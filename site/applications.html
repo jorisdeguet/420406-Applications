@@ -34,7 +34,6 @@
         </div>
         <div class="navbar-collapse collapse navbar-right">
           <ul class="nav navbar-nav">
-            <li><a href="">Plan de cours</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Semaines<span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
@@ -68,26 +67,29 @@
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Videos<span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
-                <li><a href="#s1">Liste de lecture 1</a></li>
+                <li><a href="https://www.youtube.com/watch?v=r9lYkNauGMg&list=PLYHAgLf_cnWQccEbrvVCJksLSfc5f0nR_">Liste de lecture Java</a></li>
                 <li class="divider"></li>
-                <li><a href="https://www.youtube.com/watch?v=16WzfT4K_Kw">Intro à html</a></li>
-                <li><a href="https://www.youtube.com/watch?v=WicRqXx0pZY">Intro à CSS</a></li>
+                <li><a href="https://youtu.be/r9lYkNauGMg">Premier projet Intellij</a></li>
+                <li><a href="https://youtu.be/PSnfqJ8pW2k">Impératif et méthodes</a></li>
+                <li><a href="https://youtu.be/kpBcxKXacZM">Impératif et boucles</a></li>
                 <li class="divider"></li>
-                <li><a href="https://www.youtube.com/watch?v=16WzfT4K_Kw">Tableaux HTML</a></li>
-                <li><a href="https://www.youtube.com/watch?v=16WzfT4K_Kw">Formulaire HTML</a></li>
+                <li><a href="https://youtu.be/xUfl8cSVi7s">Premier projet Android Studio</a></li>
+                <li><a href="https://youtu.be/tkSaWvoX4Wo">Tape le lapin</a></li>
                 <li class="divider"></li>
-                <li><a href="https://www.youtube.com/watch?v=ZY5bANtsSGc">Intro à Bootstrap</a></li>
-                <li><a href="https://www.youtube.com/watch?v=NjFMB-PkPRQ">Intro à Bootstrap</a></li>
-
+                <li><a href="https://youtu.be/IRgYZzYTUT0">ListView</a></li>
+                <li><a href="https://youtu.be/x-dQ5Sa0Ns0">Mise en page avec LinearLayout</a></li>
               </ul>
             </li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Utiles<span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
-                <li><a target="_blank" href="#s2">Aide mémoire HTML</a></li>
-                <li><a target="_blank" href="#s2">Aide mémoire CSS</a></li>
+                <li><a href="">Plan de cours</a></li>
                 <li class="divider"></li>
-                <li><a target="_blank" href="https://html5.validator.nu">Validateur HTML5</a></li>
+                <li><a target="_blank" href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">Java Dev Kit</a></li>
+                <li><a target="_blank" href="https://www.jetbrains.com/idea/">Intellij IDEA</a></li>
+                <li class="divider"></li>
+                <li><a target="_blank" href="http://developer.android.com/sdk/index.html">Android Studio</a></li>
+                <li><a target="_blank" href="http://developer.android.com/index.html">Site développeur Android</a></li>
               </ul>
             </li>
           </ul>
@@ -100,14 +102,12 @@
       <div class="row">
         <div class="">
             <h3 id="s1">Semaine 1 : introduction à Java et environnement de développement</h3>
-            <div class="col-md-6 alert">
+            <div class="col-md-4 alert">
               <strong>Déroulement d'une semaine type</strong>
               <p>
                 Chaque semaine, vous aurez du travail préparatoire pour découvrir la matière par vous-même.
-                Il s'agira d'une page web à lire, d'une video à suivre et d'exercices à faire.
+                Il s'agira d'une page web à lire, d'une video à suivre et/ou d'exercices à faire.
                 Cela représente environ 2 heures de travail.
-
-                LIEN INTELLIJ
               </p>
               <p>
                 Ensuite pendant la séance, vous pourrez :
@@ -118,9 +118,20 @@
                 </ul>
                 L'ensemble du travail demandé doit être fait pendant la période.
               </p>
+              <br/>
+              <strong>Installation à la maison</strong>
+              <p>
+                À la maison, vous devez installer
+                <a target="_blank" class="btn btn-primary" href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">Java Dev Kit</a> et l'environnement de développement
+                <a target="_blank" class="btn btn-primary" href="https://www.jetbrains.com/idea/">Intellij IDEA</a>
+              </p>
             </div>
-            <div class="col-md-6 alert alert-info">
-              <strong>Pendant la séance</strong>
+            <div class="col-md-4 alert  alert-warning">
+              <strong>Pendant la séance en classe</strong>
+
+            </div>
+            <div class="col-md-4 alert alert-info">
+              <strong>Pendant la séance en laboratoire</strong>
 
             </div>
         </div>
@@ -139,7 +150,7 @@
               <br><iframe width="200" height="150" src="https://www.youtube.com/embed/16WzfT4K_Kw?rel=0" frameborder="0" allowfullscreen></iframe>
               Ensuite vous devez commencer les exercices à droite. Arrêtez vous quand vous avez complété vos 2 heures.
             </div>
-            <div class="col-md-4 alert ">
+            <div class="col-md-4 alert  alert-warning">
               <div>
                 <a class="btn btn-primary btn-xs" role="button" data-toggle="collapse" href="#s01e01" aria-expanded="false" aria-controls="collapseExample">
                   exercice 1
@@ -184,21 +195,20 @@
         <div class="row">
           <div class="">
             <h3 id="s5">Semaine 3 : Programmation objet en Java</h3>
-            <div class="col-md-12 alert alert-danger">
-              <strong>Remise de travail</strong>
-
-            </div>
-            <div class="col-md-6 alert alert-success">
+            <div class="col-md-4 alert alert-success">
               <strong>Avant la séance (2h)</strong>
               Lisez la page wikipedia pour vous familiariser <a href="https://fr.wikipedia.org/wiki/Feuilles_de_style_en_cascade" class="btn btn-primary btn-xs">ici</a>
               <br/>Vous devez regarder et reproduire le résultat de la video suivante:
               <br/><iframe width="200" height="150" src="https://www.youtube.com/embed/WicRqXx0pZY?rel=0" frameborder="0" allowfullscreen></iframe>
             </div>
-            <div class="col-md-6 alert alert-info">
-              <strong>Pendant la séance</strong>
+            <div class="col-md-4 alert alert-warning">
+              <strong>Pendant la séance en classe</strong>
 
             </div>
+            <div class="col-md-4 alert alert-info">
+              <strong>Pendant la séance en laboratoire</strong>
 
+            </div>
           </div>
         </div>
         <div class="row">
@@ -246,14 +256,18 @@
         <div class="row">
           <div class="">
             <h3 id="s5">Semaine 5 : tests fonctionnels, tests sur les exceptions, tests de performance</h3>
-            <div class="col-md-6 alert alert-success">
+            <div class="col-md-4 alert alert-success">
               <strong>Avant la séance (2h)</strong>
               <br/><iframe width="200" height="150" src="https://www.youtube.com/embed/16WzfT4K_Kw?rel=0" frameborder="0" allowfullscreen></iframe>
             </div>
-            <div class="col-md-6 alert alert-info">
-              <strong>Pendant la séance</strong>
-            </div>
+            <div class="col-md-4 alert alert-warning">
+              <strong>Pendant la séance en classe</strong>
 
+            </div>
+            <div class="col-md-4 alert alert-info">
+              <strong>Pendant la séance en laboratoire</strong>
+
+            </div>
           </div>
         </div>
         <div class="row">
@@ -263,13 +277,17 @@
               <strong>Remise de travail</strong>
 
             </div>
-            <div class="col-md-6 alert alert-success">
+            <div class="col-md-4 alert alert-success">
               <strong>Avant la séance (2h)</strong>
 
             </div>
-            <div class="col-md-6 alert alert-info">
-              <strong>Pendant la séance</strong>
-              Vous devrez avancer des exercices portant sur le contenu.
+            <div class="col-md-4 alert alert-warning">
+              <strong>Pendant la séance en classe</strong>
+
+            </div>
+            <div class="col-md-4 alert alert-info">
+              <strong>Pendant la séance en laboratoire</strong>
+
             </div>
           </div>
 
@@ -278,7 +296,7 @@
         <div class="row">
           <div class="">
             <h3 id="s7">Semaine 7 : Examen Intra</h3>
-            <div class="col-md-6 alert alert-success">
+            <div class="col-md-4 alert alert-success">
               <strong>Avant la séance (2h)</strong>
               L'examen porte sur l'ensemble du contenu vu depuis le début de la session. Afin de vous aider
               dans vos révisions, nous vous conseillons de:
@@ -289,7 +307,12 @@
               Si vous avez droit à du temps supplémentaire, vous devez aviser votre professeur de votre
               intention de l'utiliser.
             </div>
-            <div class="col-md-6 alert alert-danger">
+            <div class="col-md-4 alert alert-warning">
+              <strong>Pendant la séance en classe</strong>
+              Révisions en classe. Nous reverrons les éléments que vous souhaitez. Signalez moi un point à revoir par
+              MIO avant la séance.
+            </div>
+            <div class="col-md-4 alert alert-danger">
               <strong>Pendant la séance</strong>
               L'examen dure 2h (plus si vous avez droit à du temps supplémentaire).
               <ul>
@@ -303,17 +326,23 @@
         <div class="row">
           <div class="">
             <h3 id="s8">Semaine 8: introduction à Android, interface graphique</h3>
-            <div class="col-md-6 alert alert-success">
+            <div class="col-md-4 alert alert-success">
               <strong>Avant la séance (2h)</strong>
               VOIR SI ON PEUT TROUVE RUNE BONNE VIDEO SUR salle serveur
               Vous devez préparer une question sur un point que vous voulez connaître concernant les
               infrastructures informatiques du collège. Exemple : "Combien y a-t-il de prises réseaux au collège?"
             </div>
-            <div class="col-md-6 alert alert-info">
+            <div class="col-md-4 alert alert-warning">
               <strong>Pendant la séance</strong>
-              Nous rencontrerons un technicien en informatique du collège. Il nous décrira son travail
-              puis il vous montrera une salle d'équipements informatique.
+              <p>
 
+              </p>
+            </div>
+            <div class="col-md-4 alert alert-info">
+              <strong>Pendant la séance</strong>
+              <p>
+
+              </p>
             </div>
           </div>
         </div>
@@ -322,7 +351,7 @@
           <div class="">
             <h3 id="s9">Semaine 9 : Android : ListView standard ou personnalisée, dialogues</h3>
 
-            <div class="col-md-6 alert alert-success">
+            <div class="col-md-4 alert alert-success">
               <strong>Avant la séance (2h)</strong>
               Choisissez une université entre:
               <ul>
@@ -338,24 +367,40 @@
               </ul>
               <br/>Vous devez ensuite commencer les exercices de recherche d'information ci-dessous.
             </div>
-            <div class="col-md-6 alert alert-info">
-              <strong>Pendant la séance</strong>
-              Compléter la partie tableau HTML de la phase 3.
-            </div>
+            <div class="col-md-4 alert alert-warning">
+              <strong>Pendant la séance en classe</strong>
+              <p>
 
+              </p>
+            </div>
+            <div class="col-md-4 alert alert-info">
+              <strong>Pendant la séance de laboratoire</strong>
+              <p>
+
+              </p>
+            </div>
           </div>
         </div>
 
         <div class="row">
           <div class="">
             <h3 id="s10">Semaine 10 : Android et stockage : fichiers et SQLite</h3>
-            <div class="col-md-6 alert alert-success">
+            <div class="col-md-4 alert alert-success">
               <strong>Avant la séance (2h)</strong>
 
               Possibilités ORM
             </div>
-            <div class="col-md-6 alert alert-info">
-              <strong>Pendant la séance</strong>
+            <div class="col-md-4 alert alert-warning">
+              <strong>Pendant la séance en classe</strong>
+              <p>
+
+              </p>
+            </div>
+            <div class="col-md-4 alert alert-info">
+              <strong>Pendant la séance de laboratoire</strong>
+              <p>
+
+              </p>
             </div>
           </div>
         </div>
@@ -370,47 +415,61 @@
               <strong>Remise de travail</strong>
               Vous devez remettre la phase 3 du projet.
             </div>
-            <div class="col-md-6 alert alert-success">
+            <div class="col-md-4 alert alert-success">
               <strong>Avant la séance (2h)</strong>
-              Vous devez effectuer des recherches sur l'entreprise pour laquelle vous souhaiteriez travailler.
-              Vous devez collecter les informations suivantes:
+              <p>
+
+              </p>
               <ul>
-                <li>Adresse du bureau que vous visez (à Montréal, au Québec ou ailleurs)</li>
-                <li>Site web officiel de cette compagnie</li>
-                <li>Nombre d'employés global de l'entreprise</li>
-                <li>Page Linkedin de l'entreprise</li>
-                <li>Page d'annonces d'emploi si elle existe</li>
+                <li>Singleton / factory</li>
+                <li>Adapter / wrapper</li>
+                <li>Iterator / Generator</li>
               </ul>
             </div>
-            <div class="col-md-6 alert alert-info">
-              <strong>Pendant la séance</strong>
+            <div class="col-md-4 alert alert-warning">
+              <strong>Pendant la séance en classe</strong>
+              <p>
 
+              </p>
+            </div>
+            <div class="col-md-4 alert alert-info">
+              <strong>Pendant la séance de laboratoire</strong>
+              <p>
+
+              </p>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="">
             <h3 id="s12">Semaine 12 : Patrons de conception pour l'architecture</h3>
-            <div class="col-md-6 alert alert-success">
+            <div class="col-md-4 alert alert-success">
               <strong>Avant la séance (2h)</strong>
               FAIRE VIDEO SUR FORMULAIRE
               Action : http://www.w3schools.com/html/action_page.php?coucou=hello
               <ul>
-                <li>VIDEO FORMULAIRE <a class="btn btn-xs btn-primary" href="https://www.youtube.com/watch?v=ZY5bANtsSGc">formulaire HTML</a></li>
+                <li>MVC et autres</li>
+                <li>Service / Repository</li>
               </ul>
             </div>
-            <div class="col-md-6 alert alert-info">
-              <strong>Pendant la séance</strong>
-              Vous devez compléter la partie formulaire de votre TP. Il y a une partie qui nécessite le contenu
-              HTML. Les règles CSS pour la mise en page portent sur le contenu vu pendant la semaine sur la
-              mise en page avec CSS.
+            <div class="col-md-4 alert alert-warning">
+              <strong>Pendant la séance en classe</strong>
+              <p>
+
+              </p>
+            </div>
+            <div class="col-md-4 alert alert-info">
+              <strong>Pendant la séance de laboratoire</strong>
+              <p>
+
+              </p>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="">
             <h3 id="s13">Semaine 13 : Patrons de conception pour la gestion des événements</h3>
-            <div class="col-md-6 alert alert-success">
+            <div class="col-md-4 alert alert-success">
               <strong>Avant la séance (2h)</strong>
               <ul>
                 <li>Regarder les pages Wikipedia (max 45 minutes) pour
@@ -422,8 +481,14 @@
 
               </ul>
             </div>
-            <div class="col-md-6 alert alert-info">
-              <strong>Pendant la séance</strong>
+            <div class="col-md-4 alert alert-warning">
+              <strong>Pendant la séance en classe</strong>
+              <p>
+
+              </p>
+            </div>
+            <div class="col-md-4 alert alert-info">
+              <strong>Pendant la séance de laboratoire</strong>
               <p>
                 Remplacer tous les traitements d'événements dans votre applications par l'utilisation d'un bus
                 d'événements.
@@ -439,22 +504,30 @@
               <strong>Remise de travail</strong>
               Vous devez remettre la Phase 4 du projet avant minuit le jour de cette séance.
             </div>
-            <div class="col-md-6 alert alert-success">
+            <div class="col-md-4 alert alert-success">
               <strong>Avant la séance (2h)</strong>
               Essayez d'identifier les points sur lesquels vous avez des difficultés. Envoyez un MIO à
               votre professeur pour qu'il puisse préparer des exercices supplémentaires en lien avec
               ces points qui vous posent problème.
             </div>
-            <div class="col-md-6 alert alert-info">
-              <strong>Pendant la séance</strong>
-              Exercices de révisions.
+            <div class="col-md-4 alert alert-warning">
+              <strong>Pendant la séance en classe</strong>
+              <p>
+                Exercices de révisions.
+              </p>
+            </div>
+            <div class="col-md-4 alert alert-info">
+              <strong>Pendant la séance en laboratoire</strong>
+              <p>
+                Exercices de révisions.
+              </p>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="">
             <h3 id="s15">Semaine 15 : Examen final</h3>
-            <div class="col-md-6 alert alert-success">
+            <div class="col-md-4 alert alert-success">
               <strong>Avant la séance (2h)</strong>
               L'examen porte sur l'ensemble du contenu du cours. Afin de vous aider
               dans vos révisions, nous vous conseillons de:
@@ -465,7 +538,13 @@
               Si vous avez droit à du temps supplémentaire, vous devez aviser votre professeur de votre
               intention de l'utiliser.
             </div>
-            <div class="col-md-6 alert alert-danger">
+            <div class="col-md-4 alert alert-warning">
+              <strong>Pendant la séance en classe</strong>
+              <p>
+                Exercices.
+              </p>
+            </div>
+            <div class="col-md-4 alert alert-danger">
               <strong>Pendant la séance</strong>
               L'examen dure 2h (plus si vous avez droit à du temps supplémentaire).
               <ul>
