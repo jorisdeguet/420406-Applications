@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="page du cours professions informatiques">
+    <meta name="author" content="Département informatique, collège Édouard Montpetit">
+
+    <title>Projet phase 1</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      body {
+        padding-top: 70px;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">420-103 : <strong>Projet phase 1</strong></a>
+        </div>
+        <div class="navbar-collapse collapse navbar-right">
+          <ul class="nav navbar-nav">
+            <li><a href="professions.html">Page du cours</a></li>
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Videos<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#s1">Liste de lecture 1</a></li>
+                <li class="divider"></li>
+                <li><a href="https://www.youtube.com/watch?v=16WzfT4K_Kw">Intro à html</a></li>
+                <li><a href="https://www.youtube.com/watch?v=WicRqXx0pZY">Intro à CSS</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Utiles<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a target="_blank" href="#s2">Aide mémoire HTML</a></li>
+                <li><a target="_blank" href="#s2">Aide mémoire CSS</a></li>
+                <li class="divider"></li>
+                <li><a target="_blank" href="https://html5.validator.nu">Validateur HTML5</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="row">
+        <div class="">
+            <h3 id="s1">But du projet</h3>
+            <div class="col-md-4 alert">
+              <strong>Votre site web dans 10 ans</strong>
+              <p>
+                Le but de ce site est de vous décrire dans 10 ans. Vous allez produire plusieurs
+                pages web qui viseront à décrire votre formation (collégial, universitaire, certifications etc.)
+                professionnel à travers l'entreprise pour laquelle vous travaillez
+                et finalement de donner un aperçu de votre métier.
+              </p>
+              <p>
+                Le travail permettra également d'illustrer vos compétences en HTML et en CSS.
+              </p>
+            </div>
+            <div class="col-md-4 alert ">
+              <strong>Phases du projet</strong>
+              <ul>
+                <li><strong>Phase 1 </strong>: page d'accueil, structure HTML id et class</li>
+                <li><strong>Phase 2 </strong>: CSS, style et mise en page</li>
+                <li><strong>Phase 3 </strong>: multi-pages, navigation et métier</li>
+                <li><strong>Phase 4 </strong>: formulaire, Bootstrap et formation</li>
+              </ul>
+            </div>
+            <div class="col-md-4 alert ">
+              <strong>Phase 1</strong>
+              <br>Pendant la phase 1, vous allez mettre en place la structure de base de la page d'accueil et compléter
+              quelques paragraphes de description général.
+              <br>Vous devrez également apprendre à utiliser le validateur W3C afin de produire une page valide.
+              <br>Finalement vous devrez comprendre la notion d'indentation du code.
+            </div>
+        </div>
+      </div>
+      <div class="row well">
+        <div class="">
+            <h3>
+              <span class="label label-success">2 points</span>
+              Structure du projet
+            </h3>
+            <div class="col-md-6 alert ">
+              <strong>Structure de votre projet</strong>
+              <br>Vous devez créer un répertoire avec votre nom de famille qui devra lui-même contenir 2 sous répertoires.
+              Un pour les fichiers CSS que vous produirez et un autre pour les images qui illustreront votre site.
+              Vous devez ensuite créer le fichier texte <strong>index.html</strong> pour votre page d'accueil.
+              La structure finale devra ressembler à (pour un étudiant appelé Dupont)
+              <ul>
+                <li>Dupont/
+                  <ul>
+                    <li>index.html</li>
+                    <li>css/</li>
+                    <li>images/</li>
+                  </ul>
+                </li>
+              </ul>
+
+            </div>
+
+            <div class="col-md-6 alert alert-info">
+              <strong>Pointage</strong>
+              <ol start="0">
+                  <li>Aucune structure : un seul fichier ou aucun respect des noms</li>
+                  <li>Structure partiellement respectée</li>
+                  <li>Structure identique à la demande/</li>
+              </ol>
+            </div>
+
+          </div>
+        </div>
+        <div class="row well">
+          <div class="">
+            <h3>
+              <span class="label label-success">3 points</span>
+              Structure de la page <strong>index.html</strong> : head
+            </h3>
+            <div class="col-md-6 alert">
+              <strong>Structure de la balise head</strong>
+              <br>Vous devez utliser l'encodage UTF-8 pour l'ensemble de votre page.
+              <br>Vous devez donner le titre suivante à votre page "Professions informatiques : accueil"
+
+            </div>
+
+            <div class="col-md-6 alert alert-info">
+              <strong>Pointage</strong>
+              <ul>
+                <li>1 point : structure</li>
+                <li>1 point : titre</li>
+                <li>1 point : déclaration encodage</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row well">
+          <div class="">
+            <h3>
+              <span class="label label-success">6 points</span>
+              Structure de la page <strong>index.html</strong> : body
+            </h3>
+            <div class="col-md-6 alert">
+              <strong>Structure de la balise body</strong>
+              <br/>Vous devez reproduire la section suivante:
+              <ul>
+                <li>body
+                  <ul>
+                    <li>div avec id <em>top</em></li>
+                    <li>div avec id <em>middle</em>
+                      <ul>
+                        <li>div avec id <em>content</em>
+                          <ul>
+                            <li>un titre de niveau h1 : "Moi prénom nom"</li>
+                            <li>un paragraphe vide</li>
+                            <li>un titre de niveau h1 : "Mon projet"</li>
+                            <li>un paragraphe vide</li>
+                          </ul>
+                        </li>
+                        <li>div avec id <em>menu</em></li>
+                      </ul>
+                    </li>
+                    <li>div avec id <em>bottom</em></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-md-6 alert alert-info">
+              <strong>Pointage</strong>
+              <ul>
+                  <li>1 point pour le top</li>
+                  <li>4 points pour le middle
+                    <ul>
+                        <li>3 points pour le content</li>
+                        <li>1 point pour le menu</li>
+                    </ul>
+                  </li>
+                  <li>1 point pour le bottom</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row well">
+          <div class="">
+            <h3>
+              <span class="label label-success">2 points</span>
+              Contenu de la section <em>Moi</em>
+            </h3>
+            <div class="col-md-12 alert ">
+              Vous devez vous présenter en imaginant votre situation dans 10 ans.
+              Vous devez produire un texte contenant entre 80 et 120 mots.
+            </div>
+
+          </div>
+        </div>
+        <div class="row well">
+          <div class="">
+            <h3>
+              <span class="label label-success">2 points</span>
+              Contenu de la section "Mon projet"
+            </h3>
+            <div class="col-md-12 alert ">
+              Vous devez décrire le projet en mentionnant:
+              <ul>
+                <li>l'intitulé du cours ainsi que son numéro</li>
+                <li>l'objectif d'apprentissage des différents métiers et formations en informatique</li>
+                <li>L'objectif d'apprentissage de HTML et CSS</li>
+              </ul>
+              Votre texte doit faire entre 80 et 120 mots.
+            </div>
+
+          </div>
+        </div>
+        <div class="row">
+          <div class="">
+            <div class="col-md-12 alert alert-info">
+                <h1>TODO inSERER LE RENDU DE LA PAGE A LA FIN</h1>
+
+            </div>
+            <div class="col-md-12 alert alert-danger">
+                <h1>Assurez vous d'avoir indenté votre fichier correctement (sinon 0)</h1>
+                <h1>Assurez vous que votre page passe le validateur  (sinon 0)</h1>
+            </div>
+
+          </div>
+        </div>
+
+
+      </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="bootstrap/jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
