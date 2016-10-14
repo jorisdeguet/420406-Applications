@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,220 +13,234 @@
     <!-- Bootstrap core CSS -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <style>
-      body {
-        padding-top: 70px;
-      }
+        body {
+            padding-top: 70px;
+        }
     </style>
-  </head>
+</head>
 
-  <body>
+<body>
 
     <!-- Fixed navbar -->
     <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#"><strong>Travail 1</strong> WebBot</a>
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><strong>Travail 1</strong> WebBot</a>
+            </div>
+            <div class="navbar-collapse collapse navbar-right">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Page du cours</a></li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
         </div>
-        <div class="navbar-collapse collapse navbar-right">
-          <ul class="nav navbar-nav">
-            <li><a href="index.html">Page du cours</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
     </div>
 
     <div class="container">
 
-      <div class="row">
-        <div class="">
-            <h3 id="s1">But du projet</h3>
-            <div class="col-md-4 alert">
-              <strong>Parcourir le web</strong>
-              <p>
-                Le but du premier travail est d'écrire un programme qui parcourt des pages web en 
-                  traversant des hyperliens tout en :
-              </p>
-                <ul>
-                    <li>Sauvegardant localement les pages explorées</li>
-                    <li>Collectant les adresses courriels trouvées dans les pages</li>
-                </ul>
-              <p>
-                Le travail vise à démontrer vos capacités de programmation en Java.
-              </p>
+        <div class="row">
+            <div class="">
+                <h3 id="s1">But du projet</h3>
+                <div class="col-md-4 alert">
+                    <strong>Parcourir le web</strong>
+                    <p>
+                        Le but du premier travail est d'écrire un programme qui parcourt des pages web en traversant des hyperliens tout en :
+                    </p>
+                    <ul>
+                        <li>Sauvegardant localement les pages explorées</li>
+                        <li>Collectant les adresses courriels trouvées dans les pages</li>
+                    </ul>
+                    <p>
+                        Le travail vise à démontrer vos capacités de programmation en Java.
+                    </p>
+                </div>
+                <div class="col-md-4 alert ">
+                    <strong>Format de Projet</strong>
+                    <span class="label label-warning">Remplacer Dupont par VOTRE nom de famille</span>
+                    <ul>
+                        <li><span class="label label-success">0,5 point</span> La classe principale de votre application doit s'appeler DupontBot.java</li>
+                        <li><span class="label label-success">0,5 point</span> Le package principal de votre application doit s'appeler dupont.bot</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 alert ">
+                    <strong>Correction</strong>
+                    <p>
+                        L'ensemble de la correction est effectuée sur le site <strong>http://5a5.di.college-em.info/testbot/ </strong>. Il est fortement encourager de tester votre bot sur d'autres sites mais ça n'aura pas d'impact sur la correction.
+                    </p>
+                </div>
             </div>
-            <div class="col-md-4 alert ">
-              <strong>Phases du projet</strong>
-              
-            </div>
-            <div class="col-md-4 alert ">
-              <strong>Phase 1</strong>
-              
-            </div>
-        </div>
-      </div>
-      <div class="row well">
-        <div class="">
-            <h3>
-              <span class="label label-success">2 points</span>
-              Structure du projet
-            </h3>
-            <div class="col-md-6 alert ">
-              <strong>Structure de votre projet</strong>
-              <br>Vous devez créer un répertoire avec votre nom de famille qui devra lui-même contenir 2 sous répertoires.
-              Un pour les fichiers CSS que vous produirez et un autre pour les images qui illustreront votre site.
-              Vous devez ensuite créer le fichier texte <strong>index.html</strong> pour votre page d'accueil.
-              La structure finale devra ressembler à (pour un étudiant appelé Dupont)
-              <ul>
-                <li>Dupont/
-                  <ul>
-                    <li>index.html</li>
-                    <li>css/</li>
-                    <li>images/</li>
-                  </ul>
-                </li>
-              </ul>
-
-            </div>
-
-            <div class="col-md-6 alert alert-info">
-              <strong>Pointage</strong>
-              <ol start="0">
-                  <li>Aucune structure : un seul fichier ou aucun respect des noms</li>
-                  <li>Structure partiellement respectée</li>
-                  <li>Structure identique à la demande/</li>
-              </ol>
-            </div>
-
-          </div>
         </div>
         <div class="row well">
-          <div class="">
-            <h3>
+            <div class="">
+
+                <div class="col-md-6 alert ">
+                    <h3>
+                      Gestion des arguments
+                    </h3>
+                    <strong>Arguments en ligne de commandes</strong>
+                    <p>
+                        Votre application doit prendre 3 arguments en ligne de commande dans l'ordre spécifié ici.
+                        <span class="label label-success">1 point</span> Dans le cas où l'utilisateur ne fournit pas le bon nombre d'arguments vous devez lui indiquer clairement comment utiliser votre application. (Combien d'arguments, quel est le rôle de chacun)
+                    </p>
+                    <div class="alert alert-danger" role="alert">
+                        <strong>Attention!</strong> Il ne s'agit pas d'une application intéractive.
+                    </div>
+                    <ol>
+                        <li><span class="label label-success">2 points</span> la profondeur d'exploration qui doit être un nombre entier positif.</li>
+                        <li><span class="label label-success">2 points</span> l'url de départ qui est la première page à explorer. Il doit s'gir d'une page valide.</li>
+                        <li><span class="label label-success">2 points</span> le répertoire où écrire les copies locales des fichiers explorés. Le dossier doit être accessible et on doit pouvoir y écrire.</li>
+                    </ol>
+                    <p>Pour chaque arguement, vous obtenez un point s'il est bien pris en compte et un point si vous affichez un message significatif si la valeur n'est pas bonne.</p>
+                </div>
+
+                <div class="col-md-6 ">
+                    <h3>
+                      Traitement
+                    </h3>
+                    <strong>Gestion de la profondeur</strong>
+                    <p>Le paramètre de profondeur d'exploration fonctionne ainsi:</p>
+                    <ol start="0">
+                        <li>Une profondeur de 0 signifie qu'on explore uniquement la page de départ fournie en argument</li>
+                        <li>Une profondeur de 1 signifie qu'on explore la page initiale, puis les liens contenus dans la page initiale</li>
+                        <li>On explore la page initiale, puis les liens de cette page, puis les liens contenus dans les pages liées</li>
+                        <li>etc.</li>
+                    </ol>
+                    
+                    <strong>Mémoire de l'exploration</strong>
+                    <p>
+                        <span class="label label-success">2 points</span> Vous devez implanter un mécanisme pour éviter de visiter plusieurs fois la même page.
+                        Si une page A contient un lien vers B qui contient un lien vers A, on ne devrait pas
+                        re-explorer la page A.
+                    </p>
+                    <strong>Messages pendant l'exploration</strong>
+                    <p>
+                        <span class="label label-success">1 point</span> Vous devez fournir des messages 
+                        significatifs pour chaque exploration d'une page web contenant l'URL complète du fichier.
+                        <span class="label label-success">1 point</span> Dans le cas où une URL ne peut être explorée,
+                        vous devez fournir un message significatif.
+                        
+                    </p>
+                    <strong>Collecte des courriels</strong>
+                    <p>
+                        <span class="label label-success">1 point</span> Vous devez collecter les adresses courriels 
+                        contenues dans chaque page pendant l'exploration.
+                        <span class="label label-success">1 point</span> À la fin de l'exécution, vous devez afficher dans la console la liste des courriels collectés sans doublon dans l'ordre alphabétique. 
+                    </p>
+                </div>
+
+            </div>
+        </div>
+        <div class="row well">
+            <div class="">
+                <h3>
               <span class="label label-success">3 points</span>
               Structure de la page <strong>index.html</strong> : head
             </h3>
-            <div class="col-md-6 alert">
-              <strong>Structure de la balise head</strong>
-              <br>Vous devez utliser l'encodage UTF-8 pour l'ensemble de votre page.
-              <br>Vous devez donner le titre suivante à votre page "Professions informatiques : accueil"
+                <div class="col-md-6 alert">
+                    <strong>Structure de la balise head</strong>
+                    <br>Vous devez utliser l'encodage UTF-8 pour l'ensemble de votre page.
+                    <br>Vous devez donner le titre suivante à votre page "Professions informatiques : accueil"
 
-            </div>
+                </div>
 
-            <div class="col-md-6 alert alert-info">
-              <strong>Pointage</strong>
-              <ul>
-                <li>1 point : structure</li>
-                <li>1 point : titre</li>
-                <li>1 point : déclaration encodage</li>
-              </ul>
+                <div class="col-md-6 alert alert-info">
+                    <strong>Pointage</strong>
+                    <ul>
+                        <li>1 point : structure</li>
+                        <li>1 point : titre</li>
+                        <li>1 point : déclaration encodage</li>
+                    </ul>
+                </div>
             </div>
-          </div>
         </div>
         <div class="row well">
-          <div class="">
-            <h3>
+            <div class="">
+                <h3>
               <span class="label label-success">6 points</span>
               Structure de la page <strong>index.html</strong> : body
             </h3>
-            <div class="col-md-6 alert">
-              <strong>Structure de la balise body</strong>
-              <br/>Vous devez reproduire la section suivante:
-              <ul>
-                <li>body
-                  <ul>
-                    <li>div avec id <em>top</em></li>
-                    <li>div avec id <em>middle</em>
-                      <ul>
-                        <li>div avec id <em>content</em>
-                          <ul>
-                            <li>un titre de niveau h1 : "Moi prénom nom"</li>
-                            <li>un paragraphe vide</li>
-                            <li>un titre de niveau h1 : "Mon projet"</li>
-                            <li>un paragraphe vide</li>
-                          </ul>
-                        </li>
-                        <li>div avec id <em>menu</em></li>
-                      </ul>
-                    </li>
-                    <li>div avec id <em>bottom</em></li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-
-            <div class="col-md-6 alert alert-info">
-              <strong>Pointage</strong>
-              <ul>
-                  <li>1 point pour le top</li>
-                  <li>4 points pour le middle
+                <div class="col-md-6 alert">
+                    <strong>Structure de la balise body</strong>
+                    <br/>Vous devez reproduire la section suivante:
                     <ul>
-                        <li>3 points pour le content</li>
-                        <li>1 point pour le menu</li>
+                        <li>body
+                            </li>
                     </ul>
-                  </li>
-                  <li>1 point pour le bottom</li>
-              </ul>
+                </div>
+
+                <div class="col-md-6 alert alert-info">
+                    <strong>Pointage</strong>
+                    <ul>
+                        <li>1 point pour le top</li>
+                        <li>4 points pour le middle
+                            <ul>
+                                <li>3 points pour le content</li>
+                                <li>1 point pour le menu</li>
+                            </ul>
+                        </li>
+                        <li>1 point pour le bottom</li>
+                    </ul>
+                </div>
             </div>
-          </div>
         </div>
         <div class="row well">
-          <div class="">
-            <h3>
+            <div class="">
+                <h3>
               <span class="label label-success">2 points</span>
               Contenu de la section <em>Moi</em>
             </h3>
-            <div class="col-md-12 alert ">
-              Vous devez vous présenter en imaginant votre situation dans 10 ans.
-              Vous devez produire un texte contenant entre 80 et 120 mots.
-            </div>
+                <div class="col-md-12 alert ">
+                    Vous devez vous présenter en imaginant votre situation dans 10 ans. Vous devez produire un texte contenant entre 80 et 120 mots.
+                </div>
 
-          </div>
+            </div>
         </div>
         <div class="row well">
-          <div class="">
-            <h3>
+            <div class="">
+                <h3>
               <span class="label label-success">2 points</span>
               Contenu de la section "Mon projet"
             </h3>
-            <div class="col-md-12 alert ">
-              Vous devez décrire le projet en mentionnant:
-              <ul>
-                <li>l'intitulé du cours ainsi que son numéro</li>
-                <li>l'objectif d'apprentissage des différents métiers et formations en informatique</li>
-                <li>L'objectif d'apprentissage de HTML et CSS</li>
-              </ul>
-              Votre texte doit faire entre 80 et 120 mots.
-            </div>
+                <div class="col-md-12 alert ">
+                    Vous devez décrire le projet en mentionnant:
+                    <ul>
+                        <li>l'intitulé du cours ainsi que son numéro</li>
+                        <li>l'objectif d'apprentissage des différents métiers et formations en informatique</li>
+                        <li>L'objectif d'apprentissage de HTML et CSS</li>
+                    </ul>
+                    Votre texte doit faire entre 80 et 120 mots.
+                </div>
 
-          </div>
+            </div>
         </div>
         <div class="row">
-          <div class="">
-            <div class="col-md-12 alert alert-info">
-                <h1>TODO inSERER LE RENDU DE LA PAGE A LA FIN</h1>
+            <div class="">
+                <div class="col-md-12 alert alert-info">
+                    <h1>TODO inSERER LE RENDU DE LA PAGE A LA FIN</h1>
+
+                </div>
+                <div class="col-md-12 alert alert-danger">
+                    <h1>Assurez vous d'avoir indenté votre fichier correctement (sinon 0)</h1>
+                    <h1>Assurez vous que votre page passe le validateur  (sinon 0)</h1>
+                </div>
 
             </div>
-            <div class="col-md-12 alert alert-danger">
-                <h1>Assurez vous d'avoir indenté votre fichier correctement (sinon 0)</h1>
-                <h1>Assurez vous que votre page passe le validateur  (sinon 0)</h1>
-            </div>
-
-          </div>
         </div>
 
 
-      </div>
+    </div>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="bootstrap/jquery.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
-  </body>
+</body>
+
 </html>
