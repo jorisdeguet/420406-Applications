@@ -59,41 +59,120 @@
                     <br>Vous devez parcourir le site officiel (en anglais)
                     <a class="btn btn-xs btn-primary" target="_blank" href="https://docs.oracle.com/javase/tutorial/java/nutsandbolts/">fondamentaux au Java</a> (max 20 minutes).
                     <p>Vous devez regarder la video suivante:</p>
-                    <iframe width="200" height="150" src="https://www.youtube.com/embed/r9lYkNauGMg?rel=0" frameborder="0" allowfullscreen></iframe>
+                    <iframe width="200" height="150" src="https://www.youtube.com/embed/PSnfqJ8pW2k?rel=0" frameborder="0" allowfullscreen></iframe>
+                    <iframe width="200" height="150" src="https://www.youtube.com/embed/kpBcxKXacZM?rel=0" frameborder="0" allowfullscreen></iframe>
+                    
+                    
+                    
                     <iframe width="200" height="150" src="https://www.youtube.com/embed/BzFx1dszk4I?rel=0" frameborder="0" allowfullscreen></iframe>
                     <p>
                         Ensuite vous devez commencer les exercices à droite. Arrêtez vous quand vous avez complété vos 2 heures.
                     </p>
                 </div>
                 <div class="col-md-4 alert  alert-warning">
-                    <div>
-                        Nous ferons quelques exemples d'applications pour revenir sur les éléments couverts dans la video.  
-                        
-                    </div>
+                    <p>
+                        Nous ferons quelques exemples d'applications pour revenir sur les éléments couverts dans la video.   
+                    </p>
+                    <p>
+                        Vous avancerez les exercices non terminés en binôme.   
+                    </p>
+                    <p>
+                        J'effectuerai la correction commentée de certains exercices de la semaine.   
+                    </p>
                 </div>
                 <div class="col-md-4 alert alert-info">
-                    <strong>Pendant la séance</strong> Vous devez compléter les exercices de la semaine et commencer votre <a href="phase1.html">premier travail</a>.
+                    <strong>Pendant la séance</strong> 
+                    <p>
+                        Vous devez compléter les exercices de la semaine.
+                    </p>
+                    <p>
+                        Vous devez commencer votre <a href="phase1.html">premier travail</a>.
+                    </p>
                 </div>
-                <div class="col-md-12 well">
+                <div class="col-md-12">
                     <div>
                         <a class="btn btn-primary btn-xs">
                           Exercices de la semaine
                         </a>
+                        <p>
+                            Le but des exercices est de vous faire découvrir Java par la pratique et par 
+                            la comparaison avec C#.
+
+                            Le laboratoire est à effectuer à deux. Prenez 2 postes proches pour pouvoir échanger facilement. 
+
+                            Dans chaque binôme, un d’entre vous doit faire l’exercice en Java, l’autre en C#. Ensuite vous devrez échanger vos fichiers. Vous devrez ensuite exécuter le code de l’autre sur votre poste. 
+                        </p>
                         <div>
-                            <h3>Exercice A</h3>
+                            <h3>Exercice Triangle</h3>
                             <p>
-                                Créez un projet appelé <strong>Repos</strong> dans lequel vous créerez un service simple en GET sur l'URL https://api.github.com/users/jorisdeguet/repos
+                                Reproduisez un triangle en prenant sa hauteur par un argument de ligne de commandes.
+                            </p>
+                            <pre>
+*
+**
+***
+****</pre>
+                            <p>
+                                Indications
+                            </p>
+                            <ul>
+                                <li>La méthode qui permet de transformer une chaîne de caractères en entier est une méthode statique de la classe Integer.</li>
+                                <li>Pour afficher un caractère sans sauter de ligne, <strong>System.out.print()</strong></li>
+                            </ul>
+                            <h3>Exercice Pyramide</h3>
+                            <p>
+                                Reproduisez un triangle en prenant sa hauteur par un argument de ligne de commandes.
+                            </p>
+                            <pre>
+  *
+ ***
+*****</pre>
+                            <h3>Exercice Moyenne</h3>
+                            <p>
+                                Créez un tableau d’entiers tirés au hasard entre 0 et 100. Calculez la somme, la moyenne, le min et le max que vous afficherez dans la console.
                             </p>
                             <p>
-                                Essayez de comprendre le format du résultat et de l'afficher de manière compréhensible dans une activité
+                                Indications
                             </p>
-                            <h3>Exercice B</h3>
+                            <ul>
+                                <li>Vous aurez besoin d’un objet de la classe Random pour les tirages aléatoires</li>
+                                <li>Pour trouver la documentation d’une classe, on Google 
+                                    <strong>javadoc <em>nomdelaclasse</em></strong>, ici <strong>javadoc Random</strong></li>
+                            </ul>
+                            <h3>Exercice Web</h3>
                             <p>
-                                Créez un projet appelé <strong>MockMock</strong> dans lequel vous créerez un service simple en GET avec une méthode récupérant une liste d'objets de classe Truc (2 champs String et un champ Integer).
+                                Votre programme doit prendre en argument une adresse (URL) d’un site web et afficher son contenu dans la console. Vous trouverez une indication <a href="http://docs.oracle.com/javase/tutorial/networking/urls/readingWriting.html">ici</a>. 
                             </p>
+                            <h3>Exercice KaprekarIteration</h3>
                             <p>
-                                Implantez un mock de votre service renvoyant une liste de 3 Trucs. Illustrez avec soit une ListView, soit un test unitaire.
+                                Vous devez programmer une fonction: 
                             </p>
+                            <pre>int kaprekar(int n)</pre>
+                            qui effectue ce traitement: 
+                            <ol>
+                                <li>Prenez un nombre de 4 chiffres : 8579</li>
+                                <li>Le transformer en chaîne de caractères : "8579"</li>
+                                <li>Le transformer en séquence de caractères : '8', '5', '7', '9'</li>
+                                <li>Trier et inverser: '5', '7', '8', '9' et '9', '8', '7', '5'</li>
+                                <li>Récupérer des nombres : 5789 et 9875</li>
+                                <li>Soustraire le petit du grand : 9875-5789=4086</li>
+                            </ol>
+                            Testez votre fonction dans un programme prenant un entier en argument et affichant le résultat de kaprekar.
+                            <h3>Exercice KaprekarSuite</h3>
+                            <p>
+                                En réutilisant votre fonction précédente, écrivez un programme qui prend un argument entier et affiche la séquence des nombres jusqu'à ce que le même nombre se retrouve 2 fois de suite.
+                            </p>
+                            <pre>
+9567
+4086
+8172
+7443
+3996
+6264
+4176
+6174
+6174
+                            </pre>
                         </div>
                     </div>
                 </div>
