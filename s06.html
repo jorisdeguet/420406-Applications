@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="page du cours professions informatiques">
     <meta name="author" content="Département informatique, collège Édouard Montpetit">
-
     <title>Applications</title>
 
     <!-- Bootstrap core CSS -->
@@ -16,7 +14,10 @@
         body {
             padding-top: 70px;
         }
-        pre span {color:red;}
+        
+        pre span {
+            color: red;
+        }
     </style>
 </head>
 
@@ -51,94 +52,58 @@
 
 
         <div class="row">
-            <div class="">
-                <h3 id="s2">Tests automatisés : exceptions et hasard</h3>
-                <div class="col-md-4 alert alert-success">
-                    <strong>Avant la séance (2h)</strong>
-                    <p>Vous devez regarder la video suivante:</p>
-                    <iframe width="200" height="150" src="https://www.youtube.com/embed/8YeQG_SZ9qc?rel=0" frameborder="0" allowfullscreen></iframe>
-                    <iframe width="200" height="150" src="https://www.youtube.com/embed/KhK604sQik8?rel=0" frameborder="0" allowfullscreen></iframe>
-                    <p>
-                        Ensuite vous devez commencer les exercices à droite. Arrêtez vous quand vous avez complété vos 2 heures.
-                    </p>
+            <h3 id="s2">Tests automatisés : exceptions et hasard</h3>
+            <div class="col-md-4 alert alert-success">
+                <strong>Avant la séance (2h)</strong>
+                <p>Vous devez regarder la video suivante:</p>
+                <iframe width="200" height="150" src="https://www.youtube.com/embed/8YeQG_SZ9qc?rel=0" frameborder="0" allowfullscreen></iframe>
+                <iframe width="200" height="150" src="https://www.youtube.com/embed/KhK604sQik8?rel=0" frameborder="0" allowfullscreen></iframe>
+                <p>
+                    Ensuite vous devez commencer les exercices à droite. Arrêtez vous quand vous avez complété vos 2 heures.
+                </p>
+            </div>
+            <div class="col-md-4 alert  alert-warning">
+                <div>
+                    Nous ferons quelques exemples d'applications pour revenir sur les éléments couverts dans la video.
+
                 </div>
-                <div class="col-md-4 alert  alert-warning">
-                    <div>
-                        Nous ferons quelques exemples d'applications pour revenir sur les éléments couverts dans la video.  
-                        
-                    </div>
-                </div>
-                <div class="col-md-4 alert alert-info">
-                    <strong>Pendant la séance</strong> Vous devez compléter les exercices de la semaine.
-                    Vous continuerez votre <a href="phase1.html">premier travail</a>.
-                </div>
-                <div class="col-md-12">
-                    <div>
-                        <a class="btn btn-primary btn-xs">
+            </div>
+            <div class="col-md-4 alert alert-info">
+                <strong>Pendant la séance</strong>
+                <p>
+                    Vous devez compléter les exercices de la semaine.
+                </p>
+                <p>
+                    Vous devez avancer votre travail.
+                </p>
+            </div>
+            <div class="col-md-12">
+                <div>
+                    <a class="btn btn-primary btn-xs">
                           Exercices de la semaine
                         </a>
-                        <div>
-                            <h3>Exercice EntrezUnNombre</h3>
-                            <p>
-                                En utilisant un Scanner sur le System.in, écrivez un programme qui demande à 
-                                l'utilisateur de taper un mot jusqu'à ce que ce soit un nombre entier:
-                            </p>
-                            <pre>
-Veuillez entrer un nombre:
-<span>pipo</span>
-Ceci n’est pas un nombre, veuillez entrer un nombre:
-<span>popi</span>
-Ceci n’est pas un nombre, veuillez entrer un nombre:
-<span>123</span>
-Merci votre nombre est 123.</pre>
-                            <p>
-                                Indications
-                            </p>
-                            <ul>
-                                <li>Vous aurez besoin d’un objet de la classe Random pour les tirages aléatoires</li>
-                                <li>Pour trouver la documentation d’une classe, on Google 
-                                    <strong>javadoc <em>nomdelaclasse</em></strong>, ici <strong>javadoc Random</strong>
-                                </li>
-                            </ul>
-                            <h3>Exercice DevineUnNombre</h3>
-                            <p>
-                                Votre programme doit tirer un nombre aléatoire entre 1 et 9 puis demander à l’utilisateur de le deviner jusqu’à ce qu’il entre dans la console soit le nombre en question.
-                            </p>
-                            <pre>
-Veuillez deviner le nombre entre 1 et 9:
-<span>3</span>
-Essaie encore:
-<span>2</span>
-Essaie encore:
-<span>8</span>
-Halleluyah!!!
-</pre>
-                            <h3>Exercice DevineUnNom</h3>
-                            <p>
-                                Votre programme doit tirer un nom aléatoire parmi Jean Paul Jacques Martin puis demander à l’utilisateur de le deviner jusqu’à ce qu’il entre dans la console soit le bon nom.
-
-                            </p>
-                            <pre>
-Veuillez deviner un nom parmi Paul Jean Jacques et Martin:
-<span>Paul</span>
-Essaie encore:
-<span>Jean</span>
-Halleluyah!!!
-</pre>
-                        </div>
+                    <div>
+                        <h3>Exercice NotesTests</h3>
+                        <p>
+                            Reprenez le code de l'exercice précédent <strong>Notes</strong>.
+                        </p>
+                        <p>
+                            Pour chaque méthode de service, cherchez à identifier les cas problématique pour les paramètres de la méthode.
+                        </p>
+                        <p>
+                            Écrivez les tests pour valider le bon fonctionnement du code que vous aviez écrit. Apportez les correctifs nécessaires. Validez le bon fonctionnement de votre application console existante.
+                        </p>
+                        <p>
+                            Écrivez les tests qui simulent une classe de 20 étudiants avec 3 épreuves avec des épreuves au hasard. Tirez des pointages d'épreuve entre 20 et 40. En tirant des notes aléatoires, assurez vous que la moyenne est aux alentours de 50%. Assurez vous de rendre vos tests reproductibles. Vérifiez le résultat avec un chiffrier excel qui effectue le calcul indépendemment.
+                        </p>
+                        <p>
+                            Augmentez le nombre d'étudiants à 20000 et observez les résultats.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
-
-
     </div>
-    <div class="row">
-
-
-    </div>
-    <!-- /container -->
-
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
