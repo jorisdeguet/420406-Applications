@@ -48,20 +48,23 @@
     <div class="container">
         <div class="row">
             <div class="">
-                <h3>Android : interface graphique</h3>
+                <h3>Événements</h3>
                 <div class="col-md-4 alert alert-success">
                     <strong>Avant la séance (2h)</strong>
-                    <p>Vous devez regarder ceci:</p>
-                    <iframe width="200" height="150" src="https://www.youtube.com/embed/IRgYZzYTUT0?rel=0" frameborder="0" allowfullscreen></iframe>
                     <p>
-                        Ensuite vous devez commencer les exercices . Arrêtez vous quand vous avez complété vos 2 heures.
+                        Vous devez regarder le site de la librairie 
+                        <a class="btn btn-primary" href="http://square.github.io/otto/">otto</a>
+                    </p>
+                    <p>
+                        Vous devez lire sur le patron 
+                        <a class="btn btn-primary" href="https://en.wikipedia.org/wiki/Publish–subscribe_pattern">pub / sub</a>
                     </p>
                 </div>
                 <div class="col-md-4 alert  alert-warning">
                     <strong>Pendant la séance de cours</strong>
-                    <div>
-                        Nous ferons quelques exemples d'applications pour revenir sur les éléments couverts dans la video.     
-                    </div>
+                    <p>
+                        Nous regarderons en détails comment intégrer otto dans un projet et en particulier comment gérer les register/unregister sur les événements onPause et onResume du cycle de vie d'une activité.  
+                    </p>
                 </div>
                 <div class="col-md-4 alert alert-info">
                     <strong>Pendant la séance de laboratoire</strong>
@@ -76,27 +79,26 @@
                           Exercices de la semaine
                         </a>
                         <div>
-                            <h3>Exercice OrdreAlpha</h3>
+                            <h3>Exercice EvenementsMultiple</h3>
                             <p>
-                                Vous devez implanter un jeu où une liste de prénom classée dans un ordre aléatoire. Chaque élément a 2 boutons qui permettent de changer l’ordre dans la liste. Le joueur gagne dès que la liste est dans l’ordre alphabétique. Dans ce cas, vous afficherez un dialogue de félicitations et vous mélangerez la liste à nouveau.
-
+                                Programmez une application avec un bouton qui lance un évémements via un post sur un bus. Programmez un Subscribe dans l'activité de l'application qui affiche un Log.
                             </p>
                             <p>
-                                <img src="img/Order.jpg" />
+                                Après avoir passé plusieurs fois la tablette du mode paysage au mode portrait puis au mode paysage. Appuyez sur le bouton et observez le Log. Y a-t-il plusieurs Log pour chaque événements? Expliquez.
                             </p>
-                            <h3>Exercice Internationalisation</h3>
+                            <h3>Exercice EvenementsHéritage</h3>
                             <p>
-                                Vous devez programmer le jeu de Tape Le Lapin.  Votre application doit être i18n compatible avec des versions anglais et français.
+                                Programmez une application avec 3 boutons qui lance respectivement un événement de type:
                             </p>
                             <ul>
-                                <li>Au début du jeu, le lapin est sur une case </li>
-                                <li>Le joueur tape sur un bouton 
-                                    <ul>
-                                        <li>S’il tape le lapin, on augmente le nombre de pafs et le lapin change de case </li>
-                                        <li>S’il rate, on compte un flop mais le lapin reste où il est</li>
-                                    </ul>
-                                </li>
+                                <li>classe A qui contient un champ de type date correspondant à la date d'appui sur le bouton</li>
+                                <li>classe A1 une sous-classe de A</li>
+                                <li>classe A2 une autre sous-classe de A</li>
                             </ul>
+                            <p>
+                                Écrivez 3 subscribe affichant des messages différents selon le type d'événements dans le Log. En déclenchant les différents événements (en appuyant sur les boutons), observez le Log et expliquez.
+                            </p>
+                            
                         </div>
                     </div>
                 </div>
