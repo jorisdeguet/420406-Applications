@@ -26,7 +26,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#"><strong>Applications orientées objet</strong> semaine 4</a>
+                <a class="navbar-brand" href="#"><strong>Applications orientées objet</strong> semaine 5</a>
             </div>
             <div class="navbar-collapse collapse navbar-right">
                 <ul class="nav navbar-nav">
@@ -41,85 +41,94 @@
     </div>
 
     <div class="container">
-
-
-
         <div class="row">
-            <div class="">
-                <h3 id="s2">Tests automatisés</h3>
-                <div class="col-md-4 alert alert-success">
-                    <strong>Avant la séance (2h)</strong>
-                    <p>
-                        Lisez la page Wikipedia sur les 
-                        <a href="https://fr.wikipedia.org/wiki/Test_unitaire" class="btn btn-primary btn-xs">tests
-                        </a> (max 20 min).
-                    </p>
-                    <p>Vous devez regarder la video suivante:</p>
-                    <iframe width="200" height="150" src="https://www.youtube.com/embed/8YeQG_SZ9qc?rel=0" frameborder="0" allowfullscreen></iframe>
-                    <p>
-                        Ensuite vous devez commencer les exercices à droite. Arrêtez vous quand vous avez complété vos 2 heures.
-                    </p>
+            <h3 id="s2">Tests automatisés</h3>
+            <div class="col-md-6 alert alert-success">
+                <strong>Avant la séance (2h)</strong>
+                <p>
+                    Lisez la page Wikipedia sur les 
+                    <a href="https://fr.wikipedia.org/wiki/Test_unitaire" class="btn btn-primary btn-xs">tests
+                    </a> (max 20 min).
+                </p>
+                <p>Vous devez regarder la video suivante:</p>
+                <iframe width="200" height="150" src="https://www.youtube.com/embed/8YeQG_SZ9qc?rel=0" frameborder="0" allowfullscreen></iframe>
+                <p>
+                    Ensuite vous devez commencer les exercices à droite. Arrêtez vous quand vous avez complété vos 2 heures.
+                </p>
+                <p>
+                    VIDEO A FAIRE. Montrer comment on code un truc, on le teste tout de suite. Tests avec limite de temps, tests avec exceptions, exécution en couverture de code. CALCUL DES IMPOTS, un montant de revenu, des tranches avec taux d'imposition, exception si montant négatif ou si les tranches ont des taux négatifs. TESTS SUR LES TRANCHES D'IMPOSITION.
+                    EXECUTOIN DANS INTELLIJ, DEBUG POUR VOIR.
+                </p>
+                <p>
+                    VIDEO A FAIRE. DEBOGAGE AVANCÉ. Evaluate Expression. Field watchpoint (track a field).
+                </p>
+                <p>
+                    Vous pouvez regarder la <a href="https://www.youtube.com/watch?v=VdBsUv4lnm4">vidéo de référence</a> en anglais.
+                </p>
+            </div>
+            <div class="col-md-3 alert  alert-warning">
+                <strong>Pendant le cours à 40</strong> 
+                <div>
+                    Nous ferons quelques exemples d'applications pour revenir sur les éléments couverts dans la video.  
+
                 </div>
-                <div class="col-md-4 alert  alert-warning">
-                    <div>
-                        Nous ferons quelques exemples d'applications pour revenir sur les éléments couverts dans la video.  
-                        
-                    </div>
-                </div>
-                <div class="col-md-4 alert alert-info">
-                    <strong>Pendant la séance</strong> Vous devez compléter les exercices de la semaine.
+            </div>
+            <div class="col-md-3 alert alert-info">
+                <strong>Pendant le labo à 20</strong> 
+                <p>
+                    Vous devez compléter les exercices de la semaine.
                     Vous continuerez votre <a href="phase1.html">premier travail</a>.
-                </div>
-                <div class="col-md-12">
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>
+                    <a class="btn btn-primary btn-xs">
+                      Exercices de la semaine : 
+                    </a>
+                    <p>
+                        Pour chaque exercice, vous devrez programmer une classe de code et une classe de tests. Utilisez la couverture de code pour valider que le code est testé en entier.
+                    </p>
                     <div>
-                        <a class="btn btn-primary btn-xs">
-                          Exercices de la semaine : 
-                        </a>
+                        <h3>Exercice Fibonacci</h3>
                         <p>
-                            Pour chaque exercice, vous devrez programmer une classe de code et une classe de tests. Utilisez la couverture de code pour valider que le code est testé en entier.
+                            Le programmeur doit programmer la suite de Fibonacci en 2 versions.
+
                         </p>
-                        <div>
-                            <h3>Exercice Fibonacci</h3>
-                            <p>
-                                Le programmeur doit programmer la suite de Fibonacci en 2 versions.
-                                
-                            </p>
-                            <pre>
+                        <pre>
 BigInteger fibo(BigInteger biggie);
 Long fibo(Long longie);
 </pre>
-                            <p>
-                                Le testeur doit écrire des tests pour s'assurer du bon fonctionnement. Quelques indications:
-                            </p>
-                            <ul>
-                                <li>le résultat doit toujours être positif</li>
-                                <li>le fibo d'un nombre est toujours plus grand que le fibo du nombre précédent</li>
-                                <li>si je fais fibo(n)-fibo(n-1) je devrais trouver la valeur de fibo(n-2)</li>
-                            </ul>
-                            
-                            <h3>Exercice CodePostal</h3>
-                            <p>
-                                Le programmeur doit programmer la méthode suivante qui indique si un code postal canadien est valide.
-                            </p>
-                            <pre>
+                        <p>
+                            Le testeur doit écrire des tests pour s'assurer du bon fonctionnement. Quelques indications:
+                        </p>
+                        <ul>
+                            <li>le résultat doit toujours être positif</li>
+                            <li>le fibo d'un nombre est toujours plus grand que le fibo du nombre précédent</li>
+                            <li>si je fais fibo(n)-fibo(n-1) je devrais trouver la valeur de fibo(n-2)</li>
+                        </ul>
+
+                        <h3>Exercice CodePostal</h3>
+                        <p>
+                            Le programmeur doit programmer la méthode suivante qui indique si un code postal canadien est valide.
+                        </p>
+                        <pre>
 boolean isValidZipCode(String zippy);
 </pre>
-                            <p>
-                                Le testeur doit valider cette méthode.
-                            </p>
-                            <ul>
-                                <li>on accepte les minuscules et majuscules</li>
-                                <li>les 2 blocs peuvent être séparés par 0 1 ou 2 espaces ou un tiret</li>
-                                <li>Ok "H1Y1E1" "H1Y 1E1" "h3Y  1E8"</li>
-                                <li>Ko "H1Y   1E1" "H1Y_1E1" "h3Y  1TO"</li>
-                            </ul>
-                        </div>
+                        <p>
+                            Le testeur doit valider cette méthode.
+                        </p>
+                        <ul>
+                            <li>on accepte les minuscules et majuscules</li>
+                            <li>les 2 blocs peuvent être séparés par 0 1 ou 2 espaces ou un tiret</li>
+                            <li>Ok "H1Y1E1" "H1Y 1E1" "h3Y  1E8"</li>
+                            <li>Ko "H1Y   1E1" "H1Y_1E1" "h3Y  1TO"</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-
-
     </div>
     <!-- /container -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>

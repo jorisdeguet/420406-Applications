@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,137 +13,86 @@
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <style>
-      body {
-        padding-top: 70px;
-      }
+        body {
+            padding-top: 70px;
+        }
     </style>
-  </head>
+</head>
 
-  <body>
+<body>
 
     <!-- Fixed navbar -->
     <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">420-103 : <strong>Projet phase 2</strong></a>
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Travail 2 <strong>Monnayeur et tests</strong></a>
+            </div>
+            <div class="navbar-collapse collapse navbar-right">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Accueil</a></li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
         </div>
-        <div class="navbar-collapse collapse navbar-right">
-          <ul class="nav navbar-nav">
-            <li><a href="index.html">Accueil</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
     </div>
 
     <div class="container">
+        <div class="row">
+            <div class="well ">
+                <h3>Caisse et change</h3>
+                <p>
+                    Cette partie concerne la définition des classes permettant de représenter une caisse et son contenu (argent) ainsi que l'objet qui représente le change (un ensemble de pièces billets correspondant à un montant).
+                </p>
+                Le tiroir caisse tient à jour de nombre d’objets de chaque type On teste la caisse pleine au constructeur 1 point test sur la levée d’une exception significative en cas de dépassement de capacité 1 point test sur une demande dans un compartiment vide 1 point
+                <p>
 
-      <div class="row">
-        <div class="">
-            <h3 id="s1">Phase 2 : mise en page globale</h3>
-            <div class="col-md-12 alert">
-              <strong>La structure et le style</strong>
-              <p>
-                La plupart des sites utilise une structure à base de div qui permet d'attacher
-                des règles de mise en page à certains éléments et donc structurer la page.
-                Le but de la phase 2 est d'illustrer cette technique en effectuant la mise en page
-                de votre page d'index.
-              </p>
+                    Tiroir caisse et change calculent le montant total et le nombre total d’objets Il existe un test avant/après monnayeur sur le nombre d’objet total 1 point Il existe un test avant/après monnayeur sur le montant total 1 point
 
+
+                </p>
             </div>
-
-        </div>
-      </div>
-      <div class="row well">
-        <div class="">
-          <h3>
-            <span class="label label-success">3 points</span>
-            Div du haut de la page
-          </h3>
-            <div class="col-md-12 alert">
-              <strong>div dont l'id est top</strong>
-              <p>
-                Dans la div dont l'id est top, vous devez créer une nouvelle div dont l'id devra être top-center.
-                Vous devez fixer une largeur à top-center entre 700 et 1000 pixels et ajouter les règles
-                nécessaires pour que top-center soit centré horizontalement dans top.
-
-              </p>
-              <p>
-                Vous devez ensuite attribuer une couleur de fond pour l'ensemble de la div top. Finalement
-                Vous ajouterez un titre de niveau H1 dont le contenu est "Accueil prénom nom" dant la
-                div top-center.
-
-              </p>
-              <p>
-                TODO SCREENSHOT résultat final attendu
-              </p>
+            <div class="well ">
+                <h3>Calcul de la monnaie</h3>
+                <h4>Calcul de l'arrondi</h4>
+                <p>
+                    <span class="label label-primary">3 points test</span> Vous devez vous assurer que votre calcul d'arrondi est correct dans tous les cas. Tous les arrondis sont testés .01 .02 .03 .04 etc .09
+                </p>
+                <p>
+                    <span class="label label-success">1 point code</span>
+                </p>
+                <h4>Calcul de la monnaie simple</h4> Il existe un test de base sur le calcul. Les montants négatifs sont testés ainsi que les autres montants erronés.
+                <h4>Calcul de la monnaie simple</h4>
+                <h4>Calcul de la monnaie, manque de fonds</h4>
+                <p>
+                    Calcul du change si le montant ne peut être atteint test met la caisse dans un état avec pas assez d’argent test sur la levée d’une exception significative
+                </p>
+                <h4>Calcul de la monnaie, manque de petits items</h4>
             </div>
-        </div>
-      </div>
-      <div class="row well">
-        <div class="">
-          <h3>
-            <span class="label label-success">3 points</span>
-            Div centrale
-          </h3>
-            <div class="col-md-12 alert">
-              <strong>div dont l'id est middle</strong>
-              <p>
-                Dans la div dont l'id est top, vous devez créer une nouvelle div dont l'id devra être top-center.
-                Vous devez fixer une largeur à top-center entre 700 et 1000 pixels et ajouter les règles
-                nécessaires pour que top-center soit centré horizontalement dans top.
-
-              </p>
-              <p>
-                Vous devez ensuite attribuer une couleur de fond pour l'ensemble de la div top. Finalement
-                Vous ajouterez un titre de niveau H1 dont le contenu est "Accueil prénom nom" dant la
-                div top-center.
-
-              </p>
-              <p>
-                TODO SCREENSHOT résultat final attendu
-              </p>
+            <div class="well ">
+                <h4>Couverture de code</h4>
+                <p>
+                    Regroupez tout le code que vous avez produit dans un unique package pour faciliter le calcul de la couverture de code.
+                </p>
+                <ul>
+                    <li>0 point en dessous de 50% </li>
+                    <li>1 point entre 50% et 60%</li>
+                    <li>2 points entre 60% et 70%</li>
+                    <li>3 points entre 70 et 80%</li>
+                    <li>4 points entre 80 et 95%</li>
+                    <li>5 points > 95%</li>
+                </ul>
             </div>
         </div>
-      </div>
-
-
-      <div class="row well">
-        <div class="">
-          <h3>
-            <span class="label label-success">3 points</span>
-            Div du bas
-          </h3>
-            <div class="col-md-12 alert">
-              <strong>div dont l'id est bottom</strong>
-              <p>
-                Dans la div dont l'id est top, vous devez créer une nouvelle div dont l'id devra être top-center.
-                Vous devez fixer une largeur à top-center entre 700 et 1000 pixels et ajouter les règles
-                nécessaires pour que top-center soit centré horizontalement dans top.
-
-              </p>
-              <p>
-                Vous devez ensuite attribuer une couleur de fond pour l'ensemble de la div top. Finalement
-                Vous ajouterez un titre de niveau H1 dont le contenu est "Accueil prénom nom" dant la
-                div top-center.
-
-              </p>
-              <p>
-                TODO SCREENSHOT résultat final attendu
-              </p>
-            </div>
-        </div>
-      </div>
-
-
-
     </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  </body>
+</body>
+
 </html>

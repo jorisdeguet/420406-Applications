@@ -31,7 +31,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#"><strong>Travail 1</strong> WebBot</a>
+                <a class="navbar-brand" href="#">Travail 1 <strong>WebBot</strong></a>
             </div>
             <div class="navbar-collapse collapse navbar-right">
                 <ul class="nav navbar-nav">
@@ -45,146 +45,118 @@
     <div class="container">
 
         <div class="row">
-            <div class="">
-                <h3 id="s1">But du projet</h3>
-                <div class="col-md-4 alert">
-                    <strong>Parcourir le web</strong>
-                    <p>
-                        Le but du premier travail est d'écrire un programme qui parcourt des pages web en traversant des hyperliens tout en :
-                    </p>
-                    <ul>
-                        <li>Sauvegardant localement les pages explorées</li>
-                        <li>Collectant les adresses courriels trouvées dans les pages</li>
-                    </ul>
-                    <p>
-                        Le travail vise à démontrer vos capacités de programmation en Java.
-                    </p>
-                </div>
-                <div class="col-md-4 alert ">
-                    <strong>Format de Projet</strong>
-                    <span class="label label-warning">Remplacer Dupont par VOTRE nom de famille</span>
-                    <ul>
-                        <li><span class="label label-success">0,5 point</span> La classe principale de votre application doit s'appeler DupontBot.java</li>
-                        <li><span class="label label-success">0,5 point</span> Le package principal de votre application doit s'appeler dupont.bot</li>
-                    </ul>
-                </div>
-                <div class="col-md-4 alert ">
-                    <strong>Correction</strong>
-                    <p>
-                        L'ensemble de la correction est effectuée sur le site <strong>http://5a5.di.college-em.info/testbot/ </strong>. Il est fortement encourager de tester votre bot sur d'autres sites mais ça n'aura pas d'impact sur la correction.
-                    </p>
-                </div>
+            <div class="col-md-4">
+                <strong>Parcourir le web</strong>
+                <p>
+                    Le but du premier travail est d'écrire un programme qui parcourt des pages web en traversant des hyperliens tout en :
+                </p>
+                <ul>
+                    <li>Sauvegardant localement les pages explorées</li>
+                    <li>Collectant les adresses courriels trouvées dans les pages</li>
+                </ul>
+            </div>
+            TODO SHOW GRAPHS WITH http://cpettitt.github.io/project/dagre-d3/latest/demo/interactive-demo.html
+            <div class="col-md-4 ">
+                <strong>Format de Projet</strong>
+                <span class="label label-warning">Remplacer Dupont par VOTRE nom de famille</span>
+                <ul>
+                    <li><span class="label label-success">0,5 point</span> La classe principale de votre application doit s'appeler DupontBot.java</li>
+                    <li><span class="label label-success">0,5 point</span> Le package principal de votre application doit s'appeler dupont.bot</li>
+                </ul>
+            </div>
+            <div class="col-md-4 ">
+                <strong>Correction</strong>
+                <p>
+                    L'ensemble de la correction est effectuée sur le site 
+                    <a class="btn btn-danger btn-xs" href="http://5a5.di.college-em.info/testbot/">http://5a5.di.college-em.info/testbot/</a>. 
+                    Vous pouvez tester votre bot sur d'autres sites mais ça n'aura pas d'impact sur la correction.
+                </p>
             </div>
         </div>
-        <div class="row well">
-            <div class="">
-
-                <div class="col-md-6 alert ">
-                    <h3>
-                      Gestion des arguments
-                    </h3>
-                    <strong>Arguments en ligne de commandes</strong>
-                    <p>
-                        Votre application doit prendre 3 arguments en ligne de commande dans l'ordre spécifié ici.
-                        <span class="label label-success">1 point</span> Dans le cas où l'utilisateur ne fournit pas le bon nombre d'arguments vous devez lui indiquer clairement comment utiliser votre application. (Combien d'arguments, quel est le rôle de chacun)
-                    </p>
-                    <div class="alert alert-danger" role="alert">
-                        <strong>Attention!</strong> Il ne s'agit pas d'une application intéractive.
-                    </div>
-                    <ol>
-                        <li><span class="label label-success">2 points</span> la profondeur d'exploration qui doit être un nombre entier positif.</li>
-                        <li><span class="label label-success">2 points</span> l'url de départ qui est la première page à explorer. Il doit s'gir d'une page valide.</li>
-                        <li><span class="label label-success">2 points</span> le répertoire où écrire les copies locales des fichiers explorés. Le dossier doit être accessible et on doit pouvoir y écrire.</li>
-                    </ol>
-                    <p>Pour chaque arguement, vous obtenez un point s'il est bien pris en compte et un point si vous affichez un message significatif si la valeur n'est pas bonne.</p>
-                </div>
-
-                <div class="col-md-6 ">
-                    <h3>
-                      Traitement
-                    </h3>
-                    <strong>Gestion de la profondeur</strong>
-                    <p>Le paramètre de profondeur d'exploration fonctionne ainsi:</p>
-                    <ol start="0">
-                        <li>Une profondeur de 0 signifie qu'on explore uniquement la page de départ fournie en argument</li>
-                        <li>Une profondeur de 1 signifie qu'on explore la page initiale, puis les liens contenus dans la page initiale</li>
-                        <li>On explore la page initiale, puis les liens de cette page, puis les liens contenus dans les pages liées</li>
-                        <li>etc.</li>
-                    </ol>
-                    
-                    <strong>Mémoire de l'exploration</strong>
-                    <p>
-                        <span class="label label-success">2 points</span> Vous devez implanter un mécanisme pour éviter de visiter plusieurs fois la même page.
-                        Si une page A contient un lien vers B qui contient un lien vers A, on ne devrait pas
-                        re-explorer la page A.
-                    </p>
-                    <strong>Messages pendant l'exploration</strong>
-                    <p>
-                        <span class="label label-success">1 point</span> Vous devez fournir des messages 
-                        significatifs pour chaque exploration d'une page web contenant l'URL complète du fichier.
-                        <span class="label label-success">1 point</span> Dans le cas où une URL ne peut être explorée,
-                        vous devez fournir un message significatif.
-                        
-                    </p>
-                    <strong>Sauvegarde des fichiers explorés</strong>
-                    <p>
-                        <span class="label label-success">1 point</span> Chaque page html explorée doit être stockée dans
-                        un fichier avec le même nom que la resource explorée.
-                        <span class="label label-success">2 points</span> Les liens relatifs entre pages téléchargées doivent être fonctionnels et doivent pointer vers les fichiers locaux si 2 pages sont dans le même dossier.
-                        <span class="label label-success">2 points</span> Les liens relatifs doivent fonctionner entre resources locales dans des dossiers différents.
-                        
-                    </p>
-                    <strong>Collecte des courriels</strong>
-                    <p>
-                        <span class="label label-success">1 point</span> Vous devez collecter les adresses courriels 
-                        contenues dans chaque page pendant l'exploration.
-                        <span class="label label-success">1 point</span> À la fin de l'exécution, vous devez afficher dans la console la liste des courriels collectés sans doublon dans l'ordre alphabétique. 
-                    </p>
-                </div>
-
-            </div>
-        </div>
-        <div class="row well">
-            <div class="">
-                <h3>
-              <span class="label label-success">3 points</span>
-              Structure de la page <strong>index.html</strong> : head
-            </h3>
-                <div class="col-md-6 alert">
-                    <strong>Structure de la balise head</strong>
-                    <br>Vous devez utliser l'encodage UTF-8 pour l'ensemble de votre page.
-                    <br>Vous devez donner le titre suivante à votre page "Professions informatiques : accueil"
-
-                </div>
-
-                <div class="col-md-6 alert alert-info">
-                    <strong>Pointage</strong>
-                    <ul>
-                        <li>1 point : structure</li>
-                        <li>1 point : titre</li>
-                        <li>1 point : déclaration encodage</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        
         <div class="row">
-            <div class="">
-                <div class="col-md-12 alert alert-info">
-                    <h1>TODO inSERER LE RENDU DE LA PAGE A LA FIN</h1>
-
+            <div class="col-md-12 ">
+                <h3>
+                  Gestion des arguments
+                </h3>
+                <h4>Arguments en ligne de commandes</h4>
+                <p>
+                    Votre application doit prendre 3 arguments en ligne de commande dans l'ordre spécifié ici.
+                </p>
+                <div class="alert alert-danger" role="alert">
+                    <strong>Attention!</strong> Il ne s'agit pas d'une application intéractive. Vous devez passer les paramètres en ligne de commandes. Il est fortement recommander de créer plusieurs configurations d'exécution dans Intellij IDEA.
                 </div>
-                <div class="col-md-12 alert alert-danger">
-                    <h1>Assurez vous d'avoir indenté votre fichier correctement (sinon 0)</h1>
-                    <h1>Assurez vous que votre page passe le validateur  (sinon 0)</h1>
-                </div>
+                <p>
+                    <span class="label label-success">1 point</span> Dans le cas où l'utilisateur ne fournit pas le bon nombre d'arguments vous devez lui indiquer clairement comment utiliser votre application. (Combien d'arguments, quel est le rôle de chacun).
+                </p>
+                <ol>
+                    <li><span class="label label-success">2 points</span> la profondeur d'exploration qui doit être un nombre entier positif.</li>
+                    <li><span class="label label-success">2 points</span> l'url de départ qui est la première page à explorer. Il doit s'gir d'une page valide.</li>
+                    <li><span class="label label-success">2 points</span> le répertoire où écrire les copies locales des fichiers explorés. Le dossier doit être accessible et on doit pouvoir y écrire.</li>
+                </ol>
+                <p>
+                    Pour chaque arguement, vous obtenez un point s'il est bien pris en compte et un point si vous affichez un message significatif si la valeur n'est pas bonne.
+                </p>
+            </div>
 
+            <div class="col-md-12 ">
+                <h3>
+                  Traitement
+                </h3>
+                <h4>Gestion de la profondeur</h4>
+                <p>
+                    <span class="label label-success">3 points</span>
+                    Le paramètre de profondeur d'exploration fonctionne ainsi:
+                </p>
+                <ol start="0">
+                    <li>Une profondeur de 0 signifie qu'on explore uniquement la page de départ fournie en argument</li>
+                    <li>Une profondeur de 1 signifie qu'on explore la page initiale, puis les liens contenus dans la page initiale</li>
+                    <li>On explore la page initiale, puis les liens de cette page, puis les liens contenus dans les pages liées</li>
+                    <li>etc.</li>
+                </ol>
+
+                <h4>Mémoire de l'exploration</h4>
+                <p>
+                    <span class="label label-success">2 points</span> Vous devez implanter un mécanisme pour éviter de visiter plusieurs fois la même page.
+                    Si une page A contient un lien vers B qui contient un lien vers A, on ne devrait pas
+                    re-explorer la page A.
+                </p>
+                <p>
+                    Vous pouvez tester le bon fonctionnement en lançant votre programme avec une très grande profondeur d'exploration (ex. 10000).
+                </p>
+                <h4>Messages pendant l'exploration</h4>
+                <p>
+                    <span class="label label-success">1 point</span> Vous devez fournir des messages
+                    significatifs dans la console pour chaque exploration d'une page web contenant l'URL complète du fichier.
+                </p>
+                <p>
+                    <span class="label label-success">1 point</span> Dans le cas où une URL ne peut être explorée,
+                    vous devez fournir un message significatif incluant l'URL et le problème
+
+                </p>
+                <h4>Sauvegarde des fichiers explorés</h4>
+                <p>
+                    <span class="label label-success">1 point</span> Chaque page html explorée doit être stockée dans un fichier avec le même nom que la resource explorée (index.html, 1.html etc.).
+                </p>
+                <p>
+                    <span class="label label-success">1 point</span> Chaque apparition d'une adresse courriel dans le contenu d'une page doit être remplacé par votre adresse courriel avant l'écriture sur le disque.
+                </p>
+                <p>
+                    <span class="label label-success">2 points</span> Les liens relatifs entre pages téléchargées doivent être fonctionnels et doivent pointer vers les fichiers locaux si 2 pages sont dans le même dossier.
+                </p>
+                <p>
+                    <span class="label label-success">2 points</span> Les liens relatifs doivent fonctionner entre resources locales dans des dossiers différents.
+                </p>
+                <h4>Collecte des courriels</h4>
+                <p>
+                    <span class="label label-success">1 point</span> Vous devez collecter les adresses courriels 
+                    contenues dans chaque page pendant l'exploration.
+                </p>
+                <p>
+                    <span class="label label-success">1 point</span> À la fin de l'exécution, vous devez afficher dans la console la liste des courriels collectés sans doublon dans l'ordre alphabétique. 
+                </p>
             </div>
         </div>
-
-
     </div>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
