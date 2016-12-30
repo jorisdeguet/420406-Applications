@@ -1,4 +1,8 @@
-package org.deguet;
+package org.mon_nom.app;
+
+import org.mon_nom.ArgentObjet;
+import org.mon_nom.Change;
+import org.mon_nom.TiroirCaisse;
 
 /**
  * Classe permettant d'afficher facilement une caisse ou du change dans la console
@@ -7,7 +11,7 @@ package org.deguet;
  */
 public class StringUtils {
 
-	public static String toString(TiroirArgent tiroir){
+	public static String toString(TiroirCaisse tiroir){
 		String result = "Tiroir ::: \n";
 		for (ArgentObjet m : ArgentObjet.values()){
 			result += "  "+String.format("%10s", tiroir.nombreItemsPour(m)+"")+"    @    "+m.nomLisible()+"\n";

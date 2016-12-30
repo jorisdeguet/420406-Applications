@@ -1,6 +1,6 @@
-package org.deguet;
+package org.mon_nom;
 
-public interface TiroirArgent extends Change{
+public interface TiroirCaisse extends Change{
 
     /**
      * Renvoie la capacité maximale de ce Tiroir pour ce type d'items

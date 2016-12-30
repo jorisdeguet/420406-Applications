@@ -1,4 +1,4 @@
-package org.deguet;
+package org.mon_nom;
 
 public enum ArgentObjet {
 
