@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,107 +13,103 @@
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <style>
-      body {
-        padding-top: 70px;
-      }
+        body {
+            padding-top: 70px;
+        }
     </style>
-  </head>
+</head>
 
-  <body>
+<body>
 
     <!-- Fixed navbar -->
     <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">420-103 : <strong>Projet phase 3</strong></a>
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Travail 3 : <strong>Appli Android</strong></a>
+            </div>
+            <div class="navbar-collapse collapse navbar-right">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Accueil</a></li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
         </div>
-        <div class="navbar-collapse collapse navbar-right">
-          <ul class="nav navbar-nav">
-            <li><a href="index.html">Accueil</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
     </div>
 
     <div class="container">
-
-      <div class="row">
-        <div class="">
-            <h3 id="s1">Phase 3</h3>
-            <div class="col-md-4 alert">
-              <strong>Approfondir le CSS</strong>
-              <p>
-                Le but de ce site est de vous décrire dans 10 ans. Vous allez produire plusieurs
-                pages web qui viseront à décrire votre formation (collégial, universitaire, certifications etc.)
-                professionnel à travers l'entreprise pour laquelle vous travaillez
-                et finalement de donner un aperçu de votre métier.
-              </p>
-
-            </div>
-            <div class="col-md-4 alert">
-              <strong>Site web, plusieurs pages</strong>
-              <p>
-                Dans la phase 3, nous allons dépasser une unique page web et mettre en place un site
-                multi-pages.
-              </p>
-
-            </div>
-            <div class="col-md-4 alert ">
-              <strong>Recherche sur votre entreprise</strong>
-              <p>
-                Vous allez devoir effectuer de la recherche d'information sur votre future entreprise.
-                À titre d'information voici les entreprises qui emploient le plus de nos stagiaires:
+        <div class="row">
+            <div class="well ">
+                <h3>Interface graphique</h3>
+                <h4>Mise en page</h4>
+                <p>
+                    <span class="label label-success">3 points code</span> la mise en page respecte l'image suivante
+                </p>
+                <h4>Liste</h4>
+                <p>
+                    <span class="label label-success">2 points code</span> ls liste gère correctement
+                    les augmentations et diminutions de quantité ainsi que la suppression quand la quantité 
+                    tombe à 0.
+                </p>
+                <h4>Comportement</h4>
+                <p>
+                    Cette partie concerne la définition des classes permettant de représenter une caisse et son contenu (argent) ainsi que l'objet qui représente le change (un ensemble de pièces billets correspondant à un montant).
+                </p>
                 <ul>
-                  <li>Skytech</li>
-                  <li>Globalia</li>
-                  <li>Mediagrif</li>
+                    <li>
+                        Le scan d'un code barre (bouton TODO) provoque :
+                        <ul>
+                            <li><span class="label label-success">1 point code</span> l'ajout à la liste du produit s'il existe dans l'inventaire.
+                            <li><span class="label label-success">1 point code</span> l'ouverture du dialogue d'ajout à l'inventaire si le code barre n'existe pas.</li>
+                        </ul>
+                    </li>  
+                    <li><span class="label label-success">1 point code</span> Le paiement provoque :
+                    <ul>
+                        <li>la sauvagarde de l'achat de cette liste</li>
+                        <li>l'affichage de tous les achats (montant + liste des produits avec quantité) depuis l'installation de l'application.</li>
+                        </ul> 
+                    </li> 
                 </ul>
-              </p>
+                <p>
+
+                    Tiroir caisse et change calculent le montant total et le nombre total d’objets Il existe un test avant/après monnayeur sur le nombre d’objet total 1 point Il existe un test avant/après monnayeur sur le montant total 1 point
+
+
+                </p>
+                <h4>Menu de l'activité</h4>
+                <ul>
+                    <li><span class="label label-success">1 point code</span> <strong>Créer inventaire</strong> doit remplir l'inventaire avec 20 produits </li>  
+                    <li><span class="label label-success">1 point code</span> <strong>Vider inventaire</strong> doit vider l'inventaire des produits existants</li> 
+                    <li><span class="label label-success">1 point code</span> <strong>Créer une liste</strong> doit créer une liste d'achats en prenant des produits au hasard avec des quantités aléatoires entre 1 et 5</li> 
+                </ul>
+            </div>
+            <div class="well ">
+                <h3>Persistance</h3>
+                <h4>Calcul de l'arrondi</h4>
+                <p>
+                    <span class="label label-primary">3 points test</span> Vous devez vous assurer que votre calcul d'arrondi est correct dans tous les cas. Tous les arrondis sont testés .01 .02 .03 .04 etc .09
+                </p>
+                <p>
+                    <span class="label label-success">1 point code</span>
+                </p>
+                <h4>Calcul de la monnaie simple</h4> Il existe un test de base sur le calcul. Les montants négatifs sont testés ainsi que les autres montants erronés.
+                <h4>Calcul de la monnaie simple</h4>
+                <h4>Calcul de la monnaie, manque de fonds</h4>
+                <p>
+                    Calcul du change si le montant ne peut être atteint test met la caisse dans un état avec pas assez d’argent test sur la levée d’une exception significative
+                </p>
+                <h4>Calcul de la monnaie, manque de petits items</h4>
             </div>
         </div>
-
-      </div>
-      <div class="row well">
-        <div class="">
-            <h3>
-              <span class="label label-success">1 point</span>
-              Création de la page "Mon entreprise"
-            </h3>
-            <div class="col-md-6 alert ">
-              <strong>Structure de votre projet</strong>
-              <p>
-                En partant d'une copie de votre page d'accueil, vous devez commencer une nouvelle page.
-                La structure de votre répertoire doit maintenant ressembler à :
-              </p>
-              <ul>
-                <li>Dupont/
-                  <ul>
-                    <li>index.html</li>
-                    <li>entreprise.html</li>
-                    <li>css/</li>
-                    <li>images/</li>
-                  </ul>
-                </li>
-              </ul>
-
-            </div>
-
-            <div class="col-md-6 alert alert-info">
-              <strong>Images pour votre page d'accueil</strong>
-              Pour votre page d'accueil, vous aurez besoin d'un portrait de vous que vous placerez dans le
-              répertoire images.
-            </div>
-
-          </div>
-        </div>
+    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  </body>
+</body>
+
 </html>
