@@ -65,11 +65,56 @@
         </div>
         <div class="row">
             <div class=" ">
-                <h3>Rabais</h3>
-                <h4>Interface graphique</h4>
-                <h4>Logique</h4>
+                <h3>Taux de taxe</h3>
                 <p>
-                    Cette partie concerne la définition des classes permettant de représenter une caisse et son contenu (argent) ainsi que l'objet qui représente le change (un ensemble de pièces billets correspondant à un montant).
+                    <span class="label label-success">1 point code</span>
+                    <span class="label label-primary">1 point test</span>
+                    Vous devez implanter 2 taux de taxes: un taux de taxe à 5% pour des produits essentiels comme le lait, le pain etc. Un autre taux de taxe à 35% pour les autres produits comme la pizza surgelé ou les sodas.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class=" ">
+                PAR EQUIPE DE 2 OU SEUL?????
+                <h3>Rabais</h3>
+                Pour chaque type de rabais, vous devez :
+                <ul>
+                    <li>programmer l'impact sur le ticket de caisse final (prix ou liste de produits)</li>
+                    <li>produire des tests unitaires pour valider le bon fonctionnement</li>
+                    <li>ajouter une option dans le menu de l'activité pour configurer le rabais</li>
+                </ul>
+                <h4>2 pour 1</h4>
+                <p>
+                    Chaque produit peut être en 2 pour 1. Exemple : un client achète 7 bouteilles d’eau en 2 pour 1, on peut donc appliquer 3 fois le 2 pour 1 
+                    (1 + 1) + (1 + 1) + (1 + 1) + 1 ... le client doit donc payer le prix de 4 bouteilles.
+                </p>
+                <h4>Pas de taxes si vous dépassez 100$</h4>
+                <p>
+                    On doit pouvoir activer ce rabais qui annule les taxes quand le montant hors taxe dépasse 100$ pour un achat.
+                </p>
+                <h4>Un produit gratuit par tranche de 60$</h4>
+                <p>
+                    On doit pouvoir activer ce rabais qui ajoute un produit gratuit paramétrable pour chaque tranche de 60$.
+                </p>
+                <p>
+                    Exemple : on veut donner un paquet de chips pour chaque tranche de 60$, un client qui achète pour 150$ dépasse 120$ il aura droit à 2 paquets.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class=" ">
+                <h3>Multilingue</h3>
+                <p>
+                    L'intégralité de votre application doit être traduite en français et en anglais. La qualité de l'anglais n'est pas évaluée, vous pouvez utiliser <a class="btn btn-xs btn-info" href="https://translate.google.ca">Google Translate</a> pour effectuer les traducations .
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class=" ">
+                <h3>Validation</h3>
+                <p>
+                    <span class="label label-danger">5 points négatifs</span> 
+                    Tous les endroits où un utilisateur entre de l'information doivent être validés. Vous perdrez des points pour chaque endroit où j'arrive à entrer de l'information invalide.
                 </p>
             </div>
         </div>
