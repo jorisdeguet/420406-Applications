@@ -44,7 +44,7 @@
 
     <div class="container">
         <div class="row">
-            <div class="well ">
+            <div class=" ">
                 <h3>Interface graphique</h3>
                 <h4>Mise en page</h4>
                 <p>
@@ -52,9 +52,12 @@
                 </p>
                 <h4>Liste</h4>
                 <p>
-                    <span class="label label-success">2 points code</span> ls liste gère correctement
+                    <span class="label label-success">2 points code</span> la liste gère correctement
                     les augmentations et diminutions de quantité ainsi que la suppression quand la quantité 
                     tombe à 0.
+                </p>
+                <p>
+                    <span class="label label-success">1 point code</span> le montant à payer est correctement maintenu à jour.
                 </p>
                 <h4>Comportement</h4>
                 <p>
@@ -62,16 +65,17 @@
                 </p>
                 <ul>
                     <li>
-                        Le scan d'un code barre (bouton TODO) provoque :
+                        Le scan d'un code barre via l'utilisation d'un Intent (qui démarre la caméra de la tablette) provoque :
                         <ul>
                             <li><span class="label label-success">1 point code</span> l'ajout à la liste du produit s'il existe dans l'inventaire.
-                            <li><span class="label label-success">1 point code</span> l'ouverture du dialogue d'ajout à l'inventaire si le code barre n'existe pas.</li>
+                            <li><span class="label label-success">1 point code</span> l'ouverture du dialogue d'ajout à l'inventaire si le code barre n'existe pas. TODO SCREENSHOT</li>
                         </ul>
                     </li>  
                     <li><span class="label label-success">1 point code</span> Le paiement provoque :
                     <ul>
                         <li>la sauvagarde de l'achat de cette liste</li>
-                        <li>l'affichage de tous les achats (montant + liste des produits avec quantité) depuis l'installation de l'application.</li>
+                        <li>l'affichage de tous les achats (montant + date + liste des produits avec quantité) depuis l'installation de l'application dans le log de la tablette avec le tag "ACHATS"</li>
+                        <li>l'effacement de la liste d'achats courante.</li>
                         </ul> 
                     </li> 
                 </ul>
@@ -83,27 +87,71 @@
                 </p>
                 <h4>Menu de l'activité</h4>
                 <ul>
-                    <li><span class="label label-success">1 point code</span> <strong>Créer inventaire</strong> doit remplir l'inventaire avec 20 produits </li>  
+                    <li><span class="label label-success">1 point code</span> <strong>Créer inventaire</strong> doit remplir l'inventaire avec 9 produits avec des codes à barre valides</li>  
                     <li><span class="label label-success">1 point code</span> <strong>Vider inventaire</strong> doit vider l'inventaire des produits existants</li> 
                     <li><span class="label label-success">1 point code</span> <strong>Créer une liste</strong> doit créer une liste d'achats en prenant des produits au hasard avec des quantités aléatoires entre 1 et 5</li> 
                 </ul>
             </div>
-            <div class="well ">
+            <hr/>
+            <div class="well">
                 <h3>Persistance</h3>
-                <h4>Calcul de l'arrondi</h4>
+                <h4>Produit</h4>
+                <p>
+                    <span class="label label-primary">3 points test</span>
+                    <span class="label label-success">1 point code</span> Vous devez implanter la persistance d'un produit avec les champs appropriés. Votre code doit être validé par des tests automatisés.
+                </p>
+                <p>
+                    Vous devez implanter les opérations suivantes au minimum 
+                    (vous pouvez ajouter des opérations pour faciliter les tests ou autre). 
+                </p>
+                <p>
+                    Pour chaque méthode, vous devez tester les cas normaux et les cas exceptionnels (code barre absent etc.)
+                </p>
+                <ul>
+                    <li>création d'un produit</li>  
+                    <li>récupération par son code barre</li>
+                    <li>suppression de tous les produits</li>
+                </ul>
+                <h4>Achat</h4>
                 <p>
                     <span class="label label-primary">3 points test</span> Vous devez vous assurer que votre calcul d'arrondi est correct dans tous les cas. Tous les arrondis sont testés .01 .02 .03 .04 etc .09
                 </p>
+                <ul>
+                    <li>création d'un achat</li>  
+                    <li>récupération de l'ensemble des achats</li> 
+                    <li>autre cas ...</li> 
+                </ul>
+            </div>
+            <div class="">
+                <h3>Fonctionnement global</h3>
                 <p>
-                    <span class="label label-success">1 point code</span>
+                    <span class="label label-danger">5 points négatifs</span> 
+                    Votre application doit fonctionner sans plantage et correctement. Ce pointage fonctionne en 
+                    négatif. Si l'application fonctionne correctement en tout temps, vous conservez votre note.
+                    Dans le cas contraire, vous perdez des points avec un maximum de 5.
                 </p>
-                <h4>Calcul de la monnaie simple</h4> Il existe un test de base sur le calcul. Les montants négatifs sont testés ainsi que les autres montants erronés.
-                <h4>Calcul de la monnaie simple</h4>
-                <h4>Calcul de la monnaie, manque de fonds</h4>
+                <ul>
+                    <li>plantage de l'application -1 point</li>  
+                    <li>interface illisible -1 point</li>
+                    <li>information affichée incohérente -1 point</li> 
+                    <li>autre cas ...</li> 
+                </ul>
+                
+                <h3>Feuille de code barre</h3>
                 <p>
-                    Calcul du change si le montant ne peut être atteint test met la caisse dans un état avec pas assez d’argent test sur la levée d’une exception significative
+                    <span class="label label-danger">1 point négatif</span> Vous devez joindre à votre remise une feuille avec la liste des 9 produits de votre inventaire avec une ligne par produit.
                 </p>
-                <h4>Calcul de la monnaie, manque de petits items</h4>
+                <ul>
+                    <li>image du code barre</li>  
+                    <li>nom du produit</li> 
+                    <li>prix unitaire</li> 
+                </ul>
+                <p>
+                    <a class="btn btn-danger btn-block" href="phase3-produit.html">Modèle ici</a>
+                </p>
+                <p>
+                    Vous devez également inclure une ligne vierge avec un code barre valide qui n'existe pas dans l'inventaire. L'absence de cette feuille entraîne la perte d'un point.
+                </p>
             </div>
         </div>
     </div>
