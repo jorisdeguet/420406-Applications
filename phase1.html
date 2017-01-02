@@ -68,7 +68,7 @@
                 <strong>Correction</strong>
                 <p>
                     L'ensemble de la correction est effectuée sur le site 
-                    <a class="btn btn-danger btn-xs" href="http://5a5.di.college-em.info/testbot/">http://5a5.di.college-em.info/testbot/</a>. 
+                    <a class="btn btn-danger btn-xs" href="/testbot/">http://5a5.di.college-em.info/testbot/</a>. 
                     Vous pouvez tester votre bot sur d'autres sites mais ça n'aura pas d'impact sur la correction.
                 </p>
             </div>
@@ -83,18 +83,24 @@
                     Votre application doit prendre 3 arguments en ligne de commande dans l'ordre spécifié ici.
                 </p>
                 <div class="alert alert-danger" role="alert">
-                    <strong>Attention!</strong> Il ne s'agit pas d'une application intéractive. Vous devez passer les paramètres en ligne de commandes. Il est fortement recommander de créer plusieurs configurations d'exécution dans Intellij IDEA.
+                    <strong>Attention!</strong> Il ne s'agit pas d'une application intéractive. Vous devez passer les paramètres en ligne de commandes. Il est fortement recommander de créer plusieurs configurations d'exécution dans Intellij IDEA pour tester plusieurs combinaisons de paramètres corrects ou incorrects.
                 </div>
                 <p>
-                    <span class="label label-success">1 point</span> Dans le cas où l'utilisateur ne fournit pas le bon nombre d'arguments vous devez lui indiquer clairement comment utiliser votre application. (Combien d'arguments, quel est le rôle de chacun).
+                    <span class="label label-success">1 point</span> Dans le cas où l'utilisateur ne fournit pas le bon nombre d'arguments vous devez lui indiquer clairement comment utiliser votre application.
                 </p>
+                <ul>
+                    <li>combien d'arguments</li>
+                    <li>quel est le rôle de chacun</li>
+                    <li>un exemple d'utilisation</li>
+                </ul>
+                Les paramètres sont:
                 <ol>
                     <li><span class="label label-success">2 points</span> la profondeur d'exploration qui doit être un nombre entier positif.</li>
                     <li><span class="label label-success">2 points</span> l'url de départ qui est la première page à explorer. Il doit s'agir d'une adresse valide (le format est correct et il y a une page qui y correspond).</li>
                     <li><span class="label label-success">2 points</span> le répertoire où écrire les copies locales des fichiers explorés. Le dossier doit être accessible et on doit pouvoir y écrire.</li>
                 </ol>
                 <p>
-                    Pour chaque arguement, vous obtenez un point s'il est bien pris en compte et un point si vous affichez un message significatif si la valeur n'est pas bonne.
+                    Pour chaque arguement, vous obtenez un point s'il est bien pris en compte et un point si vous affichez un message significatif quand la valeur n'est pas bonne.
                 </p>
             </div>
 
@@ -107,16 +113,16 @@
                     <span class="label label-success">3 points</span>
                     Le paramètre de profondeur d'exploration fonctionne ainsi:
                 </p>
-                <ol start="0">
+                <ul>
                     <li>Une profondeur de 0 signifie qu'on explore uniquement la page de départ fournie en argument</li>
                     <li>Une profondeur de 1 signifie qu'on explore la page initiale, puis les liens contenus dans la page initiale</li>
-                    <li>On explore la page initiale, puis les liens de cette page, puis les liens contenus dans les pages liées</li>
+                    <li>Une profondeur de 2 signifie qu'on explore la page initiale, puis les liens de cette page, puis les liens contenus dans les pages liées</li>
                     <li>etc.</li>
-                </ol>
+                </ul>
 
                 <h4>Mémoire de l'exploration</h4>
                 <p>
-                    <span class="label label-success">2 points</span> Vous devez implanter un mécanisme pour éviter de visiter plusieurs fois la même page.
+                    <span class="label label-success">2 points</span> Vous devez implanter un mécanisme pour éviter de visiter plus d'une fois la même page.
                     Si une page A contient un lien vers B qui contient un lien vers A, on ne devrait pas
                     re-explorer la page A.
                 </p>
