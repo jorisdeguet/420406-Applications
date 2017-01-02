@@ -44,7 +44,7 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-xs-6">
+            <div class="col-xs-8">
                 <h3>Objectif</h3>
                 <p>
                     Ce travail consiste à programmer un service pour gérer un tiroir caisse et le calcul
@@ -52,10 +52,13 @@
                 </p>
                 <p>
                     Vous devrez programmer les éléments demandés mais également mettre en place des tests
-                    automatiques afin de démontrer la qualité du code produit. 
+                    automatiques afin de démontrer la qualité de votre code. 
+                </p>
+                <p>
+                    Vous devrez définir des classes d'exception significatives pour les problèmes possibles. Vous les regrouperez dans un package exceptions (<span class="label label-success">1 point</span>).
                 </p>
             </div>
-            <div class="col-xs-6">
+            <div class="col-xs-4">
                 <h3>Fichiers de départ</h3>
                 <p>
                     Vous trouverez un projet Maven de départ 
@@ -69,26 +72,73 @@
             </div>
         </div>
         <div class="row">
-            <div class=" ">
-                <h3>Calcul de la monnaie</h3>
-                <h4>Calcul de l'arrondi</h4>
+            <div class="well ">
+                <h3>Implémentations de Change et TiroirCaisse</h3>
+                <h4>Nom du package et des classes</h4>
                 <p>
-                    <span class="label label-primary">3 points test</span> Vous devez vous assurer que votre calcul d'arrondi est correct dans tous les cas. Tous les arrondis sont testés .01 .02 .03 .04 etc .09
+                    <span class="label label-success">1 point</span> Vous devez renommer: 
+                </p>
+                <ul>
+                    <li>le package org.mon_nom par org.votrenom </li>
+                    <li>la même chose pour les 3 classes du package <strong>impl</strong> </li>
+                </ul>
+                <h4>Fonctionnalités</h4> 
+                <p>
+                    Le tiroir caisse et la caisse <span class="label label-success">1 point code</span>
+                    maintiennent le nombre d'objets de chaque type, le montant total et le nombre total d'objets après chaque opération.
+                </p>
+                Il existe un test pour
+                <ul>
+                    <li><span class="label label-primary">1 point test</span> on teste le dépassement de la capacité pour un type d'objet à l'ajout d'objets pour un tiroir caisse. Pour chaque billet, il y a 40 emplacements. Pour chaque pièces, il y a 50 emplacements.</li>
+                    <li><span class="label label-primary">1 point test</span> on teste la caisse pleine au constructeur : le compartiment des pièces de 1 sou doit être vide puisqu'on ne rend jamais de 1 sou. Tous les autres compartiments sont pleins à leur capacité.</li>
+                    <li><span class="label label-primary">1 point test</span> on teste le manque d'objets quand on retire trop d'objets d'un certain type pour un tiroir caisse</li>
+                    <li><span class="label label-primary">1 point test</span> on teste l'impossibilité de retirer des 1 sou. (par contre on peut en ajouter)</li>
+                </ul>
+                Il existe un test de base sur le calcul. Les montants négatifs sont testés ainsi que les autres montants erronés.
+                <h4>Constructeur</h4> 
+                <p>
+                    Le constructeur par défaut (sans paramètres) de votre classe doit renvoyer une tiroir plein (sauf les 1 sou).
                 </p>
                 <p>
-                    <span class="label label-success">1 point code</span>
+                    Le montant total est de 40 billets de 100, 40 billets de 50 etc. 
+                    Le nombre total d'objets est de 40 + 40 + 40 ... 50 + 50 + 50 etc.
                 </p>
-                <h4>Calcul de la monnaie simple</h4> Il existe un test de base sur le calcul. Les montants négatifs sont testés ainsi que les autres montants erronés.
-                <h4>Calcul de la monnaie simple</h4>
-                <h4>Calcul de la monnaie, manque de fonds</h4>
-                <p>
-                    Calcul du change si le montant ne peut être atteint test met la caisse dans un état avec pas assez d’argent test sur la levée d’une exception significative
-                </p>
-                <h4>Calcul de la monnaie, manque de petits items</h4>
             </div>
         </div>
         <div class="row">
             <div class=" ">
+                <h3>Implémentation de ServiceArgent</h3>
+                <h4>Calcul de l'arrondi</h4>
+                <p>
+                    <span class="label label-success">1 point code</span> <span class="label label-primary">3 points test</span> Vous devez vous assurer que votre calcul d'arrondi est correct dans tous les cas. Tous les arrondis sont testés .01 .02 .03 .04 etc .09
+                </p>
+                <p>
+                    
+                </p>
+                <h4>Calcul de la monnaie simple</h4> 
+                <p>
+                    <span class="label label-success">1 point code</span> <span class="label label-primary">2 points test</span>
+                    Il existe un test de base sur le calcul. Les montants négatifs sont testés ainsi que les autres montants abberrants. Dans ces cas, une exception significatives est levée.
+                </p>
+                
+                <h4>Calcul de la monnaie, manque de fonds</h4>
+                <p>
+                    <span class="label label-success">1 point code</span> <span class="label label-primary">2 points test</span>
+                    Votre service doit gérer les cas où le montant ne peut pas être rendu parce qu'il manque quelque chose dans le tiroir caisse. Dans ces situations, le tiroir caisse doit rester inchangé.
+                </p>
+                <h4>Calcul de la monnaie, manque certains objets</h4>
+                <p>
+                    <span class="label label-success">1 point code</span> <span class="label label-primary">2 points test</span>
+                    Vous devez gérer des cas comme le suivant: il ne reste que des billets (40 de chaque type) et on veut calculer le change pour 63$. Cela devrait échouer. 
+                </p>
+                <p>
+                    <span class="label label-success">2 points code</span> <span class="label label-primary">1 point test</span>
+                    Vous devez gérer des cas comme le suivant: il reste un billet des billets de 50$ et des billets de 20$ dans le tiroir caisse mais rien d'autre. Quelqu'un demande 60$ dans la caisse. Cela devrait réussir (3 billets de 20$).
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class=" well ">
                 <h3>Couverture de code</h3>
                 <p>
                     <span class="label label-primary">5 points test</span> Regroupez tout le code que vous avez produit dans un unique package pour faciliter le calcul de la couverture de code.
@@ -100,6 +150,18 @@
                     <li>3 points entre 70 et 80%</li>
                     <li>4 points entre 80 et 95%</li>
                     <li>5 points > 95%</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class=" ">
+                <h3>Manipulation par les interfaces</h3>
+                <p>
+                    <span class="label label-danger">5 points négatifs</span> Tous vos traitements doivent utiliser les méthodes définies dans les interfaces. Vous devez manipuler les objets par les interfaces Change, TiroirCaisse et ServiceArgent plutôt que par vos classes d'implémentations. Vous perdrez un point à chaque fois que:
+                </p>
+                <ul>
+                    <li>Vous accédez à un champ public d'une classe depuis une autre classe (dans le code ou dans les tests)</li>
+                    <li>Vous utilisez une méthode définie dans vos classes mais qui n'existe pas dans l'interface</li>
                 </ul>
             </div>
         </div>
