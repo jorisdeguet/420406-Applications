@@ -11,7 +11,7 @@
     <title>Projet phase 2</title>
 
     <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh5u" crossorigin="anonymous">
     <style>
         body {
             padding-top: 70px;
@@ -45,9 +45,9 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-8">
-                <h3>Objectif</h3>
+                <h4>Objectif</h4>
                 <p>
-                    Ce travail consiste à programmer un service pour gérer un tiroir caisse et le calcul
+                    Ce travail consiste à programmer un service pour gérer un tiroir-caisse et le calcul
                     du change nécessaire au paiement d'un achat. 
                 </p>
                 <p>
@@ -59,12 +59,10 @@
                 </p>
             </div>
             <div class="col-xs-4">
-                <h3>Fichiers de départ</h3>
+                <h4>Fichiers de départ</h4>
                 <p>
                     Vous trouverez un projet Maven de départ 
                     <a class="btn btn-primary btn-xs" href="https://github.com/jorisdeguet/420406-Applications/tree/master/travaux/monnayeur">ici</a>.
-                </p>
-                <p>
                     Vous pouvez télécharger l'ensemble du code du cours 
                     <a class="btn btn-primary btn-xs" href="https://github.com/jorisdeguet/420406-Applications/archive/master.zip">ici</a>
                 </p>
@@ -72,9 +70,9 @@
             </div>
         </div>
         <div class="row">
-            <div class="well ">
-                <h3>Implémentations de Change et TiroirCaisse</h3>
-                <h4>Nom du package et des classes</h4>
+            <div class=" ">
+                <h4>Implémentations de Change et TiroirCaisse</h4>
+                <h5>Nom du package et des classes</h5>
                 <p>
                     <span class="label label-success">1 point</span> Vous devez renommer: 
                 </p>
@@ -82,20 +80,18 @@
                     <li>le package org.mon_nom par org.votrenom </li>
                     <li>la même chose pour les 3 classes du package <strong>impl</strong> </li>
                 </ul>
-                <h4>Fonctionnalités</h4> 
+                <h5>Fonctionnalités</h5> 
                 <p>
-                    Le tiroir caisse et la caisse <span class="label label-success">1 point code</span>
+                    <span class="label label-success">1 point code</span> Le tiroir caisse et la caisse 
                     maintiennent le nombre d'objets de chaque type, le montant total et le nombre total d'objets après chaque opération.
                 </p>
-                Il existe un test pour
                 <ul>
-                    <li><span class="label label-primary">1 point test</span> on teste le dépassement de la capacité pour un type d'objet à l'ajout d'objets pour un tiroir caisse. Pour chaque billet, il y a 40 emplacements. Pour chaque pièces, il y a 50 emplacements.</li>
-                    <li><span class="label label-primary">1 point test</span> on teste la caisse pleine au constructeur : le compartiment des pièces de 1 sou doit être vide puisqu'on ne rend jamais de 1 sou. Tous les autres compartiments sont pleins à leur capacité.</li>
-                    <li><span class="label label-primary">1 point test</span> on teste le manque d'objets quand on retire trop d'objets d'un certain type pour un tiroir caisse</li>
+                    <li><span class="label label-primary">1 point test</span> on teste le dépassement de la capacité pour un type d'objet à l'ajout d'objets pour un tiroir caisse. Pour chaque billet, il y a 40 emplacements. Pour chaque pièce, il y a 50 emplacements.</li>
+                    <li><span class="label label-primary">1 point test</span> on teste le tiroir-caisse plein au constructeur : le compartiment des pièces de 1 sou doit être vide puisqu'on ne rend jamais de 1 sou. Tous les autres compartiments sont pleins à leur capacité.</li>
+                    <li><span class="label label-primary">1 point test</span> on teste le manque d'objets quand on retire trop d'objets d'un certain type pour un tiroir-caisse</li>
                     <li><span class="label label-primary">1 point test</span> on teste l'impossibilité de retirer des 1 sou. (par contre on peut en ajouter)</li>
                 </ul>
-                Il existe un test de base sur le calcul. Les montants négatifs sont testés ainsi que les autres montants erronés.
-                <h4>Constructeur</h4> 
+                <h5>Constructeur</h5> 
                 <p>
                     Le constructeur par défaut (sans paramètres) de votre classe doit renvoyer une tiroir plein (sauf les 1 sou).
                 </p>
@@ -107,61 +103,59 @@
         </div>
         <div class="row">
             <div class=" ">
-                <h3>Implémentation de ServiceArgent</h3>
-                <h4>Calcul de l'arrondi</h4>
+                <h4>Implémentation de ServiceArgent</h4>
+                <h5>Calcul de l'arrondi</h5>
                 <p>
                     <span class="label label-success">1 point code</span> <span class="label label-primary">3 points test</span> Vous devez vous assurer que votre calcul d'arrondi est correct dans tous les cas. Tous les arrondis sont testés .01 .02 .03 .04 etc .09
                 </p>
                 <p>
                     
                 </p>
-                <h4>Calcul de la monnaie simple</h4> 
+                <h5>Calcul de la monnaie simple</h5> 
                 <p>
                     <span class="label label-success">1 point code</span> <span class="label label-primary">2 points test</span>
-                    Il existe un test de base sur le calcul. Les montants négatifs sont testés ainsi que les autres montants abberrants. Dans ces cas, une exception significatives est levée.
+                    Il existe un test de base sur le calcul. Les montants négatifs sont testés ainsi que les autres montants aberrants, une exception significatives est levée.
                 </p>
                 
-                <h4>Calcul de la monnaie, manque de fonds</h4>
+                <h5>Calcul de la monnaie, manque de fonds</h5>
                 <p>
                     <span class="label label-success">1 point code</span> <span class="label label-primary">2 points test</span>
-                    Votre service doit gérer les cas où le montant ne peut pas être rendu parce qu'il manque quelque chose dans le tiroir caisse. Dans ces situations, le tiroir caisse doit rester inchangé.
+                    Votre service doit gérer les cas où le montant ne peut pas être rendu parce qu'il manque quelque chose dans le tiroir-caisse. Dans ces situations, le tiroir-caisse doit rester inchangé. Par exemple, on veut le change pour 60$ et il ne reste que 20 dans le tiroir-caisse.
                 </p>
-                <h4>Calcul de la monnaie, manque certains objets</h4>
+                <h5>Calcul de la monnaie, manque certains objets</h5>
                 <p>
                     <span class="label label-success">1 point code</span> <span class="label label-primary">2 points test</span>
-                    Vous devez gérer des cas comme le suivant: il ne reste que des billets (40 de chaque type) et on veut calculer le change pour 63$. Cela devrait échouer. 
+                    Vous devez gérer des cas comme le suivant : il ne reste que des billets (40 de chaque type) et on veut calculer le change pour 63$. Cela devrait échouer. 
                 </p>
                 <p>
-                    <span class="label label-success">2 points code</span> <span class="label label-primary">1 point test</span>
-                    Vous devez gérer des cas comme le suivant: il reste un billet des billets de 50$ et des billets de 20$ dans le tiroir caisse mais rien d'autre. Quelqu'un demande 60$ dans la caisse. Cela devrait réussir (3 billets de 20$).
+                    <span class="label label-success">2 points code (difficile)</span> <span class="label label-primary">1 point test</span>
+                    Vous devez gérer le type de cas suivant : il reste un billet des billets de 50$ et des billets de 20$ dans le tiroir caisse mais rien d'autre. Quelqu'un demande 60$ dans la caisse. Cela devrait réussir (3 billets de 20$).
                 </p>
             </div>
         </div>
         <div class="row">
-            <div class=" well ">
-                <h3>Couverture de code</h3>
+            <div class="  ">
+                <h4>Couverture de code</h4>
                 <p>
-                    <span class="label label-primary">5 points test</span> Regroupez tout le code que vous avez produit dans un unique package pour faciliter le calcul de la couverture de code.
+                    <span class="label label-primary">4 points test</span> Regroupez tout le code que vous avez produit dans le package <strong>impl</strong> pour faciliter le calcul de la couverture de code.
                 </p>
                 <ul>
-                    <li>0 point en dessous de 50% </li>
-                    <li>1 point entre 50% et 60%</li>
-                    <li>2 points entre 60% et 70%</li>
-                    <li>3 points entre 70 et 80%</li>
-                    <li>4 points entre 80 et 95%</li>
-                    <li>5 points > 95%</li>
+                    <li>1 point entre 50% et 75%</li>
+                    <li>2 points entre 75% et 85%</li>
+                    <li>3 points entre 85% et 95%</li>
+                    <li>4 points > 95%</li>
                 </ul>
             </div>
         </div>
         <div class="row">
             <div class=" ">
-                <h3>Manipulation par les interfaces</h3>
+                <h4>Manipulation par les interfaces</h4>
                 <p>
-                    <span class="label label-danger">5 points négatifs</span> Tous vos traitements doivent utiliser les méthodes définies dans les interfaces. Vous devez manipuler les objets par les interfaces Change, TiroirCaisse et ServiceArgent plutôt que par vos classes d'implémentations. Vous perdrez un point à chaque fois que:
+                    <span class="label label-danger">4 points négatifs</span> Tous vos traitements doivent utiliser les méthodes définies dans les interfaces. Vous devez manipuler les objets par les interfaces Change, TiroirCaisse et ServiceArgent plutôt que par vos classes d'implémentations. Vous perdrez un point à chaque fois que :
                 </p>
                 <ul>
-                    <li>Vous accédez à un champ public d'une classe depuis une autre classe (dans le code ou dans les tests)</li>
-                    <li>Vous utilisez une méthode définie dans vos classes mais qui n'existe pas dans l'interface</li>
+                    <li>Vous accédez directement à un champ d'une classe depuis une autre classe (dans le code ou dans les tests)</li>
+                    <li>Vous utilisez une méthode définie dans vos classes mais qui n'existe pas dans l'interface (dans le code ou dans les tests)</li>
                 </ul>
             </div>
         </div>
