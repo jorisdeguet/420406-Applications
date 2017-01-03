@@ -44,11 +44,11 @@
 
     <div class="container">
         <div class="row">
-            <div class=" ">
+            <div class="col-xs-6 ">
                 <h3>Interface graphique</h3>
                 <h4>Mise en page</h4>
                 <p>
-                    <span class="label label-success">3 points code</span> la mise en page respecte l'image suivante
+                    <span class="label label-success">3 points code</span> la mise en page respecte l'image suivante (cliquez pour élargir)
                 </p>
                 <h4>Liste</h4>
                 <p>
@@ -59,16 +59,21 @@
                 <p>
                     <span class="label label-success">1 point code</span> le montant à payer est correctement maintenu à jour.
                 </p>
+            </div>
+            <div class="col-xs-6 well">
+                <a href="img/phase3-ui.png"><img src="img/phase3-ui.png" style="width:100%"/></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-9">
+                
                 <h4>Comportement</h4>
-                <p>
-                    Cette partie concerne la définition des classes permettant de représenter une caisse et son contenu (argent) ainsi que l'objet qui représente le change (un ensemble de pièces billets correspondant à un montant).
-                </p>
                 <ul>
                     <li>
                         Le scan d'un code barre via l'utilisation d'un Intent (qui démarre la caméra de la tablette) provoque :
                         <ul>
                             <li><span class="label label-success">1 point code</span> l'ajout à la liste du produit s'il existe dans l'inventaire.
-                            <li><span class="label label-success">1 point code</span> l'ouverture du dialogue d'ajout à l'inventaire si le code barre n'existe pas. TODO SCREENSHOT</li>
+                            <li><span class="label label-success">1 point code</span> l'ouverture du dialogue d'ajout à l'inventaire si le code barre n'existe pas. (voir image à droite)</li>
                         </ul>
                     </li>  
                     <li><span class="label label-success">1 point code</span> Le paiement provoque :
@@ -79,20 +84,25 @@
                         </ul> 
                     </li> 
                 </ul>
-                <p>
-
-                    Tiroir caisse et change calculent le montant total et le nombre total d’objets Il existe un test avant/après monnayeur sur le nombre d’objet total 1 point Il existe un test avant/après monnayeur sur le montant total 1 point
-
-
-                </p>
+            </div>
+            <div class="col-xs-3 well">
+                <a href="img/phase3-ajouter.png"><img src="img/phase3-ajouter.png" style="width:100%;"/></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-9">
                 <h4>Menu de l'activité</h4>
                 <ul>
                     <li><span class="label label-success">1 point code</span> <strong>Créer inventaire</strong> doit remplir l'inventaire avec 9 produits avec des codes à barre valides</li>  
-                    <li><span class="label label-success">1 point code</span> <strong>Vider inventaire</strong> doit vider l'inventaire des produits existants</li> 
                     <li><span class="label label-success">1 point code</span> <strong>Créer une liste</strong> doit créer une liste d'achats en prenant des produits au hasard avec des quantités aléatoires entre 1 et 5</li> 
+                    <li><span class="label label-success">1 point code</span> <strong>Vider inventaire</strong> doit vider l'inventaire des produits existants</li> 
                 </ul>
             </div>
-            <hr/>
+            <div class="col-xs-3 well">
+                <a href="img/phase3-menu.png"><img src="img/phase3-menu.png" style="width:100%;"/></a>
+            </div>
+        </div>
+        <div class="row">
             <div class="well">
                 <h3>Persistance</h3>
                 <h4>Produit</h4>
@@ -122,10 +132,12 @@
                     <li>autre cas ...</li> 
                 </ul>
             </div>
+        </div>
+        <div class="row">
             <div class="">
                 <h3>Fonctionnement global</h3>
                 <p>
-                    <span class="label label-danger">5 points négatifs</span> 
+                    <span class="label label-danger">4 points négatifs</span> 
                     Votre application doit fonctionner sans plantage et correctement. Ce pointage fonctionne en 
                     négatif. Si l'application fonctionne correctement en tout temps, vous conservez votre note.
                     Dans le cas contraire, vous perdez des points avec un maximum de 5.
