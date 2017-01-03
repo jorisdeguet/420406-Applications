@@ -57,7 +57,7 @@
                     tombe à 0.
                 </p>
                 <p>
-                    <span class="label label-success">1 point code</span> le montant à payer est correctement maintenu à jour.
+                    <span class="label label-success">1 point code</span> le montant à payer est correctement maintenu à jour (à côté du bouton SCANNER).
                 </p>
             </div>
             <div class="col-xs-6 well">
@@ -78,9 +78,9 @@
                     </li>  
                     <li><span class="label label-success">1 point code</span> Le paiement provoque :
                     <ul>
-                        <li>la sauvagarde de l'achat de cette liste</li>
+                        <li>la sauvegarde de l'achat de cette liste (voir persistance plus bas)</li>
                         <li>l'affichage de tous les achats (montant + date + liste des produits avec quantité) depuis l'installation de l'application dans le log de la tablette avec le tag "ACHATS"</li>
-                        <li>l'effacement de la liste d'achats courante.</li>
+                        <li>l'effacement de la liste d'achats courante (on peut alors commencer un nouvel achat)</li>
                         </ul> 
                     </li> 
                 </ul>
@@ -93,7 +93,7 @@
             <div class="col-xs-9">
                 <h4>Menu de l'activité</h4>
                 <ul>
-                    <li><span class="label label-success">1 point code</span> <strong>Créer inventaire</strong> doit remplir l'inventaire avec 9 produits avec des codes à barre valides</li>  
+                    <li><span class="label label-success">1 point code</span> <strong>Créer inventaire</strong> doit remplir l'inventaire avec 9 produits avec des codes à barre valides. Les produits doivent correspondre à votre feuille de codes barre (voir plus bas)</li>  
                     <li><span class="label label-success">1 point code</span> <strong>Créer une liste</strong> doit créer une liste d'achats en prenant des produits au hasard avec des quantités aléatoires entre 1 et 5</li> 
                     <li><span class="label label-success">1 point code</span> <strong>Vider inventaire</strong> doit vider l'inventaire des produits existants</li> 
                 </ul>
@@ -107,24 +107,28 @@
                 <h3>Persistance</h3>
                 <h4>Produit</h4>
                 <p>
+                    <span class="label label-success">1 point code</span>
                     <span class="label label-primary">3 points test</span>
-                    <span class="label label-success">1 point code</span> Vous devez implanter la persistance d'un produit avec les champs appropriés. Votre code doit être validé par des tests automatisés.
+                    Vous devez implanter la persistance d'un produit avec les champs appropriés. Votre code doit être validé par des tests automatisés.
                 </p>
                 <p>
                     Vous devez implanter les opérations suivantes au minimum 
                     (vous pouvez ajouter des opérations pour faciliter les tests ou autre). 
                 </p>
                 <p>
-                    Pour chaque méthode, vous devez tester les cas normaux et les cas exceptionnels (code barre absent etc.)
+                    Pour chaque méthode, vous devez tester les cas normaux et les cas exceptionnels (code barre absent, mal formé etc.)
                 </p>
                 <ul>
                     <li>création d'un produit</li>  
-                    <li>récupération par son code barre</li>
+                    <li>récupération d'un produit par son code barre</li>
+                    <li>récupération d'un produit tiré au hasard</li>
                     <li>suppression de tous les produits</li>
                 </ul>
                 <h4>Achat</h4>
                 <p>
-                    <span class="label label-primary">3 points test</span> Vous devez vous assurer que votre calcul d'arrondi est correct dans tous les cas. Tous les arrondis sont testés .01 .02 .03 .04 etc .09
+                    <span class="label label-success">1 point code</span>
+                    <span class="label label-primary">2 points test</span>
+                    Vous devez implanter la persistance d'un achat. Les opérations obligatoires sont:
                 </p>
                 <ul>
                     <li>création d'un achat</li>  
