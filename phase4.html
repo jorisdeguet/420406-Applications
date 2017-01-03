@@ -47,13 +47,20 @@
             <div class="col-xs-9">
                 <h3>Paiement</h3>
                 <p>
-                    Vous devez implanter le processus de paiement incluant les étapes suivantes. Cela nécessitera la réutilisation de votre code du travail 2.
+                    Vous devez implanter le nouveau processus de paiement incluant les étapes suivantes. Cela nécessitera la réutilisation de votre code du travail 2.
                 </p>
                 <ul>
                     <li>On appuie sur le bouton PAYER</li>
-                    <li><span class="label label-success">1 point code</span> Un dialogue s'ouvre pour saisir les pièces et billets donnés par le client. On peut poursuivre uniquement si le montant est suffisant</li>
+                    <li><span class="label label-success">1 point code</span> Un dialogue s'ouvre pour saisir les pièces et billets donnés par le client. On peut poursuivre uniquement si le montant est suffisant (voir à droite)</li>
                     <li><span class="label label-success">1 point code</span> Le système calcule le montant donné, le montant du, le montant à rendre en monnaie</li>
                     <li><span class="label label-success">1 point code</span> Le système affiche ces trois montants ainsi que les pièces billets qui sont rendus au client</li>
+                    <li>Le ticket de caisse complet est affiché dans le log de l'appareil (avec le tag <strong>ACHATS</strong>):
+                        <ul>
+                            <li><span class="label label-success">1 point code</span> la liste des produits avec la quantité, un par ligne</li>
+                            <li><span class="label label-success">1 point code</span> le montant hors taxe, le montant de taxes et le montant final</li>
+                            <li><span class="label label-success">1 point code</span> la somme économisé grâce aux rabais appliqués</li>
+                        </ul>
+                    </li>
                 </ul>
                 <p>
                     <span class="label label-success">1 point code</span> Une option est ajoutée au menu de l'activité pour visualiser l'état du tiroir caisse.
@@ -71,6 +78,9 @@
                     <span class="label label-primary">1 point test</span>
                     Vous devez implanter 2 taux de taxes: un taux de taxe à 5% pour des produits essentiels comme le lait, le pain etc. Un autre taux de taxe à 35% pour les autres produits comme la pizza surgelé ou les sodas.
                 </p>
+                <p>
+                    Vous devez inclure des produits pour chaque taux de taxe dans votre inventaire standard (vos 9 produits).
+                </p>
             </div>
         </div>
         <div class="row">
@@ -80,15 +90,18 @@
                 <ul>
                     <li>programmer l'impact sur le ticket de caisse final</li>
                     <li>produire des tests unitaires pour valider le bon fonctionnement</li>
-                    <li>ajouter une option dans le menu de l'activité pour configurer le rabais</li>
+                    <li>ajouter les éléments d'interface graphique pour configurer le rabais</li>
                 </ul>
                 <h4>2 pour 1</h4>
                 <p>
                     <span class="label label-success">1 point code</span>
                     <span class="label label-warning">1 point interface graphique</span>
                     <span class="label label-primary">1 point test</span>
-                    Chaque produit peut être en 2 pour 1. Exemple : un client achète 7 bouteilles d’eau en 2 pour 1, on peut donc appliquer 3 fois le 2 pour 1 
-                    (1 + 1) + (1 + 1) + (1 + 1) + 1 ... le client doit donc payer le prix de 4 bouteilles.
+                    Chaque produit peut être en 2 pour 1. Exemple : un client achète 7 bouteilles d’eau en 2 pour 1, on peut donc appliquer 3 fois le rabais: 
+                </p>
+                <pre>(1 + 1) + (1 + 1) + (1 + 1) + 1 </pre>
+                <p>
+                    Le client doit donc payer le prix de 4 bouteilles.
                 </p>
                 <h4>Pas de taxes si vous dépassez 100$</h4>
                 <p>
@@ -99,28 +112,25 @@
                 </p>
                 <h4>Combinaison de rabais</h4>
                 <p>
+                    <span class="label label-success">1 point code</span>
+                    <span class="label label-primary">2 points test</span>
                     Vous devez toujours appliquer les rabais de la manière la plus profitable au client. 
                 </p>
             </div>
         </div>
         <div class="row">
-            <div class=" ">
-                <h3>Multilingue</h3>
-                <p>
-                    <span class="label label-success">3 points code</span>
-                    <span class="label label-primary">1 point test</span>
-                    L'intégralité de votre application doit être traduite en français et en anglais. La qualité de l'anglais n'est pas évaluée, vous pouvez utiliser <a class="btn btn-xs btn-info" href="https://translate.google.ca">Google Translate</a> pour effectuer les traducations .
-                </p>
-            </div>
+            <h3>Multilingue</h3>
+            <p>
+                <span class="label label-success">3 points code</span>
+                L'intégralité de votre interface gratuite doit être traduite en français et en anglais. La qualité de l'anglais n'est pas évaluée, vous pouvez utiliser <a class="btn btn-xs btn-info" href="https://translate.google.ca">Google Translate</a> pour effectuer les traducations .
+            </p>
         </div>
         <div class="row">
-            <div class=" ">
-                <h3>Validation</h3>
-                <p>
-                    <span class="label label-danger">4 points négatifs</span> 
-                    Tous les endroits où un utilisateur entre de l'information doivent être validés. Vous perdrez des points pour chaque endroit où j'arrive à entrer de l'information invalide.
-                </p>
-            </div>
+            <h3>Validation</h3>
+            <p>
+                <span class="label label-danger">4 points négatifs</span> 
+                Tous les endroits où un utilisateur entre de l'information doivent être validés. Vous perdrez des points pour chaque endroit où j'arrive à entrer de l'information invalide.
+            </p>
         </div>
     </div>
 
