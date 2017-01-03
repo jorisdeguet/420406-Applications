@@ -44,23 +44,23 @@
 
     <div class="container">
         <div class="row">
-            <div class=" ">
-                <h3>Intégration</h3>
-                <h4>Mise en page</h4>
-                <p>
-                    <span class="label label-success">1 point code</span> <span class="label label-success"> 1 point code</span> la mise en page respecte l'image suivante
-                </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class=" ">
+            <div class="col-xs-9">
                 <h3>Paiement</h3>
                 <p>
-                    <span class="label label-success">2 points code</span> la liste gère correctement les augmentations et diminutions de quantité ainsi que la suppression quand la quantité tombe à 0.
+                    Vous devez implanter le processus de paiement incluant les étapes suivantes. Cela nécessitera la réutilisation de votre code du travail 2.
                 </p>
+                <ul>
+                    <li>On appuie sur le bouton PAYER</li>
+                    <li><span class="label label-success">1 point code</span> Un dialogue s'ouvre pour saisir les pièces et billets donnés par le client. On peut poursuivre uniquement si le montant est suffisant</li>
+                    <li><span class="label label-success">1 point code</span> Le système calcule le montant donné, le montant du, le montant à rendre en monnaie</li>
+                    <li><span class="label label-success">1 point code</span> Le système affiche ces trois montants ainsi que les pièces billets qui sont rendus au client</li>
+                </ul>
                 <p>
-                    <span class="label label-success">1 point code</span> le montant à payer est correctement maintenu à jour.
+                    <span class="label label-success">1 point code</span> Une option est ajoutée au menu de l'activité pour visualiser l'état du tiroir caisse.
                 </p>
+            </div>
+            <div class="col-xs-3">
+                <img src="img/phase4-paiement.png" style="width:100%;"/>
             </div>
         </div>
         <div class="row">
@@ -75,29 +75,31 @@
         </div>
         <div class="row">
             <div class=" ">
-                PAR EQUIPE DE 2 OU SEUL?????
                 <h3>Rabais</h3>
                 Pour chaque type de rabais, vous devez :
                 <ul>
-                    <li>programmer l'impact sur le ticket de caisse final (prix ou liste de produits)</li>
+                    <li>programmer l'impact sur le ticket de caisse final</li>
                     <li>produire des tests unitaires pour valider le bon fonctionnement</li>
                     <li>ajouter une option dans le menu de l'activité pour configurer le rabais</li>
                 </ul>
                 <h4>2 pour 1</h4>
                 <p>
+                    <span class="label label-success">1 point code</span>
+                    <span class="label label-warning">1 point interface graphique</span>
+                    <span class="label label-primary">1 point test</span>
                     Chaque produit peut être en 2 pour 1. Exemple : un client achète 7 bouteilles d’eau en 2 pour 1, on peut donc appliquer 3 fois le 2 pour 1 
                     (1 + 1) + (1 + 1) + (1 + 1) + 1 ... le client doit donc payer le prix de 4 bouteilles.
                 </p>
                 <h4>Pas de taxes si vous dépassez 100$</h4>
                 <p>
+                    <span class="label label-success">1 point code</span>
+                    <span class="label label-warning">1 point interface graphique</span>
+                    <span class="label label-primary">1 point test</span>
                     On doit pouvoir activer ce rabais qui annule les taxes quand le montant hors taxe dépasse 100$ pour un achat.
                 </p>
-                <h4>Un produit gratuit par tranche de 60$</h4>
+                <h4>Combinaison de rabais</h4>
                 <p>
-                    On doit pouvoir activer ce rabais qui ajoute un produit gratuit paramétrable pour chaque tranche de 60$.
-                </p>
-                <p>
-                    Exemple : on veut donner un paquet de chips pour chaque tranche de 60$, un client qui achète pour 150$ dépasse 120$ il aura droit à 2 paquets.
+                    Vous devez toujours appliquer les rabais de la manière la plus profitable au client. 
                 </p>
             </div>
         </div>
@@ -105,6 +107,8 @@
             <div class=" ">
                 <h3>Multilingue</h3>
                 <p>
+                    <span class="label label-success">3 points code</span>
+                    <span class="label label-primary">1 point test</span>
                     L'intégralité de votre application doit être traduite en français et en anglais. La qualité de l'anglais n'est pas évaluée, vous pouvez utiliser <a class="btn btn-xs btn-info" href="https://translate.google.ca">Google Translate</a> pour effectuer les traducations .
                 </p>
             </div>
@@ -113,7 +117,7 @@
             <div class=" ">
                 <h3>Validation</h3>
                 <p>
-                    <span class="label label-danger">5 points négatifs</span> 
+                    <span class="label label-danger">4 points négatifs</span> 
                     Tous les endroits où un utilisateur entre de l'information doivent être validés. Vous perdrez des points pour chaque endroit où j'arrive à entrer de l'information invalide.
                 </p>
             </div>
