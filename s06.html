@@ -38,16 +38,17 @@
     <div class="container">
         <div class="row">
             <h3 id="s2">Tests automatisés : méthode de travail et intégration</h3>
-            <div class="col-md-4 alert alert-success">
+            <div class="col-md-3 alert alert-success">
                 <strong>Avant la séance (2h)</strong>
-                <p>Vous devez regarder la video suivante:</p>
-                <iframe width="200" height="150" src="https://www.youtube.com/embed/8YeQG_SZ9qc?rel=0" frameborder="0" allowfullscreen></iframe>
-                <iframe width="200" height="150" src="https://www.youtube.com/embed/KhK604sQik8?rel=0" frameborder="0" allowfullscreen></iframe>
                 <p>
-                    Ensuite vous devez commencer les exercices à droite. Arrêtez vous quand vous avez complété vos 2 heures.
+                    Vous devez lire la page suivante 
+                    <a class="btn btn-xs btn-primary" href="https://fr.wikipedia.org/wiki/Test_driven_development">TDD</a>
+                </p>   
+                <p>
+                    Ensuite vous devez commencer l'exercice d'intégration. Arrêtez vous quand vous avez complété vos 2 heures.
                 </p>
             </div>
-            <div class="col-md-4 alert  alert-warning">
+            <div class="col-md-6 alert  alert-warning">
                 <strong>Pendant le cours à 40</strong> 
                 <p>
                     Nous discuterons de quelques principes pour écrire vos tests.
@@ -64,14 +65,21 @@
                     </li>
                     <li>Comment utiliser la couverture de code</li>
                 </ul>
+                <p>
+                    Nous discuterons également de plusieurs autres éléments concernant les tests
+                </p>
+                <ul>
+                    <li>Quoi tester? Est-ce qu'on teste tout? Ce qui est risqué, nouveau, cher etc.</li>
+                    <li>Quand doit-on tester? Quand est-ce qu'on écrit les tests? Quand est-ce qu'on les exécute?</li>
+                </ul>
             </div>
-            <div class="col-md-4 alert alert-info">
+            <div class="col-md-3 alert alert-info">
                 <strong>Pendant le labo à 20</strong> 
                 <p>
                     Vous devez compléter les exercices de la semaine.
                 </p>
                 <p>
-                    Vous devez avancer votre travail.
+                    Vous devez avancer votre travail 2.
                 </p>
             </div>
             <div class="col-md-12">
@@ -90,11 +98,18 @@
                         <p>
                             Écrivez les tests pour valider le bon fonctionnement du code que vous aviez écrit. Apportez les correctifs nécessaires. Validez le bon fonctionnement de votre application console existante.
                         </p>
+                        Écrivez les tests qui
+                        <ul>
+                            <li>simulent une classe de 10 étudiants</li>
+                            <li>assurez vous d'avoir un hasard reproductible</li>
+                            <li>3 épreuves avec des pointages au hasard entre 20 et 100 points</li>
+                            <li>des notes aléatoires (entre 0 et le pointage de l'épreuve)</li>
+                            <li>assurez vous que la moyenne est aux alentours de 50% (dû au tirage aléatoire)</li>
+                            <li>afficher en console les valeurs tirées au hasard pour pouvoir les reporter dans Excel</li>
+                            <li>valider les résultats de votre code avec une feuille de calcul Excel</li>
+                        </ul>
                         <p>
-                            Écrivez les tests qui simulent une classe de 20 étudiants avec 3 épreuves avec des épreuves au hasard. Tirez des pointages d'épreuve entre 20 et 40. En tirant des notes aléatoires, assurez vous que la moyenne est aux alentours de 50%. Assurez vous de rendre vos tests reproductibles. Vérifiez le résultat avec un chiffrier excel qui effectue le calcul indépendemment.
-                        </p>
-                        <p>
-                            Augmentez le nombre d'étudiants à 20000 et observez les résultats.
+                            Augmentez le nombre d'étudiants à 20000 et observez les résultats. Est-on plus proche de 50%?
                         </p>
                     </div>
                 </div>
