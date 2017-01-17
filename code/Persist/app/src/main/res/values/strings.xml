@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">DemoPersist</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    
+    <string name="coucou">Coucou</string>
+    <string name="fichiers">fichiers</string>
+    <string name="sql">SQL</string>
+    <string name="prefs">Preferences</string>
+    <string name="add">Ajout</string>
+    <string name="flush">Vider</string>
+    <string name="count">Compter</string>
+
+</resources>
