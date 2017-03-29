@@ -19,7 +19,7 @@ android {
 }
 
 dependencies {
-    compile files('libs/android-integration-2.2.jar')
+    compile group: 'com.google.zxing', name: 'android-integration', version: '2.2'
     compile 'com.android.support:support-v4:21.0.3'
     compile 'com.android.support:support-v13:21.0.3'
 }
