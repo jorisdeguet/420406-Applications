@@ -101,7 +101,7 @@ public abstract class TestAbstract {
     @Test
     public void testSaveOnePerformance(){
         long a = System.currentTimeMillis();
-        for (int i = 0 ; i < 400 ; i++){
+        for (int i = 0 ; i < 200 ; i++){
             Product p = new Product();
             p.setNom("Produit " + i);
             p.setPrixUnitaire(i*10);

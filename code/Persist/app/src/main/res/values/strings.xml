@@ -2,7 +2,7 @@
 <resources>
 
     <string name="app_name">DemoPersist</string>
-    <string name="action_settings">Settings</string>
+    <string name="action_settings">Roule les tests unitaires!!</string>
     <string name="hello_world">Hello world!</string>
     
     <string name="coucou">Coucou</string>

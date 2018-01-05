@@ -12,6 +12,7 @@ import android.view.Menu;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import static android.R.id.list;
 import static org.deguet.persist.R.string.prefs;
@@ -77,6 +78,8 @@ public class DemoActivity extends Activity {
                 adapterprefs.notifyDataSetChanged();
             }
         });
+
+        Toast.makeText(getApplicationContext(), "Pensez à exécuter les tests unitaires du projet", Toast.LENGTH_LONG).show();
     }
 
 
