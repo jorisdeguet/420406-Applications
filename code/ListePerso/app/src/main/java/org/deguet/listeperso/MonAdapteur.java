@@ -19,7 +19,7 @@ import static android.R.attr.resource;
 
 public class MonAdapteur extends ArrayAdapter<Truc> {
 
-    public Bus bus = new Bus();
+    public static Bus bus = new Bus();
 
 
     public MonAdapteur(Context context) {
@@ -58,6 +58,6 @@ public class MonAdapteur extends ArrayAdapter<Truc> {
             }
         });
 
-        return v; //super.getView(position, convertView, parent);
+        return v;
     }
 }

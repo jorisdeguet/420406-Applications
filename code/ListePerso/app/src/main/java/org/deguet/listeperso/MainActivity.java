@@ -42,18 +42,18 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onPause() {
-        adapter.bus.unregister(this);
+        MonAdapteur.bus.unregister(this);
         super.onPause();
     }
 
     @Override
     protected void onResume() {
-        adapter.bus.register(this);
-        super.onPause();
+        MonAdapteur.bus.register(this);
+        super.onResume();
     }
 
     @Subscribe
-    public void readirAClicSurA(Truc t){
+    public void reagirAClicSurA(Truc t){
         // le supprimer de la liste
         liste.remove(t);
         // mettre à jour l'affichage
