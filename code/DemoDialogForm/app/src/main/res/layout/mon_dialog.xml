@@ -15,8 +15,9 @@
     </EditText>
     
     <EditText
-        android:id="@+id/prenom"
-        android:hint="Prenom"
+        android:id="@+id/age"
+        android:hint="Age"
+        android:inputType="number"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10" >

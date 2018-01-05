@@ -12,5 +12,9 @@
     <string name="cancel">Cancel piou</string>
     <string name="mon_super_titre">Super super titre</string>
 
+    <string-array name="sexes">
+        <item>Homme</item>
+        <item>Femme</item>
+    </string-array>
 
 </resources>
