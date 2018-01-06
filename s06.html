@@ -1,127 +1,128 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>AppOrientObjet</title>
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <style>
-        body {
-            padding-top: 70px;
-        }
-    </style>
-</head>
-<body>
-    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="page du cours professions informatiques">
+        <meta name="author" content="Département informatique, collège Édouard Montpetit">
+        <title>Sem. 6</title>
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            body {padding-top: 70px;}
+            pre span {color:red;}
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand fixed-top navbar-light bg-dark" >
+            <div class="container">
+                <a class="navbar-brand text-light" href="#">Apps Orientées Objet</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#theCollapse" aria-controls="theCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-                <a class="navbar-brand" href="#"><strong>Applications orientées objet</strong> semaine 6</a>
+                <div class="collapse navbar-collapse" id="theCollapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li><a class="btn btn-outline-light ml-1" role="button" href="index.html" ><i class="fa fa-home" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="navbar-collapse collapse navbar-right">
-                <ul class="nav navbar-nav">
-                    <li class="dropdown">
-                        <a href="index.html">Accueil</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
+        </nav>
 
-    <div class="container">
-        <div class="row">
-            <h3 id="s2">Tests automatisés : méthode de travail et intégration</h3>
-            <div class="col-md-3 alert alert-success">
-                <strong>Avant la séance (2h)</strong>
-                <p>
-                    Vous devez lire la page suivante 
-                    <a class="btn btn-xs btn-primary" href="https://fr.wikipedia.org/wiki/Test_driven_development">TDD</a>
-                </p>   
-                <p>
-                    Ensuite vous devez commencer l'exercice d'intégration. Arrêtez vous quand vous avez complété vos 2 heures.
-                </p>
+        <div class="container">
+            <div class="row">
+                <h3 id="s2">6 Tests automatisés : méthode de travail et intégration</h3>
             </div>
-            <div class="col-md-6 alert  alert-warning">
-                <strong>Pendant le cours à 40</strong> 
-                <p>
-                    Nous commencerons avec une explication de l'
-                    <a href="https://docs.oracle.com/javase/tutorial/java/javaOO/enum.html">enum</a> en Java.
-                </p>
-                <p>
-                    Nous discuterons de quelques principes pour écrire vos tests.
-                </p>
-                <ul>
-                    <li>Toujours pouvoir exécuter ce que j'écris, tests u fur et à mesure</li>
-                    <li>Une classe de code = une classe de test</li>
-                    <li>Une méthode = plusieurs tests
+            <div class="row">
+                <div class="col-md-3 card text-white bg-danger">
+                    <div class="card-body">
+                        <strong>Avant la séance (2h)</strong>
+                        <p>
+                            Vous devez lire la page suivante 
+                            <a class="btn btn-sm btn-primary" href="https://fr.wikipedia.org/wiki/Test_driven_development">TDD</a>
+                        </p>   
+                        <p>
+                            Ensuite vous devez commencer l'exercice d'intégration. Arrêtez vous quand vous avez complété vos 2 heures.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 card">
+                    <div class="card-body">
+                        <strong>Pendant le cours à 40</strong> 
+                        <p>
+                            Nous commencerons avec une explication de l'
+                            <a href="https://docs.oracle.com/javase/tutorial/java/javaOO/enum.html">enum</a> en Java.
+                        </p>
+                        <p>
+                            Nous discuterons de quelques principes pour écrire vos tests.
+                        </p>
                         <ul>
-                            <li>Quand ça fonctionne</li>
-                            <li>Quand ça exceptionne</li>
-                            <li>Quand ça boucle plante etc.</li>
+                            <li>Toujours pouvoir exécuter ce que j'écris, tests u fur et à mesure</li>
+                            <li>Une classe de code = une classe de test</li>
+                            <li>Une méthode = plusieurs tests
+                                <ul>
+                                    <li>Quand ça fonctionne</li>
+                                    <li>Quand ça exceptionne</li>
+                                    <li>Quand ça boucle plante etc.</li>
+                                </ul>
+                            </li>
+                            <li>Comment utiliser la couverture de code</li>
                         </ul>
-                    </li>
-                    <li>Comment utiliser la couverture de code</li>
-                </ul>
-                <p>
-                    Nous discuterons également de plusieurs autres éléments concernant les tests
-                </p>
-                <ul>
-                    <li>Quoi tester? Est-ce qu'on teste tout? Ce qui est risqué, nouveau, cher etc.</li>
-                    <li>Quand doit-on tester? Quand est-ce qu'on écrit les tests? Quand est-ce qu'on les exécute?</li>
-                </ul>
-            </div>
-            <div class="col-md-3 alert alert-info">
-                <strong>Pendant le labo à 20</strong> 
-                <p>
-                    Vous devez compléter les exercices de la semaine.
-                </p>
-                <p>
-                    Vous devez avancer votre travail 2.
-                </p>
-            </div>
-            <div class="col-md-12">
-                <div>
-                    <a class="btn btn-primary btn-xs">
-                      Exercices de la semaine
-                    </a>
+                        <p>
+                            Nous discuterons également de plusieurs autres éléments concernant les tests
+                        </p>
+                        <ul>
+                            <li>Quoi tester? Est-ce qu'on teste tout? Ce qui est risqué, nouveau, cher etc.</li>
+                            <li>Quand doit-on tester? Quand est-ce qu'on écrit les tests? Quand est-ce qu'on les exécute?</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 card text-white bg-primary">
+                    <div class="card-body">
+                        <strong>Pendant le labo à 20</strong> 
+                        <p>
+                            Vous devez compléter les exercices de la semaine.
+                        </p>
+                        <p>
+                            Vous devez avancer votre travail 2.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-12">
                     <div>
-                        <h3>Exercice NotesTests</h3>
-                        <p>
-                            Reprenez le code de l'exercice précédent <strong>Notes</strong>.
-                        </p>
-                        <p>
-                            Pour chaque méthode de service, cherchez à identifier les cas problématiques pour les paramètres de la méthode.
-                        </p>
-                        <p>
-                            Écrivez les tests pour valider le bon fonctionnement du code que vous aviez écrit. Apportez les correctifs si nécessaire. Validez le bon fonctionnement de votre application console existante.
-                        </p>
-                        Écrivez les tests qui
-                        <ul>
-                            <li>simulent une classe de 10 étudiants</li>
-                            <li>assurez vous d'avoir un hasard reproductible</li>
-                            <li>3 épreuves avec des pointages au hasard entre 20 et 100 points</li>
-                            <li>des notes aléatoires (entre 0 et le pointage de l'épreuve)</li>
-                            <li>assurez vous que la moyenne est aux alentours de 50% (dû au tirage aléatoire)</li>
-                            <li>afficher en console les valeurs tirées au hasard pour pouvoir les reporter dans Excel</li>
-                            <li>valider les résultats de votre code avec une feuille de calcul Excel</li>
-                        </ul>
-                        <p>
-                            Augmentez le nombre d'étudiants à 20000 et observez les résultats. Est-on plus proche de 50%?
-                        </p>
+                        <h2><span class="btn btn-dark btn-lg btn-block mt-5">Exercices de la semaine</span></h2>
+                        <div>
+                            <h3>Exercice NotesTests</h3>
+                            <p>
+                                Reprenez le code de l'exercice précédent <strong>Notes</strong>.
+                            </p>
+                            <p>
+                                Pour chaque méthode de service, cherchez à identifier les cas problématiques pour les paramètres de la méthode.
+                            </p>
+                            <p>
+                                Écrivez les tests pour valider le bon fonctionnement du code que vous aviez écrit. Apportez les correctifs si nécessaire. Validez le bon fonctionnement de votre application console existante.
+                            </p>
+                            Écrivez les tests qui
+                            <ul>
+                                <li>simulent une classe de 10 étudiants</li>
+                                <li>assurez vous d'avoir un hasard reproductible</li>
+                                <li>3 épreuves avec des pointages au hasard entre 20 et 100 points</li>
+                                <li>des notes aléatoires (entre 0 et le pointage de l'épreuve)</li>
+                                <li>assurez vous que la moyenne est aux alentours de 50% (dû au tirage aléatoire)</li>
+                                <li>afficher en console les valeurs tirées au hasard pour pouvoir les reporter dans Excel</li>
+                                <li>valider les résultats de votre code avec une feuille de calcul Excel</li>
+                            </ul>
+                            <p>
+                                Augmentez le nombre d'étudiants à 20000 et observez les résultats. Est-on plus proche de 50%?
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-</body>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+    </body>
 
 </html>

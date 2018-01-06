@@ -1,114 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="page du cours professions informatiques">
-    <meta name="author" content="Département informatique, collège Édouard Montpetit">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="page du cours professions informatiques">
+        <meta name="author" content="Département informatique, collège Édouard Montpetit">
 
-    <title>App. orientée objet</title>
+        <title>App. orientée objet</title>
 
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <style>
-        body {
-            padding-top: 70px;
-        }
-    </style>
-</head>
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            body {
+                padding-top: 70px;
+            }
+        </style>
+    </head>
 
-<body>
+    <body>
 
-    <!-- Fixed navbar -->
-    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
+        <nav class="navbar navbar-expand-md fixed-top navbar-light bg-dark" >
+            <div class="container">
+                <a class="navbar-brand text-light" href="#">Apps Orientées Objet</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#theCollapse" aria-controls="theCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-                <a class="navbar-brand" href="#">420-406 : <strong>Applications orientées objet</strong></a>
+                <div class="collapse navbar-collapse" id="theCollapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li>
+                            <button class="btn btn-outline-light ml-1" role="button" routerLink="/find" href="utils/PC_2017H_420-406_Departement-Informatique.docx">plan de cours</button>
+                        <li>
+                        </li>
+                        <li class="dropdown ml-1">
+                            <button class="btn dropdown-toggle btn-outline-light"
+                                    type="button" id="dropdownPatient" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                projet
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownPatient">
+                                <a class="dropdown-item" href="phase1.html" >phase 1</a>
+                                <a class="dropdown-item" href="phase2.html" >phase 2</a>
+                                <a class="dropdown-item" href="phase3.html" >phase 3</a>
+                                <a class="dropdown-item" href="phase4.html" >phase 4</a>
+                            </div>
+                        </li>
+                        <li class="dropdown ml-1">
+                            <button class="btn dropdown-toggle btn-outline-success"
+                                    type="button" id="dropdownVid" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="label label-primary">videos</span>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownVid">
+                                <a class="dropdown-item" href="https://www.youtube.com/channel/UCOH9PMOL-wGH29SYcNFlfbQ">Chaine Youtube</a>
+                                <a class="dropdown-item" href="https://www.youtube.com/playlist?list=PLYHAgLf_cnWQccEbrvVCJksLSfc5f0nR_">Liste de lecture Java</a>
+                            </div>
+                        </li>
+                        <li class="dropdown ml-1">
+                            <button class="btn dropdown-toggle btn-outline-info"
+                                    type="button" id="dropdownSoft" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="label label-primary">outils</span>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownSoft">
+                                <a class="dropdown-item" target="_blank" href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">Java Dev Kit</a>
+                                <a class="dropdown-item" target="_blank" href="https://www.jetbrains.com/idea/">Intellij IDEA</a>
+                                <a class="dropdown-item" target="_blank" href="http://developer.android.com/sdk/index.html">Android Studio</a>
+                                <a class="dropdown-item" target="_blank" href="http://developer.android.com/index.html">Site développeur Android</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="navbar-collapse collapse navbar-right">
-                <ul class="nav navbar-nav">
-                    <li><a href="utils/PC_2017H_420-406_Departement-Informatique.docx">Plan de cours</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Travaux<span class="caret"></span></a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="phase1.html">Projet phase 1</a></li>
-                            <li><a href="phase2.html">Projet phase 2</a></li>
-                            <li><a href="phase3.html">Projet phase 3</a></li>
-                            <li><a href="phase4.html">Projet phase 4</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Videos<span class="caret"></span></a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="https://www.youtube.com/channel/UCOH9PMOL-wGH29SYcNFlfbQ">Chaine Youtube</a></li>
-                            <li class="divider"></li>
-                            <li><a href="https://www.youtube.com/playlist?list=PLYHAgLf_cnWQccEbrvVCJksLSfc5f0nR_">Liste de lecture Java</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Logiciels<span class="caret"></span></a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a target="_blank" href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">Java Dev Kit</a></li>
-                            <li><a target="_blank" href="https://www.jetbrains.com/idea/">Intellij IDEA</a></li>
-                            <li class="divider"></li>
-                            <li><a target="_blank" href="http://developer.android.com/sdk/index.html">Android Studio</a></li>
-                            <li><a target="_blank" href="http://developer.android.com/index.html">Site développeur Android</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <!--/.nav-collapse -->
-        </div>
-    </div>
+        </nav>
 
-    <div class="container">
-        <div class="row text-danger">
-            <div class="col-xs-4 ">
-                <strong>Plagiat</strong>
-                <p>
-                    Les exercices peuvent être réalisés à plusieurs. Toutefois, tous les travaux <strong>évalués</strong> sont <span class="label label-danger">INDIVIDUELS</span>.
-                </p>
-                <p>
-                    Un premier plagiat sera sanctionné d'un <span class="label label-danger">0 au travail</span>. Si vous aviez déjà eu un plagiat au collège, vous aurez une rencontre avec la direction.
-                </p>
-                <p>Un second plagiat entraîne la note de <span class="label label-danger">0 au cours</span>.</p>
+        <div class="container">
+            <div class="row text-danger border border-danger">
+                <div class="col">
+                    <strong>Plagiat</strong>
+                    <p>
+                        Les exercices peuvent être réalisés à plusieurs. Toutefois, tous les travaux <strong>évalués</strong> sont <span class="label label-danger">INDIVIDUELS</span>.
+                    </p>
+                    <p>
+                        Un premier plagiat sera sanctionné d'un <span class="badge badge-danger">0 au travail</span>. Si vous aviez déjà eu un plagiat au collège, vous aurez une rencontre avec la direction.
+                    </p>
+                    <p>Un second plagiat entraîne la note de <span class="badge badge-danger">0 au cours</span>.</p>
+                </div>
+                <div class="col">
+                    <strong>S'aider ou plagier</strong>
+                    <p>
+                        Vous avez le droit de travailler ensemble, de vous aider en expliquant des notions et autres. Parlez et expliquez à un autre étudiant est encouragé.
+                    </p>
+                    <p>
+                        Vous ne pouvez PAS échanger des fichiers, des parties de fichiers, vos clés USB ou disque externe etc. entre vous. Cela inclut recopier lettre par lettre le travail d'un autre.
+                    </p>
+                </div>
+                <div class="col">
+                    <strong>Copier ou être copié</strong>
+                    <p>
+                        Dans un cas de plagiat, celui qui a partagé son travail est sanctionné au même titre que celui qui l'a copié.
+                    </p>
+                    <p>
+                        Protégez votre travail. Éteignez votre ordinateur en quittant. Vérouillez votre session si vous sortez. Ne prêtez jamais votre clé ou disque. Si vous partagez votre travail, vous ne contrôlez pas ce que les autres vont en faire.
+                    </p>
+                </div>
             </div>
-            <div class="col-xs-4 ">
-                <strong>S'aider ou plagier</strong>
-                <p>
-                    Vous avez le droit de travailler ensemble, de vous aider en expliquant des notions et autres. Parlez et expliquez à un autre étudiant est encouragé.
-                </p>
-                <p>
-                    Vous ne pouvez PAS échanger des fichiers, des parties de fichiers, vos clés USB ou disque externe etc. entre vous. Cela inclut recopier lettre par lettre le travail d'un autre.
-                </p>
-            </div>
-            <div class="col-xs-4 ">
-                <strong>Copier ou être copié</strong>
-                <p>
-                    Dans un cas de plagiat, celui qui a partagé son travail est sanctionné au même titre que celui qui l'a copié.
-                </p>
-                <p>
-                    Protégez votre travail. Fermez votre session en quittant. Si vous partagez votre travail, vous ne contrôlez pas ce que les autres vont en faire.
-                </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="">
-                <div class="col-md-8 alert">
+            <div class="row">
+
+                <div class="col-md-8">
                     <strong>Déroulement d'une semaine type</strong>
                     <p>
                         Chaque semaine, vous aurez du travail préparatoire pour découvrir la matière par vous-même. Il s'agira d'une page web à lire, d'une video à suivre et/ou d'exercices à faire. Cela représente environ 2 heures de travail.
                     </p>
                     <p>
-                        Ensuite pendant la séance, vous pourrez :
+                        Ensuite pendant la séance, vous devez :
                     </p>
                     <ul>
                         <li>compléter et valider vos exercices avec le professeur</li>
@@ -119,112 +122,129 @@
                         L'ensemble du travail demandé doit être fait pendant la période.
                     </p>
                     <br/>
-                    
-                        
+
+
                 </div>
                 <div class="col-md-4">
                     <strong>Installation à la maison</strong>
                     <p>
                         À la maison, vous devez installer
-                        <a target="_blank" class="btn btn-primary btn-xs" href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">Java Dev Kit</a> et l'environnement de développement
-                        <a target="_blank" class="btn btn-primary btn-xs" href="https://www.jetbrains.com/idea/">Intellij IDEA</a>
+                        <a target="_blank" class="btn btn-primary btn-sm" href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">Java Dev Kit</a> et l'environnement de développement
+                        <a target="_blank" class="btn btn-primary btn-sm" href="https://www.jetbrains.com/idea/">Intellij IDEA</a>
                     </p>
                     <p>
                         Pendant la 2ème moitié du cours, vous aurez besoin de 
-                        <a target="_blank" class="btn btn-primary btn-xs" href="http://developer.android.com/sdk/index.html">Android Studio</a>.
+                        <a target="_blank" class="btn btn-primary btn-sm" href="http://developer.android.com/sdk/index.html">Android Studio</a>.
                     </p>
                 </div>
             </div>
-        </div>
 
-        <div class="row">
-            <div>
-                <div class="col-md-12 ">
+            <div class="row">
+                <div class="col-md-12">
                     <strong>Semaine par semaine</strong>
-                    <table class="table table-condensed">
+                    <table class="table table-sm table-striped table-hover">
                         <tr>
-                            <td><a class="btn btn-primary btn-xs" href="s01.html">1</a></td>
+                            <td><a class="btn btn-secondary btn-sm" href="s01.html"><i class="fa fa-sign-in" aria-hidden="true"></i> 1</a></td>
                             <td>Java : Introduction et Intellij IDEA </td>
-                            <td rowspan="4" class="alert alert-danger">
-                                <a class="btn btn-primary btn-sm" href="phase1.html">Travail 1 : WebBot </a> : programmation, librairies et fichiers
+                            <td rowspan="4" class="bg-light text-dark border border-dark">
+                                <a class="btn btn-dark btn-sm btn-block" href="phase1.html"><i class="fa fa-firefox" aria-hidden="true"></i> Travail 1 : WebBot </a>
+                                <ul>
+                                    <li>programmation</li>
+                                    <li>librairies</li>
+                                    <li>gestion de fichiers</li>
+                                </ul>
                             </td>
                         </tr>
                         <tr>
-                            <td><a class="btn btn-primary btn-xs" href="s02.html">2</a></td>
+                            <td><a class="btn btn-secondary btn-sm" href="s02.html"><i class="fa fa-sign-in" aria-hidden="true"></i> 2</a></td>
                             <td>Java : programmation impérative</td>
                         </tr>
                         <tr>
-                            <td><a class="btn btn-primary btn-xs" href="s03.html">3</a></td>
+                            <td><a class="btn btn-secondary btn-sm" href="s03.html"><i class="fa fa-sign-in" aria-hidden="true"></i> 3</a></td>
                             <td>Java : librairie standard</td>
                         </tr>
                         <tr>
-                            <td><a class="btn btn-primary btn-xs" href="s04.html">4</a></td>
+                            <td><a class="btn btn-secondary btn-sm" href="s04.html"><i class="fa fa-sign-in" aria-hidden="true"></i> 4</a></td>
                             <td>Java : objet</td>
                         </tr>
                         <tr>
-                            <td><a class="btn btn-primary btn-xs" href="s05.html">5</a></td>
+                            <td><a class="btn btn-secondary btn-sm" href="s05.html"><i class="fa fa-sign-in" aria-hidden="true"></i> 5</a></td>
                             <td>Tests unitaires</td>
-                            <td rowspan="3" class="alert alert-info">
-                                <a class="btn btn-primary btn-sm" href="phase2.html">Travail 2 : monnaie</a> : définition de classes, calcul et tests unitaires.
+                            <td rowspan="3" class="bg-dark text-light border border-dark">
+                                <a class="btn btn-light btn-sm btn-block" href="phase2.html"><i class="fa fa-money" aria-hidden="true"></i> Travail 2 : monnaie</a>
+                                <ul>
+                                    <li>définition de classes</li>
+                                    <li>calcul</li>
+                                    <li>tests unitaires</li>
+                                </ul>
                             </td>
                         </tr>
                         <tr>
-                            <td><a class="btn btn-primary btn-xs" href="s06.html">6</a></td>
+                            <td><a class="btn btn-secondary btn-sm" href="s06.html"><i class="fa fa-sign-in" aria-hidden="true"></i> 6</a></td>
                             <td>Tests et exceptions</td>
                         </tr>
                         <tr>
-                            <td><a class="btn btn-danger btn-xs" href="s07.html">7</a></td>
+                            <td><a class="btn btn-danger btn-sm" href="s07.html"><i class="fa fa-sign-in" aria-hidden="true"></i> 7</a></td>
                             <td>Examen intra</td>
                         </tr>
                         <tr>
-                            <td><a class="btn btn-primary btn-xs" href="s08.html">8</a></td>
+                            <td><a class="btn btn-secondary btn-sm" href="s08.html"><i class="fa fa-sign-in" aria-hidden="true"></i> 8</a></td>
                             <td>Android : Introduction</td>
-                            <td rowspan="4" class="alert alert-warning">
-                                <a class="btn btn-primary btn-sm" href="phase3.html">Travail 3 : application Android</a> : 
-                                intégration de la partie monnaie, interface graphique, persistance
+                            <td rowspan="4" class="bg-light text-dark border border-dark">
+                                <a class="btn btn-dark btn-sm btn-block" href="phase3.html"><i class="fa fa-android" aria-hidden="true"></i> Travail 3 : application Android</a>
+                                <ul>
+                                    <li>intégration de la partie monnaie</li>
+                                    <li>interface graphique</li>
+                                    <li>persistance</li>
+                                </ul>
                             </td>
                         </tr>
                         <tr>
-                            <td><a class="btn btn-primary btn-xs" href="s09.html">9</a></td>
+                            <td><a class="btn btn-secondary btn-sm" href="s09.html"><i class="fa fa-sign-in" aria-hidden="true"></i> 9</a></td>
                             <td>Android : interface graphique</td>
                         </tr>
                         <tr>
-                            <td><a class="btn btn-primary btn-xs" href="s10.html">10</a></td>
+                            <td><a class="btn btn-secondary btn-sm" href="s10.html"><i class="fa fa-sign-in" aria-hidden="true"></i> 10</a></td>
                             <td>Android : stockage</td>
 
                         </tr>
                         <tr>
-                            <td><a class="btn btn-primary btn-xs" href="s11.html">11</a></td>
+                            <td><a class="btn btn-secondary btn-sm" href="s11.html"><i class="fa fa-sign-in" aria-hidden="true"></i> 11</a></td>
                             <td>Architecture : initiation </td>
-                            
+
                         </tr>
                         <tr>
-                            <td><a class="btn btn-primary btn-xs" href="s12.html">12</a></td>
+                            <td><a class="btn btn-secondary btn-sm" href="s12.html"><i class="fa fa-sign-in" aria-hidden="true"></i> 12</a></td>
                             <td>Architecture : patrons de conception</td>
-                            <td rowspan="4" class="alert alert-success">
-                                <a class="btn btn-primary btn-sm" href="phase4.html">Travail 4 : améliorations</a> : 
-                                gestion des rabais, i18n, paiement
+                            <td rowspan="4" class="bg-dark text-light border border-dark">
+                                <a class="btn btn-light btn-sm btn-block" href="phase4.html">Travail 4 : améliorations</a>
+                                <ul>
+                                    <li>gestion des rabais</li>
+                                    <li>i18n</li>
+                                    <li>paiement</li>
+                                </ul>
                             </td>
                         </tr>
                         <tr>
-                            <td><a class="btn btn-primary btn-xs" href="s13.html">13</a></td>
+                            <td><a class="btn btn-secondary btn-sm" href="s13.html"><i class="fa fa-sign-in" aria-hidden="true"></i> 13</a></td>
                             <td>Architecture : événements (patrons et librairie)</td>
                         </tr>
                         <tr>
-                            <td><a class="btn btn-primary btn-xs" href="s14.html">14</a></td>
+                            <td><a class="btn btn-secondary btn-sm" href="s14.html"><i class="fa fa-sign-in" aria-hidden="true"></i> 14</a></td>
                             <td>Révisions / intégration</td>
                         </tr>
                         <tr>
-                            <td><a class="btn btn-danger btn-xs" href="s15.html">15</a></td>
+                            <td><a class="btn btn-danger btn-sm" href="s15.html"><i class="fa fa-sign-in" aria-hidden="true"></i> 15</a></td>
                             <td>Examen final</td>
                         </tr>
                     </table>
                 </div>
             </div>
         </div>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-</body>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+    </body>
 
 </html>

@@ -1,118 +1,125 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>AppOrientObjet</title>
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <style>
-        body {
-            padding-top: 70px;
-        }
-    </style>
-</head>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="page du cours professions informatiques">
+        <meta name="author" content="Département informatique, collège Édouard Montpetit">
+        <title>Sem. 1</title>
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            body {
+                padding-top: 70px;
+            }
+        </style>
+    </head>
 
-<body>
+    <body>
 
-    <!-- Fixed navbar -->
-    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-expand fixed-top navbar-light bg-dark" >
+            <div class="container">
+                <a class="navbar-brand text-light" href="#">Apps Orientées Objet</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#theCollapse" aria-controls="theCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-                <a class="navbar-brand" href="#"><strong>Applications orientées objet</strong> semaine 1</a>
-            </div>
-            <div class="navbar-collapse collapse navbar-right">
-                <ul class="nav navbar-nav">
-                    <li class="dropdown">
-                        <a href="index.html" >Accueil</a>
-                        
-                    </li>
-                </ul>
-            </div>
-            <!--/.nav-collapse -->
-        </div>
-    </div>
-
-    <div class="container">
-
-        
-        <div class="row">
-            <div class="">
-                <h3 id="s1">Semaine 1 : Introduction à Java et environnement de développement</h3>
-                <div class="col-md-3 alert">
-                    <strong>Déroulement d'une semaine type</strong>
-                    <p>
-                        Chaque semaine, vous aurez du travail préparatoire pour découvrir la matière par vous-même. Il s'agira d'une page web à lire, d'une video à suivre et/ou d'exercices à faire. Cela représente environ 2 heures de travail.
-                    </p>
-                    <strong>
-                        Pendant la séance à 40 :
-                    </strong>
-                    <ul>
-                        <li>Quiz sur le travail préparatoire</li>
-                        <li>Retour sur les réponses du quiz</li>
-                        <li>Travail sur les exercices d'application en binome</li>
-                    </ul>
-                    <strong>Pendant la séance à 20 :</strong>
-                    <ul>
-                        <li>Fin des exercices si nécessaire</li>
-                        <li>Travail personnel évalué</li>
+                <div class="collapse navbar-collapse" id="theCollapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li><a class="btn btn-outline-light ml-1" role="button" href="index.html" ><i class="fa fa-home" aria-hidden="true"></i></a></li>
                     </ul>
                 </div>
-                <div class="col-md-7 alert  alert-warning">
-                    <strong>Pendant le cours à 40</strong> 
-                    <p>
-                        Je ferai une introduction au contenu du cours, nous lirons les éléments importants du plan de cours.
-                    </p>
-                    <strong>Contenu</strong>
-                    <ul>
-                        <li>Application : architecture, exceptions, robustesse et tests automatisés</li>
-                        <li>Java comme langage, Android comme plateforme</li>
-                    </ul>
-                    <strong>Logisitique</strong> 
-                    <ul>
-                        <li>Évaluations et date</li>
-                        <li>Politique concernant les absences non justifiées</li>
-                        <li>Politique concernant les plagiat</li>
-                        <li>Appel pour faire connaissance</li>
-                    </ul>
-                    <strong>Explications du fonctionnement de GitHub</strong> 
-                    <p>
-                        Nous allons télécharger le contenu du cours. Explication des 2 branches.
-                    </p>
-                    <strong>Intellij IDEA</strong> 
-                    <ul>
-                        <li>Première classe Java</li>
-                        <li>Point d'arrêt et débogueur</li>
-                        <li>Configuration d'exécution et .idea</li>
-                    </ul>
-                    <iframe width="200" height="150" src="https://www.youtube.com/embed/r9lYkNauGMg?rel=0" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </nav>
 
+        <div class="container">
+            <div class="row">
+                <h3>Semaine 1 : Introduction à Java et environnement de développement</h3>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card text-white bg-danger mb-3">
+                        <div class="card-header">
+                            Semaine type
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">
+                                Chaque semaine, vous aurez du travail préparatoire pour découvrir la matière par vous-même. Il s'agira d'une page web à lire, d'une video à suivre et/ou d'exercices à faire. Cela représente environ 2 heures de travail.
+                            </p>
+                            <h6 class="card-subtitle mb-2">Pendant la séance à 40</h6>
+                            <ul>
+                                <li>Quiz sur le travail préparatoire</li>
+                                <li>Retour sur les réponses du quiz</li>
+                                <li>Travail sur les exercices d'application en binome</li>
+                            </ul>
+                            <h6 class="card-subtitle mb-2">Pendant la séance à 20</h6>
+                            <ul>
+                                <li>Fin des exercices si nécessaire</li>
+                                <li>Travail personnel évalué</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-2">
-                    <strong>Pendant le labo à 20</strong>
-                    <p>
-                        Vous pratiquerez les manipulations vu pendant le premier cours. 
-                    </p>
-                    <p>
-                        Complétez les exercices de cette semaine.
-                    </p>
-                    <p>
-                        Commencez votre 
-                        <a class="btn btn-primary" href="phase1.html">premier travail</a> (création du projet, création de la classe pour l'application, exécution et débogue).
-                    </p>
+                <div class="col-md-5">
+                    <div class="card text-white bg-dark mb-3">
+                        <div class="card-header">
+                            Cours à 40
+                        </div>
+                        <div class="card-body">
+                            <h6 class="card-subtitle mb-2">Contenu</h6>
+                            <ul>
+                                <li>Application : architecture, exceptions, robustesse et tests automatisés</li>
+                                <li>Java comme langage, Android comme plateforme</li>
+                            </ul>
+                            <h6 class="card-subtitle mb-2">Logisitique - plan</h6>
+                            <ul>
+                                <li>Évaluations et date</li>
+                                <li>Politique concernant les absences non justifiées</li>
+                                <li>Politique concernant les plagiat</li>
+                                <li>Appel pour faire connaissance</li>
+                            </ul>
+                            
+                            <h6 class="card-subtitle mb-2">Explications du fonctionnement de GitHub</h6>
+                            <ul>
+                                <li>Télécharger le contenu du cours</li>
+                                <li>Explication des 2 branches</li>
+                            </ul>
+                            <h6 class="card-subtitle mb-2">Intellij IDEA</h6>
+                            <ul>
+                                <li>Première classe Java</li>
+                                <li>Point d'arrêt et débogueur</li>
+                                <li>Configuration d'exécution et .idea</li>
+                            </ul>
+                            <iframe width="200" height="150" src="https://www.youtube.com/embed/r9lYkNauGMg?rel=0" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card text-white bg-primary mb-3">
+                        <div class="card-header">
+                            Labo à 20
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">
+                                Vous pratiquerez les manipulations vu pendant le premier cours. 
+                            </p>
+                            <p class="card-text">
+                                Complétez les exercices de cette semaine.
+                            </p>
+                            <p class="card-text">
+                                Commencez votre 
+                                <a class="btn btn-dark btn-sm" href="phase1.html">premier travail</a> (création du projet, création de la classe pour l'application, exécution et débogue).
+                            </p>
+                            <p class="card-text">
+                                Je ferai une introduction au contenu du cours, nous lirons les éléments importants du plan de cours.
+                            </p>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-md-12">
                     <div>
-                        <a class="btn btn-primary btn-xs">
-                          Exercices de la semaine
-                        </a>
+                        <h2><span class="btn btn-dark btn-lg btn-block mt-5">Exercices de la semaine</span></h2>
                         <div>
                             <h3>Exercice Racine2</h3>
                             <p>
@@ -122,7 +129,7 @@
                                 Vous allez calculer la racine de 2 sans utiliser la fonction fournie. 
                                 Pour cela vous vous baserez sur les choses suivantes:
                             </p>
-                            
+
                             <ul>
                                 <li>Si a est la racine de 2, alors a*a=2</li>
                                 <li>1*1=1, 2*2=4, donc la racine de 2 est compris entre 1 et 2</li>
@@ -140,12 +147,12 @@
                             </p>
                             <h3>Exercice RacineCarre</h3>
                             <p>
-                                En vous basant sur l'exercice précédent, programmer une méthode renvoyant la racine carré d'un nombre passé en paramètre sans utiliser de librairie ou de fonction fournie par Java.
+                                En vous basant sur l'exercice précédent, programmer une méthode renvoyant la racine carré d'un nombre passé en paramètre en respectant les mêmes contraintes que pour l'exercice précédent.
                             </p>
                             <p>
                                 Testez votre code en vérifiant que quand on multiplie votre résultat par lui-même cela donne le nombre passé en paramètre.
                             </p>
-                            <h2><span class="label label-warning">Extra 2017</span></h2>
+                            <h2><span class="badge badge-warning">Extra 2017</span></h2>
                             <h3>Exercice UnUn</h3>
                             <p>
                                 Vous devez programmer une méthode qui transforme une String en une autre String:
@@ -166,24 +173,28 @@
                             </p>
                             <pre>static void sequence(String source, int longueur){}</pre>
                             <p>Par exemple, pour <strong>sequence("1", 6)</strong> donne</p>
-<pre>1
+                            <pre class="text-white bg-dark p-3">1
 11
 21
 1211
 111221
 312211
 </pre>
-                            <p>Quel est le chiffre le plus haut qu'on peut atteindre en partant de "1"? Est-ce qu'il arrive que le résultat de unUn soit plus court que la source?</p>
+                            <p>Vous devez produire des programmes exécutables pour répondre aux questions suivantes:</p>
+                            <ul>
+                                <li>Quel est le chiffre le plus haut qu'on peut atteindre en partant de "1"? </li>
+                                <li>Est-ce qu'il arrive que le résultat de unUn soit plus court que la source?</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </div>        
-    </div>
-    <!-- /container -->
+        <!-- /container -->
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-</body>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+    </body>
 
 </html>

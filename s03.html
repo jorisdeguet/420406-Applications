@@ -1,109 +1,105 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>AppOrientObjet</title>
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <style>
-        body {
-            padding-top: 70px;
-        }
-        pre span {
-            color:red;
-        }
-    </style>
-</head>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="page du cours professions informatiques">
+        <meta name="author" content="Département informatique, collège Édouard Montpetit">
+        <title>Sem. 3</title>
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            body {padding-top: 70px;}
+            pre span {color:red;}
+        </style>
+    </head>
 
-<body>
+    <body>
 
-    <!-- Fixed navbar -->
-    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-expand fixed-top navbar-light bg-dark" >
+            <div class="container">
+                <a class="navbar-brand text-light" href="#">Apps Orientées Objet</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#theCollapse" aria-controls="theCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-                <a class="navbar-brand" href="#"><strong>Applications orientées objet</strong> semaine 3</a>
+                <div class="collapse navbar-collapse" id="theCollapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li><a class="btn btn-outline-light ml-1" role="button" href="index.html" ><i class="fa fa-home" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="navbar-collapse collapse navbar-right">
-                <ul class="nav navbar-nav">
-                    <li class="dropdown">
-                        <a href="index.html">Accueil</a>
-                    </li>
-                </ul>
-            </div>
-            <!--/.nav-collapse -->
-        </div>
-    </div>
+        </nav>
 
-    <div class="container">
-        <div class="row">
-            <h3 id="s2">Java, librairie standard et autres librairies</h3>
-            <div class="col-md-6 alert alert-success">
-                <strong>Avant la séance (2h)</strong>
-                <p>
-
-                    La source la plus importante de documentation sur la librairie standard est le javadoc.
-                    Parcourez une ou deux pages en partant de
-                    <a class="btn btn-xs btn-primary" target="_blank" href="https://docs.oracle.com/javase/7/docs/api/">javadoc</a> (max 20 minutes).
-                </p> 
-                <p>
-                   Vous devez lire le javadoc de la classe Set
-                    <a class="btn btn-xs btn-primary" target="_blank" href="https://docs.oracle.com/javase/7/docs/api/java/util/Set.html">Set</a> (max 10 minutes).
-                </p>
-
-                <p>Vous devez regarder la video suivante:</p>
-                <iframe width="200" height="150" src="https://www.youtube.com/embed/KhK604sQik8?rel=0" frameborder="0" allowfullscreen></iframe>
-                <iframe width="200" height="150" src="https://www.youtube.com/embed/YxLB9Hc9GLI?rel=0" frameborder="0" allowfullscreen></iframe>
-                <iframe width="200" height="150" src="https://www.youtube.com/embed/0nIQGQ6D6xw?rel=0" frameborder="0" allowfullscreen></iframe>
-                <iframe width="200" height="150" src="https://www.youtube.com/embed/v4HM5iTfSoE?rel=0" frameborder="0" allowfullscreen></iframe>
-                <p>
-                    Ensuite vous devez commencer les exercices à droite. Arrêtez vous quand vous avez complété vos 2 heures.
-                </p>
+        <div class="container">
+            <div class="row">
+                <h3>3 Java, librairie standard et autres librairies</h3>
             </div>
-            <div class="col-md-3 alert  alert-warning">
-                <strong>Pendant le cours à 40</strong> 
-                <p>
-                    Nous ferons quelques exemples d'applications pour revenir sur les éléments couverts dans la video.     
-                </p>
-                <ul>
-                    <li>Nous corrigerons l'exercice de moyenne d'un tableau d'entier pour illustrer des tests unitaires</li>
-                    <li>Nous ferons un exemple de Map sur une classe que nous allons définir nous même pour hashCode et equals</li>
-                    <li>Nous illustrerons une autre librairie à travers un MultiSet dans Guava</li>
-                </ul>
-                <p>
-                    Vous avancerez les exercices de la semaine en binôme.    
-                </p>
-            </div>
-            <div class="col-md-3 alert alert-info">
-                <strong>Pendant le labo à 20</strong> 
-                <p>
-                    Vous devez compléter les exercices de la semaine.
-                </p>
-                <p>
-                    Vous continuerez votre <a href="phase1.html">premier travail</a>.
-                </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <div>
-                    <a class="btn btn-primary btn-xs">
-                      Exercices de la semaine
-                    </a>
-                    <div>
-                        <h3>Exercice EntrezUnNombre</h3>
+            <div class="row">
+                <div class="col-md-6 card text-white bg-danger">
+                    <div class="card-body">
+                        <strong>Avant la séance (2h)</strong>
                         <p>
-                            En utilisant un Scanner sur le System.in, écrivez un programme qui demande à 
-                            l'utilisateur de taper un mot jusqu'à ce que ce soit un nombre entier:
+
+                            La source la plus importante de documentation sur la librairie standard est le javadoc.
+                            Parcourez une ou deux pages en partant de
+                            <a class="btn btn-sm btn-dark " target="_blank" href="https://docs.oracle.com/javase/7/docs/api/">javadoc</a> (max 20 minutes).
+                        </p> 
+                        <p>
+                            Vous devez lire le javadoc de la classe Set
+                            <a class="btn btn-sm btn-dark " target="_blank" href="https://docs.oracle.com/javase/7/docs/api/java/util/Set.html">Set</a> (max 10 minutes).
                         </p>
-                        <pre>
+
+                        <p>Vous devez regarder la video suivante:</p>
+                        <iframe width="200" height="150" src="https://www.youtube.com/embed/KhK604sQik8?rel=0" frameborder="0" allowfullscreen></iframe>
+                        <iframe width="200" height="150" src="https://www.youtube.com/embed/YxLB9Hc9GLI?rel=0" frameborder="0" allowfullscreen></iframe>
+                        <iframe width="200" height="150" src="https://www.youtube.com/embed/0nIQGQ6D6xw?rel=0" frameborder="0" allowfullscreen></iframe>
+                        <iframe width="200" height="150" src="https://www.youtube.com/embed/v4HM5iTfSoE?rel=0" frameborder="0" allowfullscreen></iframe>
+                        <p>
+                            Ensuite vous devez commencer les exercices à droite. Arrêtez vous quand vous avez complété vos 2 heures.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3 card">
+                    <div class="card-body">
+                        <strong>Pendant le cours à 40</strong> 
+                        <p>
+                            Nous ferons quelques exemples d'applications pour revenir sur les éléments couverts dans la video.     
+                        </p>
+                        <ul>
+                            <li>Nous corrigerons l'exercice de moyenne d'un tableau d'entier pour illustrer des tests unitaires</li>
+                            <li>Nous ferons un exemple de Map sur une classe que nous allons définir nous même pour hashCode et equals</li>
+                            <li>Nous illustrerons une autre librairie à travers un MultiSet dans Guava</li>
+                        </ul>
+                        <p>
+                            Vous avancerez les exercices de la semaine en binôme.    
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3 card text-white bg-primary">
+                    <div class="card-body">
+                        <strong>Pendant le labo à 20</strong> 
+                        <p>
+                            Vous devez compléter les exercices de la semaine.
+                        </p>
+                        <p>
+                            Vous continuerez votre <a class="btn btn-dark btn-sm" href="phase1.html">premier travail</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div>
+                        <h2><span class="btn btn-dark btn-lg btn-block mt-5">Exercices de la semaine</span></h2>
+                        <div>
+                            <h3>Exercice EntrezUnNombre</h3>
+                            <p>
+                                En utilisant un Scanner sur le System.in, écrivez un programme qui demande à 
+                                l'utilisateur de taper un mot jusqu'à ce que ce soit un nombre entier:
+                            </p>
+                            <pre class="text-white bg-dark p-3">
 Veuillez entrer un nombre:
 <span>pipo</span>
 Ceci n’est pas un nombre, veuillez entrer un nombre:
@@ -111,20 +107,20 @@ Ceci n’est pas un nombre, veuillez entrer un nombre:
 Ceci n’est pas un nombre, veuillez entrer un nombre:
 <span>123</span>
 Merci votre nombre est 123.</pre>
-                        <p>
-                            Indications
-                        </p>
-                        <ul>
-                            <li>Vous aurez besoin d’un objet de la classe Random pour les tirages aléatoires</li>
-                            <li>Pour trouver la documentation d’une classe, on Google 
-                                <strong>javadoc <em>nomdelaclasse</em></strong>, ici <strong>javadoc Random</strong>
-                            </li>
-                        </ul>
-                        <h3>Exercice DevineUnNombre</h3>
-                        <p>
-                            Votre programme doit tirer un nombre aléatoire entre 1 et 9 puis demander à l’utilisateur de le deviner jusqu’à ce qu’il entre dans la console soit le nombre en question.
-                        </p>
-                        <pre>
+                            <p>
+                                Indications
+                            </p>
+                            <ul>
+                                <li>Vous aurez besoin d’un objet de la classe Random pour les tirages aléatoires</li>
+                                <li>Pour trouver la documentation d’une classe, on Google 
+                                    <strong>javadoc <em>nomdelaclasse</em></strong>, ici <strong>javadoc Random</strong>
+                                </li>
+                            </ul>
+                            <h3>Exercice DevineUnNombre</h3>
+                            <p>
+                                Votre programme doit tirer un nombre aléatoire entre 1 et 9 puis demander à l’utilisateur de le deviner jusqu’à ce qu’il entre dans la console soit le nombre en question.
+                            </p>
+                            <pre class="text-white bg-dark p-3">
 Veuillez deviner le nombre entre 1 et 9:
 <span>3</span>
 Essaie encore:
@@ -133,35 +129,36 @@ Essaie encore:
 <span>8</span>
 Halleluyah!!!
 </pre>
-                        <h3>Exercice DevineUnNom</h3>
-                        <p>
-                            Votre programme doit tirer un nom aléatoire parmi Jean Paul Jacques Martin puis demander à l’utilisateur de le deviner jusqu’à ce qu’il entre dans la console soit le bon nom.
+                            <h3>Exercice DevineUnNom</h3>
+                            <p>
+                                Votre programme doit tirer un nom aléatoire parmi Jean Paul Jacques Martin puis demander à l’utilisateur de le deviner jusqu’à ce qu’il entre dans la console soit le bon nom.
 
-                        </p>
-                        <pre>
+                            </p>
+                            <pre class="text-white bg-dark p-3">
 Veuillez deviner un nom parmi Paul Jean Jacques et Martin:
 <span>Paul</span>
 Essaie encore:
 <span>Jean</span>
 Halleluyah!!!
 </pre>
-                        <h3>Exercice EcritLitFichier</h3>
-                        <p>
-                            Votre programme doit:
-                        </p>
-                        <ul>
-                            <li>Écrire un fichier vide dans le dossier courant appelé vide.txt</li>
-                            <li>Créer un fichier texte contenant vos noms dans le dossier parent du dossier courant</li>
-                            <li>Prendre un ou plusieurs noms de fichiers comme arguments</li>
-                            <li>Afficher le contenu de chaque fichier dans la console en les séparant par une ligne de -------------</li>
-                        </ul>
+                            <h3>Exercice EcritLitFichier</h3>
+                            <p>
+                                Votre programme doit:
+                            </p>
+                            <ul>
+                                <li>Écrire un fichier vide dans le dossier courant appelé vide.txt</li>
+                                <li>Créer un fichier texte contenant vos noms dans le dossier parent du dossier courant</li>
+                                <li>Prendre un ou plusieurs noms de fichiers comme arguments</li>
+                                <li>Afficher le contenu de chaque fichier dans la console en les séparant par une ligne de -------------</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- /container -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-</body>
+        <!-- /container -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+    </body>
 </html>
