@@ -25,10 +25,23 @@ public class App
         Service service = new ServiceImplementation();
         Scanner scan = new Scanner(System.in);
         int choix = 0;
+        boolean inputIncorrect = true;
+        
         System.out.println( "Bonjour, bienvenue dans posts et réponses" );
         do{
             montrerUsage();
-            choix = scan.nextInt();
+            
+             while(inputIncorrect) {
+                if(scan.hasNextInt()) {
+                    choix = scan.nextInt();
+                    inputIncorrect = false;
+                }
+                else {
+                    System.out.println("Veuillez entrer un chiffre inclu dans la liste de choix");
+                    scan.next();
+                }
+            }
+            
             System.out.println("Vous avez choisi " + choix);
             switch (choix){
                 case 1:
