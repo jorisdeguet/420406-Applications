@@ -11,8 +11,8 @@ public enum ArgentObjet {
 	piece1	    (100, 	    "pièce 1$ "),
     piece25s	(25, 	    "pièce 0.25$ "),
     piece10s	(10, 	    "pièce 0.10$ "),
-    piece5s	    (5, 	    "pièce 0.5$ "),
-    piece1s	    (1, 	    "pièce 0.1$ ");
+    piece5s	    (5, 	    "pièce 0.05$ "),
+    piece1s	    (1, 	    "pièce 0.01$ ");
 	
 	public final int valeurEnCents;
 	
