@@ -55,7 +55,7 @@
                     automatiques afin de démontrer la qualité de votre code. 
                 </p>
                 <p>
-                    Vous devrez définir des classes d'exception significatives pour les problèmes possibles. Vous les regrouperez dans un package exceptions (<span class="label label-success">1 point</span>).
+                    Vous devrez définir des classes d'exception significatives pour les problèmes possibles. Vous les regrouperez dans le package exceptions (<span class="label label-success">1 point</span>).
                 </p>
             </div>
             <div class="col-xs-4">
@@ -71,65 +71,80 @@
         </div>
         <div class="row">
             <div class=" ">
-                <h4>Implémentations de Change et TiroirCaisse</h4>
-                <h5>Nom du package et des classes</h5>
+                <h4>Nom du package et des classes</h4>
                 <p>
                     <span class="label label-success">1 point</span> Vous devez renommer: 
                 </p>
                 <ul>
                     <li>le package org.mon_nom par org.votrenom </li>
-                    <li>la même chose pour les 3 classes du package <strong>impl</strong> </li>
+                    <li>la même chose pour les classes du package <strong>impl</strong> </li>
                 </ul>
-                <h5>Fonctionnalités</h5> 
+                
+                <h4>Implémentation de Change</h4>
+                <strong>Constructeur</strong> 
                 <p>
-                    <span class="label label-success">1 point code</span> Le tiroir caisse et le change 
-                    maintiennent le nombre d'objets de chaque type, le montant total et le nombre total d'objets après chaque opération.
+                    Le constructeur sans paramètre de votre classe doit renvoyer un change vide.
+                </p>
+                <strong>Fonctionnalités</strong> 
+                <p>
+                    <span class="label label-success">1 point code</span> Le change 
+                    maintient le nombre d'objets de chaque type, le montant total et le nombre total d'objets après chaque opération.
                 </p>
                 <ul>
-                    <li><span class="label label-primary">1 point test</span> on teste le dépassement de la capacité pour un type d'objet à l'ajout d'objets pour un tiroir caisse. Pour chaque billet, il y a 40 emplacements. Pour chaque pièce, il y a 50 emplacements.</li>
-                    <li><span class="label label-primary">1 point test</span> on teste le tiroir-caisse plein au constructeur : le compartiment des pièces de 1 sou doit être vide puisqu'on ne rend jamais de 1 sou. Tous les autres compartiments sont pleins à leur capacité.</li>
-                    <li><span class="label label-primary">1 point test</span> on teste le manque d'objets quand on retire trop d'objets d'un certain type pour un tiroir-caisse</li>
-                    <li><span class="label label-primary">1 point test</span> on teste l'impossibilité de retirer des 1 sou. (par contre on peut en ajouter)</li>
+                    <li><span class="label label-primary">1 point test</span> on teste les différentes valeurs du change pour un change vide.</li>
+                    <li><span class="label label-primary">1 point test</span> on teste l'évolution des différentes valeurs après des opération d'ajout réussies.</li>
+                    <li><span class="label label-primary">1 point test</span> on teste les différentes exceptions sur des opérations avec exceptions</li>
                 </ul>
-                <h5>Constructeur</h5> 
-                <p>
-                    Le constructeur par défaut (sans paramètres) de votre classe doit renvoyer une tiroir plein (sauf les 1 sou).
-                </p>
-                <p>
-                    Le montant total est de 40 billets de 100, 40 billets de 50 etc. 
-                    Le nombre total d'objets est de 40 + 40 + 40 ... 50 + 50 + 50 etc.
-                </p>
             </div>
         </div>
         <div class="row">
             <div class=" ">
                 <h4>Implémentation de ServiceArgent</h4>
-                <h5>Calcul de l'arrondi</h5>
+                <strong>Constructeur</strong> 
+                <p>
+                    Le constructeur sans paramètre renvoit un service qui est à moitié plein.
+                    Par exemple, il contient 20 billets de chaque sorte puisque la capacité
+                    maximale pour les billets est de 40 par type.
+                </p>
+                
+                <strong>Calcul de l'arrondi</strong>
                 <p>
                     <span class="label label-success">1 point code</span> <span class="label label-primary">3 points test</span> Vous devez vous assurer que votre calcul d'arrondi est correct dans tous les cas. Tous les arrondis sont testés .01 .02 .03 .04 etc .09 (<a href="http://www.cra-arc.gc.ca/gncy/lmntnpnny/menu-fra.html">source</a>)
                 </p>
                 <p>
                     
                 </p>
-                <h5>Calcul de la monnaie simple</h5> 
+                <strong>Calcul de la monnaie simple</strong> 
                 <p>
                     <span class="label label-success">1 point code</span> <span class="label label-primary">2 points test</span>
-                    Il existe un test de base sur le calcul. Les montants négatifs sont testés ainsi que les autres montants aberrants, une exception significative est levée.
+                    Il existe un test de base sur le calcul où un montant simple est retiré avec un change suffisant et que le Service est capable de contenir. Les montants négatifs sont testés ainsi que les autres montants aberrants, une exception significative est levée.
                 </p>
                 
-                <h5>Calcul de la monnaie, manque de fonds</h5>
+                <strong>Calcul de la monnaie avec dépassement</strong> 
                 <p>
-                    <span class="label label-success">1 point code</span> <span class="label label-primary">2 points test</span>
-                    Votre service doit gérer les cas où le montant ne peut pas être rendu parce qu'il manque quelque chose dans le tiroir-caisse. Dans ces situations, le tiroir-caisse doit rester inchangé. Par exemple, on veut le change pour 60$ et il ne reste que 20 dans le tiroir-caisse.
+                    <span class="label label-success">1 point code</span> <span class="label label-primary">1 point test</span>
+                    Il existe un test illustrant un cas où l'argent donné ne rentre pas dans les capacités du service. Par exemple, on paie avec 3 billets de 100$ alors que le service contient déjà 38 billets de 100$. Une exception doit être lancé et l'état du service ne
+                    doit pas changer.
                 </p>
-                <h5>Calcul de la monnaie, manque certains objets</h5>
+                
+                <strong>Calcul de la monnaie, manque de fonds</strong>
                 <p>
                     <span class="label label-success">1 point code</span> <span class="label label-primary">2 points test</span>
-                    Vous devez gérer des cas comme le suivant : il ne reste que des billets (40 de chaque type) et on veut calculer le change pour 63$. Cela devrait échouer. 
+                    Votre service doit gérer les cas où le change ne peut pas être rendu parce qu'il manque quelque chose dans le service. Dans ces situations, le service doit rester inchangé. Par exemple, on veut le change pour 60$ et il ne reste que 20 dans le service.
+                </p>
+                <strong>Calcul de la monnaie, manque certains objets</strong>
+                <p>
+                    <span class="label label-success">1 point code</span> <span class="label label-primary">2 points test</span>
+                    Vous devez gérer des cas comme le suivant : il ne reste que des billets (30 de chaque type) et on doit rendre le change pour 63$. Cela devrait échouer (le client nous devait 37$ et il a payé avec un billet de 100$).
                 </p>
                 <p>
                     <span class="label label-success">2 points code (difficile)</span> <span class="label label-primary">1 point test</span>
-                    Vous devez gérer le type de cas suivant : il reste un billet des billets de 50$ et des billets de 20$ dans le tiroir caisse mais rien d'autre. Quelqu'un demande 60$ dans la caisse. Cela devrait réussir (3 billets de 20$).
+                    Vous devez gérer le type de cas suivant : il reste un billet des billets de 50$ et des billets de 20$ mais rien d'autre. Quelqu'un demande un change de 60$ (il doit 40$ et il a donné 100$), Cela devrait réussir avec un résultat de 3 * 20$).
+                </p>
+                <strong>Autres méthodes du service</strong>
+                <p>
+                    <span class="label label-success">2 points code</span> <span class="label label-primary">4 points test</span>
+                    Vous devez tester les autres méthodes du service (hors arrondi et calcul du change) et vous assurer de leur bon fonctionnement.
                 </p>
             </div>
         </div>
@@ -137,7 +152,7 @@
             <div class="  ">
                 <h4>Couverture de code</h4>
                 <p>
-                    <span class="label label-primary">4 points test</span> Regroupez tout le code que vous avez produit dans le package <strong>impl</strong> pour faciliter le calcul de la couverture de code.
+                    <span class="label label-primary">4 points test</span> Regroupez tout le code que vous avez produit dans le package <strong>impl</strong> pour faciliter le calcul de la couverture de code (pourcentage des lignes de code).
                 </p>
                 <ul>
                     <li>1 point entre 50% et 75%</li>
