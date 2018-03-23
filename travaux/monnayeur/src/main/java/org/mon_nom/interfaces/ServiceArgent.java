@@ -84,6 +84,8 @@ public interface ServiceArgent {
 
     /**
      * Renvoie la capacité maximale de ce Tiroir pour ce type d'items
+     * Doit renvoyer 40 pour chaque type billet
+     * Doit renvoyer 50 pour chaque type pièce
      * @param m
      * @return
      */
