@@ -13,6 +13,8 @@ public interface Change {
 
     /**
      * Ajouter un objet du type spécifié m fois.
+     * la valeur 0 comme nombre est accepté.
+     * les valeurs négatives amènent une exception significative
      * @param m
      * @param nombre
      */
