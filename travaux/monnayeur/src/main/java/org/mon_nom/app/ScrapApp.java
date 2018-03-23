@@ -1,16 +1,17 @@
 package org.mon_nom.app;
 
-import org.mon_nom.Change;
-import org.mon_nom.TiroirCaisse;
+import org.mon_nom.impl.ChangeMon_Nom;
+import org.mon_nom.interfaces.Change;
 import org.mon_nom.impl.ServiceArgentMon_Nom;
-import org.mon_nom.impl.TiroirCaisseMon_Nom;
-import org.mon_nom.service.ServiceArgent;
+import org.mon_nom.interfaces.ServiceArgent;
+import org.mon_nom.utils.ArgentObjet;
+import org.mon_nom.utils.StringUtils;
 
 import java.util.Locale;
 import java.util.Random;
 import java.util.Scanner;
 
-public class ConsoleApp
+public class ScrapApp
 {
 
 	public static void main( String[] args )
@@ -22,8 +23,7 @@ public class ConsoleApp
 		/**
 		 * Changez ici pour tester vos propres classes
 		 */
-		TiroirCaisse r = new TiroirCaisseMon_Nom(); // changez la caisse par votre caisse
-		ServiceArgent m = new ServiceArgentMon_Nom().serviceAvecTiroirMoitiePlein();  // changez le monnayeur par le vôtre
+		ServiceArgent m = new ServiceArgentMon_Nom();  // changez le monnayeur par le vôtre
 		
 		while(true){
 			double amount = 0.0;
@@ -37,11 +37,13 @@ public class ConsoleApp
 			}
 			System.out.println("################################## Calcul en cours pour "+amount);
 			try{
-				Change c = m.calculerChange(amount);
+				Change donne = new ChangeMon_Nom();
+				donne.ajouterItem(ArgentObjet.billet100,100);
+				Change c = m.calculerChange(amount, donne);
 				System.out.println("Change total : " + c.valeurTotale());
 				System.out.println(StringUtils.toString(c));
-
-				System.out.println(StringUtils.toString(r));
+				System.out.println("Contenu du service tiroir caisse total : " + m.valeurTotale());
+				System.out.println(StringUtils.toString(m));
 			}catch(Throwable e){
 				e.printStackTrace();
 			}

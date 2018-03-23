@@ -1,7 +1,7 @@
 package org.mon_nom.impl;
 
-import org.mon_nom.ArgentObjet;
-import org.mon_nom.Change;
+import org.mon_nom.utils.ArgentObjet;
+import org.mon_nom.interfaces.Change;
 
 
 public class ChangeMon_Nom implements Change {

@@ -1,4 +1,6 @@
-package org.mon_nom;
+package org.mon_nom.interfaces;
+
+import org.mon_nom.utils.ArgentObjet;
 
 public interface Change {
 
