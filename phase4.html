@@ -1,96 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="page du cours professions informatiques">
-    <meta name="author" content="Département informatique, collège Édouard Montpetit">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="page du cours professions informatiques">
+        <meta name="author" content="Département informatique, collège Édouard Montpetit">
 
-    <title>Projet phase 4</title>
+        <title>Projet phase 4</title>
 
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <style>
-        body {
-            padding-top: 70px;
-        }
-    </style>
-</head>
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <style>
+            body {
+                padding-top: 70px;
+            }
+        </style>
+    </head>
 
-<body>
+    <body>
 
-    <!-- Fixed navbar -->
-    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <!-- Fixed navbar -->
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Travail 4 <strong>Application Complexe</strong></a>
+                </div>
+                <div class="navbar-collapse collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Accueil</a></li>
+                    </ul>
+                </div>
+                <!--/.nav-collapse -->
+            </div>
+        </div>
+
         <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">Travail 4 <strong>Application Complexe</strong></a>
+            <div class="row">
+                <div class="col-xs-9">
+                    <h3>Paiement</h3>
+                    <p>
+                        Tu dois implanter le nouveau processus de paiement incluant les étapes suivantes. Cela nécessitera la réutilisation du travail 2.
+                    </p>
+                    <ul>
+                        <li>On appuie sur le bouton PAYER</li>
+                        <li><span class="label label-success">1 point code</span> Un dialogue s'ouvre pour saisir les pièces et billets donnés par le client (voir à droite). On peut poursuivre uniquement si le montant est suffisant.</li>
+                        <li><span class="label label-success">1 point code</span> Le système calcule et affiche le montant donné, le montant dû et le montant à rendre en monnaie</li>
+                        <li><span class="label label-success">1 point code</span> Le système affiche les pièces billets qui sont rendus au client</li>
+                        <li>Le ticket de caisse complet est affiché dans le log de l'appareil (avec le tag <strong>ACHATS</strong>):
+                            <ul>
+                                <li><span class="label label-success">1 point code</span> la liste des produits avec la quantité, un par ligne</li>
+                                <li><span class="label label-success">1 point code</span> le montant hors taxe, le montant de taxes et le montant final</li>
+                                <li><span class="label label-success">1 point code</span> la somme économisé grâce aux rabais appliqués</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p>
+                        <span class="label label-success">1 point code</span> Une option est ajoutée au menu de l'activité pour visualiser l'état du tiroir caisse.
+                    </p>
+                </div>
+                <div class="col-xs-3">
+                    <img src="img/phase4-paiement.png" style="width:100%;"/>
+                </div>
             </div>
-            <div class="navbar-collapse collapse navbar-right">
-                <ul class="nav navbar-nav">
-                    <li><a href="index.html">Accueil</a></li>
-                </ul>
-            </div>
-            <!--/.nav-collapse -->
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-9">
-                <h3>Paiement</h3>
-                <p>
-                    Vous devez implanter le nouveau processus de paiement incluant les étapes suivantes. Cela nécessitera la réutilisation de votre code du travail 2.
-                </p>
-                <ul>
-                    <li>On appuie sur le bouton PAYER</li>
-                    <li><span class="label label-success">1 point code</span> Un dialogue s'ouvre pour saisir les pièces et billets donnés par le client. On peut poursuivre uniquement si le montant est suffisant (voir à droite)</li>
-                    <li><span class="label label-success">1 point code</span> Le système calcule le montant donné, le montant du, le montant à rendre en monnaie</li>
-                    <li><span class="label label-success">1 point code</span> Le système affiche ces trois montants ainsi que les pièces billets qui sont rendus au client</li>
-                    <li>Le ticket de caisse complet est affiché dans le log de l'appareil (avec le tag <strong>ACHATS</strong>):
-                        <ul>
-                            <li><span class="label label-success">1 point code</span> la liste des produits avec la quantité, un par ligne</li>
-                            <li><span class="label label-success">1 point code</span> le montant hors taxe, le montant de taxes et le montant final</li>
-                            <li><span class="label label-success">1 point code</span> la somme économisé grâce aux rabais appliqués</li>
-                        </ul>
-                    </li>
-                </ul>
-                <p>
-                    <span class="label label-success">1 point code</span> Une option est ajoutée au menu de l'activité pour visualiser l'état du tiroir caisse.
-                </p>
-            </div>
-            <div class="col-xs-3">
-                <img src="img/phase4-paiement.png" style="width:100%;"/>
-            </div>
-        </div>
-        <div class="row">
-            <div class=" ">
+            <div class="row">
                 <h3>Taux de taxe</h3>
                 <p>
                     <span class="label label-success">1 point code</span>
                     <span class="label label-primary">1 point test</span>
-                    Vous devez implanter 2 taux de taxes: un taux de taxe à 5% pour des produits essentiels comme le lait, le pain etc. Un autre taux de taxe à 35% pour les autres produits comme la pizza surgelé ou les sodas.
+                    Implante 2 taux de taxes: un taux de taxe à 5% pour des produits essentiels comme le lait, le pain etc. Un autre taux de taxe à 35% pour les autres produits comme la pizza surgelé ou les sodas.
                 </p>
                 <p>
-                    Vous devez inclure des produits pour chaque taux de taxe dans votre inventaire standard (vos 9 produits).
+                    Inclus des produits pour chaque taux de taxe dans ton inventaire standard (les 9 produits).
                 </p>
             </div>
-        </div>
-        <div class="row">
-            <div class=" ">
+            <div class="row">
                 <h3>Rabais</h3>
-                Pour chaque type de rabais, vous devez :
+                Pour chaque type de rabais, tu dois :
                 <ul>
                     <li>programmer l'impact sur le ticket de caisse final</li>
                     <li>produire des tests unitaires pour valider le bon fonctionnement</li>
                     <li>ajouter les éléments d'interface graphique pour configurer le rabais</li>
+                    <li>inplanter la persistance de chaque type de rabais</li>
                 </ul>
                 <h4>2 pour 1</h4>
                 <p>
@@ -103,7 +101,7 @@
                 <p>
                     Le client doit donc payer le prix de 4 bouteilles.
                 </p>
-                <h4>Pas de taxes si vous dépassez 100$</h4>
+                <h4>Pas de taxes si on dépasse 100$</h4>
                 <p>
                     <span class="label label-success">1 point code</span>
                     <span class="label label-warning">1 point interface graphique</span>
@@ -114,24 +112,27 @@
                 <p>
                     <span class="label label-success">1 point code</span>
                     <span class="label label-primary">2 points test</span>
-                    Vous devez toujours appliquer les rabais de la manière la plus profitable au client. 
+                    Tu dois toujours appliquer les rabais de la manière la plus profitable au client. Par exemple, un client peut acheter pour 95$ de produits plus 2 produits à 4 dollars en 2 pour 1.
+                </p>
+                <ul>
+                    <li>si j'applique le 2 pour 1, le client paie 99$ plus les taxes soit 113.85$</li>
+                    <li>si j'oublie le 2 pour 1, le client paie 103$ puisqu'on ne charge pas les taxes</li>
+                </ul>
+            </div>
+            <div class="row">
+                <h3>Multilingue</h3>
+                <p>
+                    <span class="label label-success">3 points code</span>
+                    L'intégralité de votre interface gratuite doit être traduite en français et en anglais. La qualité de l'anglais n'est pas évaluée, vous pouvez utiliser <a class="btn btn-xs btn-info" href="https://translate.google.ca">Google Translate</a> pour effectuer les traducations .
                 </p>
             </div>
-        </div>
-        <div class="row">
-            <h3>Multilingue</h3>
-            <p>
-                <span class="label label-success">3 points code</span>
-                L'intégralité de votre interface gratuite doit être traduite en français et en anglais. La qualité de l'anglais n'est pas évaluée, vous pouvez utiliser <a class="btn btn-xs btn-info" href="https://translate.google.ca">Google Translate</a> pour effectuer les traducations .
-            </p>
-        </div>
-        <div class="row">
-            <h3>Validation</h3>
-            <p>
-                <span class="label label-danger">4 points négatifs</span> 
-                Tous les endroits où un utilisateur entre de l'information doivent être validés. Vous perdrez des points pour chaque endroit où j'arrive à entrer de l'information invalide. Ceci inclut le code barre ...
-            </p>
-            <pre>
+            <div class="row">
+                <h3>Validation</h3>
+                <p>
+                    <span class="label label-danger">4 points négatifs</span> 
+                    Tous les endroits où un utilisateur entre de l'information doivent être validés. Tu perds des points pour chaque endroit où j'arrive à entrer de l'information invalide. Ceci inclut le code barre ...
+                </p>
+                <pre>
 public class BarcodeValidator {
 
     /**
@@ -140,28 +141,23 @@ public class BarcodeValidator {
      * @return
      */
     public static boolean isUPCValid(String s){
-        if (s.length() != 12) return false;
-        //Pattern.Pattern.compile("[0-9]*");
-        if (!s.matches("[0-9]*")) return false;
-
-        boolean odd = true;
-        //Add the digits in the odd-numbered positions (first, third, fifth, etc.) together and multiply by three.
+        if (s.length() != 12) return false;     // doit faire 12 de long
+        if (!s.matches("[0-9]*")) return false; // doit uniquement contenir des chiffres
+        // somme des positions impaires (1er, 3e, 5e, etc.)
         int sumOdd = 0 ;
-        //Add the digits in the even-numbered positions (second, fourth, sixth, etc.) to the result.
+        // pareil pour les positions paires (2e, 4e, 6e etc.)
         int sumEven = 0;
         char[] array = s.toCharArray();
-        for (int i = 0 ; i < array.length - 1 ; i++){
+        for (int i = 0 ; i &lt; array.length - 1 ; i++){
             int digit = Integer.parseInt(array[i]+"");
-            //System.out.println("Digit " + digit);
             if (i%2==0) sumOdd += digit;
             else sumEven += digit;
-            odd = !odd;
         }
-        //Find the result modulo 10 (i.e. the remainder when divided by 10.. 10 goes into 58 5 times with 8 leftover).
+        // 3 * somme des impairs + somme des pairs ... ensuite modulo 10
         int result = (3*sumOdd + sumEven)%10;
-        //If the result is not zero, subtract the result from ten.
+        // If the result is not zero, subtract the result from ten.
         result = result!=0?10-result:0;
-        // get the last digit value that should be equal to this result.
+        // on compare avec le dernier chiffre
         int lastDigit = Integer.parseInt(array[array.length-1]+"");
         return result == lastDigit;
     }
@@ -172,6 +168,6 @@ public class BarcodeValidator {
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-</body>
+    </body>
 
 </html>
