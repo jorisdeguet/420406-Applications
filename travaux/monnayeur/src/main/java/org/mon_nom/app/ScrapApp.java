@@ -27,18 +27,19 @@ public class ScrapApp
 		
 		while(true){
 			double amount = 0.0;
-			System.out.println("Entrez un montant : (x POUR UN MONTANT AU HASARD)");
+			System.out.println("Entrez un montant entre 0 et 100 $ : (x POUR UN MONTANT AU HASARD)");
 			if(!s.hasNextDouble()){
 				s.next();
-				amount = rand.nextInt(10000)*1.0 / 100;
-			} 
+				amount = rand.nextInt(1000)*1.0 / 100;
+			}
 			else{
 				amount = s.nextDouble();
 			}
-			System.out.println("################################## Calcul en cours pour "+amount);
+			System.out.println("################################## Calcul en cours pour "+amount + " sur 100$");
 			try{
+				System.out.println("Contenu du service tiroir caisse total : " + m.valeurTotale());
 				Change donne = new ChangeMon_Nom();
-				donne.ajouterItem(ArgentObjet.billet100,100);
+				donne.ajouterItem(ArgentObjet.billet100,1);
 				Change c = m.calculerChange(amount, donne);
 				System.out.println("Change total : " + c.valeurTotale());
 				System.out.println(StringUtils.toString(c));
