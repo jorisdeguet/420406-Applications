@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 26
-    buildToolsVersion "26.0.1"
+    compileSdkVersion 27
+    buildToolsVersion '27.0.3'
 
     defaultConfig {
         applicationId "org.deguet.persist"
         minSdkVersion 14
-        targetSdkVersion 26
+        targetSdkVersion 27
 
         testApplicationId "org.deguet.persist.test"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -22,12 +22,11 @@ android {
 }
 
 dependencies {
-    //androidTestCompile 'junit:junit:4.12'
-    androidTestCompile 'com.android.support:support-annotations:26.0.1'
-    androidTestCompile 'com.android.support.test:runner:0.5'
-    androidTestCompile 'com.android.support.test:rules:0.5'
+    implementation 'com.android.support:support-v4:27.1.1'
+    implementation 'com.google.code.gson:gson:2.2.4'
+    implementation 'commons-io:commons-io:2.4'
 
-    compile 'com.android.support:support-v4:26.0.1'
-    compile 'com.google.code.gson:gson:2.2.4'
-    compile 'commons-io:commons-io:2.4'
+    androidTestImplementation 'com.android.support:support-annotations:27.1.1'
+    androidTestImplementation 'com.android.support.test:runner:0.5'
+    androidTestImplementation 'com.android.support.test:rules:0.5'
 }
