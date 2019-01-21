@@ -73,7 +73,8 @@
                         Code après video 4
                     </a>
                     <p>
-                        Optionnel: vous trouverez un projet illustrant les différentes possibilités de stockage <a href="https://github.com/jorisdeguet/420406-Applications/tree/master/code/Persist" class="btn btn-xs btn-primary">ici</a>.
+                        <span class="badge badge-warning" >Optionnel: </span>
+                        vous trouverez un projet illustrant les différentes possibilités de stockage <a href="https://github.com/jorisdeguet/420406-Applications/tree/master/code/Persist" class="btn btn-xs btn-primary">ici</a>.
                     </p>
                     <p>
                         Ensuite vous devez commencer les exercices . Arrêtez vous quand vous avez complété vos 2 heures.
@@ -105,24 +106,34 @@
                             </p>
                             <ul>
                                 <li>Une seule activité</li>
-                                <li>À la fermeture de l'activité (événement onDestroy <a href="https://developer.android.com/reference/android/app/Activity.html">ici</a>), 
-                                    l'activité sauvegarde sur l'appareil l'heure (vous choisissez le format et le type de sauvegarde SharedPref/fichier/SQLite)
+                                <li>À la fermeture de l'activité (événement onPause? onStop? onDestroy? <a href="https://developer.android.com/reference/android/app/Activity.html" target="_blank">ici</a>), 
+                                    l'activité sauvegarde sur l'appareil l'heure de l'arrêt.
                                 </li>
                                 <li>
-                                    Au démarrage de l'activité, on affiche dans un TextView l'heure du dernier arrêt de l'application. Au premier démarrage de l'application, on n'affiche rien mais on fait apparaître un Toast indiquant un tout premier démarrage.
+                                    Au démarrage de l'activité, on affiche dans un TextView l'heure du dernier arrêt de l'application. Au premier démarrage de l'application, on n'affiche rien mais on fait apparaître un Toast indiquant un tout premier démarrage. (vous pouvez supprimer l'application du périphérique pour pratiquer le premier démarrage)
                                 </li>
                             </ul>
-                            GLISSER UN EXERCICE SUR PERSISTER UN ENUM
                             
                             <h3>Exercice Persist</h3>
                             <p>
-                                En partant du projet Persist fourni sur le repository github, vous devez:
+                                Vous devez créer une classe entité Personne à persister avec Room avec les champs suivants:
                             </p>
                             <ul>
-                                <li>Complétez le code pour la partie SQL dans l'interface graphique (qui ne marche pas)</li>
-                                <li>Arrangez le code pour que le ListView affiche les éléments persistés au démarrage (et pas uniquement après un ajout ou un vidage)</li>
-                                <li>Ajoutez une traduction en anglais à l'interface graphique fournie</li>
+                                <li>nom de type String</li>
+                                <li>dateNaissance de type DateTime (<a href="https://www.joda.org/joda-time/quickstart.html">ici</a>)</li>
+                                <li>sexe d'un type énuméré Sexe avec comme valeurs possibles Homme, Femme et Complexe</li>
                             </ul>
+                            <p>
+                                Vous devez programmer le nécessaire pour avoir les opérations suivantes possibles:
+                            </p>
+                            <ul>
+                                <li>sauver une personne</li>
+                                <li>récupérer les personnes d'un sexe fourni en paramètre</li>
+                                <li>récupérer toutes les personnes</li>
+                            </ul>
+                            <p>
+                                Vous devez illustrer le fonctionnement de votre code avec des tests unitaires utilisant une base de données en mémoire vive.
+                            </p>
                         </div>
                     </div>
                 </div>
