@@ -52,6 +52,7 @@ public class MainActivity extends Activity {
 	
 	@Override
 	public void onActivityResult(int requestCode, int resultCode, Intent intent) {
+		super.onActivityResult(requestCode, resultCode, intent);
 		IntentResult scanResult = IntentIntegrator.parseActivityResult(requestCode, resultCode, intent);
 		// quand un resultat valide a ete trouve
 		if (scanResult != null) {
