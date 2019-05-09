@@ -95,6 +95,15 @@
                             <p>
                                 Essaie <strong>File </strong> > <strong>Invalidate Cache / Restart</strong> puis <em>Invalidate Cache / Restart</em>.
                             </p>
+                            <h3>Mes tests unitaires ne s'exécutent pas</h3>
+                            <p>Dans le fichier build.gradle (dans le dossier app), vérifier que</p>
+                            <ul>
+                                <li>on a la dépendance androidTestImplementation 'androidx.test:core:1.1.0'</li>
+                                <li>on a la dépendance
+    androidTestImplementation 'androidx.test:runner:1.1.0'</li>
+                                <li>la valeur de testInstrumentationRunner  est bien "androidx.test.runner.AndroidJUnitRunner"</li>
+                                <li>exemple ici : https://github.com/jorisdeguet/RoomSQL/blob/RoomTransaction/app/build.gradle</li>
+                            </ul>
                             
                         </div>
                     </div>
