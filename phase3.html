@@ -20,7 +20,6 @@
 </head>
 
 <body>
-
     <!-- Fixed navbar -->
     <div class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container">
@@ -43,59 +42,128 @@
     </div>
 
     <div class="container">
-        <div class="row">
+        <div class="row mb-3">
             <div class="col-xs-6 ">
-                <h3>Interface graphique</h3>
+                <h3>Activité d'accueil</h3>
                 <h4>Mise en page</h4>
                 <p>
-                    <span class="label label-success">3 points code</span> la mise en page respecte l'image suivante (cliquez pour élargir)
+                    <span class="label label-success">1 point</span> la mise en page respecte l'image suivante (cliquez pour élargir)
                 </p>
-                <h4>Liste</h4>
+                <h4>Boutons</h4>
                 <p>
-                    <span class="label label-success">2 points code</span> la liste gère correctement
-                    les augmentations et diminutions de quantité ainsi que la suppression quand la quantité 
-                    tombe à 0.
+                    <span class="label label-success">1 point</span> les boutons fonctionnement. Scanner doit démarrer l'application de lecture de codes QR. Ajouter doit amener à l'activité de création d'une question.
                 </p>
+                <h4>Code QR</h4>
                 <p>
-                    <span class="label label-success">1 point code</span> le montant à payer est correctement maintenu à jour (à côté du bouton SCANNER).
+                    <span class="label label-success">2 points </span> Si le code QR représente une question valide (voir critères TP2), une nouvelle question est créée en base de données.
                 </p>
             </div>
-            <div class="col-xs-6 well">
-                <a href="img/phase3-ui.png"><img src="img/phase3-ui.png" style="width:100%"/></a>
+            
+            <div class="col-xs-3 ">
+                <a href="img/phase3-accueil.png"><img src="img/phase3-accueil.png" style="width:100%"/></a>
+            </div>
+            <div class="col-xs-3 ">
+                <p>
+                    Ce TP nécessite que les données soient sauvegardée dans la BD SQLite sur l'appareil Android. Il est recommandé de modifier le service produit dans le TP2 pour qu'il utilise un DAO Room.
+                </p>
+                <p>
+                    Les points de BD ne seront accordés que si les données sont enregistrées dans SQLite.
+                </p>
+            </div>
+            
+        </div>
+        <div class="row">
+            <div class="col-xs-6 ">
+                <h3>Création d'une question</h3>
+                <h4>Mise en page</h4>
+                <p>
+                    <span class="label label-success">1 point</span> la mise en page respecte l'image suivante (cliquez pour élargir)
+                </p>
+                <h4>Fonctionnement correct</h4>
+                <p>
+                    <span class="label label-success">2 points</span> Si on entre une question valide (voir critères TP2), une nouvelle question est créée en base de données.
+                </p>
+                <h4>Erreur</h4>
+                <p>
+                    <span class="label label-success">1 point</span> Il y a un message d'erreur significatif en cas d'erreur.
+                </p>
+            </div>
+            <div class="col-xs-3 ">
+                <a href="img/phase3-ajout.png"><img src="img/phase3-ajout.png" style="width:100%"/></a>
+            </div>
+            <div class="col-xs-3 ">
+                <a href="img/phase3-ajout-complet.png"><img src="img/phase3-ajout-complet.png" style="width:100%"/></a>
             </div>
         </div>
         <div class="row">
-            <div class="col-xs-9">
-                
+            <div class="col-xs-12 alert-danger">
+                ATTENTION! SI ON NE PEUT PAS CRÉER DE QUESTION, ON NE PEUT PAS CORRIGER LA SUITE.
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-9 ">
+                <h3>Liste des questions</h3>
+                <h4>Mise en page</h4>
+                <p>
+                    <span class="label label-success">1 point</span> la mise en page de chaque élément de la liste respecte l'image suivante (cliquez pour élargir)
+                </p>
+                <h4>Tri</h4>
+                <p>
+                    <span class="label label-success">1 point</span> La liste doit être triée selon les critères indiqués dans le TP2.
+                </p>
                 <h4>Comportement</h4>
-                <ul>
-                    <li>
-                        Le scan d'un code barre via l'utilisation d'un Intent (qui démarre la caméra de la tablette) provoque :
-                        <ul>
-                            <li><span class="label label-success">1 point code</span> l'ajout à la liste du produit s'il existe dans l'inventaire.
-                            <li><span class="label label-success">1 point code</span> l'ouverture du dialogue d'ajout à l'inventaire si le code barre n'existe pas. (voir image à droite)</li>
-                        </ul>
-                    </li>  
-                    <li><span class="label label-success">1 point code</span> Le paiement provoque :
-                    <ul>
-                        <li>la sauvegarde de l'achat de cette liste (voir persistance plus bas)</li>
-                        <li>l'affichage de tous les achats (montant + date + liste des produits avec quantité) depuis l'installation de l'application dans le log de la tablette avec le tag "ACHATS"</li>
-                        <li>l'effacement de la liste d'achats courante (on peut alors commencer un nouvel achat)</li>
-                        </ul> 
-                    </li> 
-                </ul>
+                <p>
+                    <span class="label label-success">2 points</span> Un appui sur le bouton avec l'icône amène aux résultats. Un appui sur tout autre endroit de la ligne amène à l'écran de vote.
+                </p>
             </div>
             <div class="col-xs-3 well">
-                <a href="img/phase3-ajouter.png"><img src="img/phase3-ajouter.png" style="width:100%;"/></a>
+                <a href="img/phase3-liste.png"><img src="img/phase3-liste.png" style="width:100%"/></a>
             </div>
         </div>
         <div class="row">
-            <div class="col-xs-9">
+            <div class="col-xs-6">
+                <h4>Écran de vote</h4>
+                <p>
+                    <span class="label label-success">1 point </span> La mise en page doit correspondre avec un moyen d'enregistrer une note entre 0 et 5 inclus et un champ pour entrer le nom du votant.
+                </p>
+                <p>
+                   <span class="label label-success">2 points </span> Un vote est créé en base de données avec la note et le vote.
+                </p>
+                <p>
+                    <span class="label label-success">1 point </span> Il y a un message d'erreur significatif si le votant a déjà voté pour cette question.
+                </p>
+            </div>
+            <div class="col-xs-3 well">
+                <a href="img/phase3-vote.png"><img src="img/phase3-vote.png" style="width:100%;"/></a>
+            </div>
+            <div class="col-xs-3 well">
+                <a href="img/phase3-vote-complet.png"><img src="img/phase3-vote-complet.png" style="width:100%;"/></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 alert-danger">
+                ATTENTION! SI ON NE PEUT PAS CRÉER DE VOTE, ON NE PEUT PAS CORRIGER LA SUITE.
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3">
+                <h4>Écran de résultats</h4>
+                <p>
+                    <span class="label label-success">2 point </span> La mise en page correspond et permet d'afficher la moyenne, l'écart type et la distribution des votes par note.
+                </p>
+                <p>
+                    <span class="label label-success">1 point </span> Un message s'affiche s'il n'y a aucun vote pour cette question à ce moment.
+                </p>
+            </div>
+            <div class="col-xs-3 well">
+                <a href="img/phase3-resultats.png"><img src="img/phase3-resultats.png" style="width:100%;"/></a>
+            </div>
+            <div class="col-xs-3">
                 <h4>Menu de l'activité</h4>
                 <ul>
-                    <li><span class="label label-success">1 point code</span> <strong>Créer inventaire</strong> doit remplir l'inventaire avec 9 produits avec des codes à barre valides. Les produits doivent correspondre à votre feuille de codes barre (voir plus bas)</li>  
-                    <li><span class="label label-success">1 point code</span> <strong>Créer une liste</strong> doit créer une liste d'achats en prenant des produits au hasard avec des quantités aléatoires entre 1 et 5</li> 
-                    <li><span class="label label-success">1 point code</span> <strong>Vider inventaire</strong> doit vider l'inventaire des produits existants</li> 
+                    <li><span class="label label-success">1 point </span> <strong>Supprime les votes</strong> doit supprimer tous les objets votes dans la base de données</li>  
+                    <li><span class="label label-success">1 point </span> <strong>Supprime les questions</strong> doit supprimer toutes les questions sauf celle où il y a des votes</li>
+                    <li><span class="label label-success">1 point </span> La liste se met à jour après suppression (éléments et ordre)</li>
                 </ul>
             </div>
             <div class="col-xs-3 well">
@@ -104,45 +172,24 @@
         </div>
         <div class="row">
             <div class="well">
-                <h3>Base de données</h3>
-                <h4>Produit</h4>
+                <h3>Base de données et DAO</h3>
                 <p>
-                    <span class="label label-success">1 point code</span>
-                    <span class="label label-primary">3 points test</span>
-                    Vous devez implanter la persistance d'un produit avec les champs appropriés. Votre code doit être validé par des tests automatisés.
+                    Les fonctionnalités demandées dans ce travail nécessite des opérations au niveau de la base de données et sans doute de nouvelles méthodes au niveau de votre service (pour effectuer des validations, tris et autres autour des accès à la BD).
                 </p>
                 <p>
-                    Vous devez implanter les opérations dans la couche de service suivantes au minimum 
-                    (vous pouvez ajouter des opérations pour faciliter les tests ou autre). 
+                    <span class="label label-primary">4 points test</span> Tests s'exécutant sur l'appareil Android pour valider les différentes méthodes.
                 </p>
                 <p>
-                    Pour chaque méthode, vous devez tester les cas normaux et les cas exceptionnels (code barre absent, mal formé etc.)
+                    Tu peux t'aider des tests de votre TP2.
                 </p>
-                <ul>
-                    <li>création d'une question</li>  
-                    <li>création d'un vote</li>
-                    <li>récupération des votes pour une question donnée</li>
-                    <li>suppression de tous les produits</li>
-                </ul>
-                <h4>Achat</h4>
-                <p>
-                    <span class="label label-success">1 point code</span>
-                    <span class="label label-primary">2 points test</span>
-                    Vous devez implanter la persistance d'un achat. Les opérations obligatoires sont:
-                </p>
-                <ul>
-                    <li>création d'un achat</li>  
-                    <li>récupération de l'ensemble des achats</li> 
-                    <li>autre cas ...</li> 
-                </ul>
             </div>
         </div>
         <div class="row">
             <div class="">
                 <h3>Fonctionnement global</h3>
                 <p>
-                    <span class="label label-danger">4 points négatifs</span> 
-                    Votre application doit fonctionner sans plantage et correctement. Ce pointage fonctionne en 
+                    <span class="label label-danger">5 points négatifs</span> 
+                    Fonctionnement correct et sans plantage. Ce pointage fonctionne en 
                     négatif. Si l'application fonctionne correctement en tout temps, vous conservez votre note.
                     Dans le cas contraire, vous perdez des points avec un maximum de 5.
                 </p>
@@ -153,20 +200,9 @@
                     <li>autre cas ...</li> 
                 </ul>
                 
-                <h3>Feuille de code barre</h3>
+                <h3>Feuille de code QR (Quick Response)</h3>
                 <p>
-                    <span class="label label-danger">1 point négatif</span> Vous devez joindre à votre remise une feuille avec la liste des 9 produits de votre inventaire avec une ligne par produit.
-                </p>
-                <ul>
-                    <li>image du code barre</li>  
-                    <li>nom du produit</li> 
-                    <li>prix unitaire</li> 
-                </ul>
-                <p>
-                    <a class="btn btn-danger btn-block" href="phase3-produit.html">Modèle ici</a>
-                </p>
-                <p>
-                    Vous devez également inclure une ligne vierge avec un code barre valide qui n'existe pas dans l'inventaire. L'absence de cette feuille entraîne la perte d'un point.
+                    Une page <a class="btn btn-danger btn-block" href="phase3-produit.html">ici</a> avec des codes QR pour tester la fonctionnalité de scan.
                 </p>
             </div>
         </div>
