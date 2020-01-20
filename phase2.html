@@ -1,3 +1,4 @@
+﻿
 <!DOCTYPE html>
 <html lang="en">
 
@@ -31,7 +32,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Travail 2 <strong>Monnayeur et tests</strong></a>
+                <a class="navbar-brand" href="#">Travail 2 <strong>Questionnaire et tests</strong></a>
             </div>
             <div class="navbar-collapse collapse navbar-right">
                 <ul class="nav navbar-nav">
@@ -47,8 +48,8 @@
             <div class="col-xs-8">
                 <h4>Objectif</h4>
                 <p>
-                    Ce travail consiste à programmer un service pour gérer un tiroir-caisse et le calcul
-                    du change nécessaire au paiement d'un achat. 
+                    Ce travail consiste à programmer un service pour gérer un questionnaire et le calcul
+                    des votes ainsi que de statistiques. 
                 </p>
                 <p>
                     Vous devrez programmer les éléments demandés mais également mettre en place des tests
@@ -61,8 +62,8 @@
             <div class="col-xs-4">
                 <h4>Fichiers de départ</h4>
                 <p>
-                    Vous trouverez un projet Maven de départ 
-                    <a class="btn btn-primary btn-xs" href="https://github.com/jorisdeguet/420406-Applications/tree/master/travaux/monnayeur">ici</a>.
+                    Vous trouverez une interface décrivant les méthodes à implémenter 
+                    <a class="btn btn-primary btn-xs" href="#">ici</a>.
                     Vous pouvez télécharger l'ensemble du code du cours 
                     <a class="btn btn-primary btn-xs" href="https://github.com/jorisdeguet/420406-Applications/archive/master.zip">ici</a>
                 </p>
@@ -73,79 +74,88 @@
             <div class=" ">
                 <h4>Nom du package et des classes</h4>
                 <p>
-                    <span class="label label-success">1 point</span> Vous devez renommer: 
+                    <span class="label label-success">1 point</span> Vous devez avoir: 
                 </p>
                 <ul>
-                    <li>le package org.mon_nom par org.votrenom </li>
-                    <li>la même chose pour les classes du package <strong>impl</strong> </li>
+                    <li>un package appelé <strong>org.votrenom</strong> qui regroupe tous les packages suivants : </li>
+					<ul>
+						<li>un package <strong>interfaces</strong> pour la classe d'interface fournie</li>
+						<li>un package <strong>impl</strong> pour vos classes d'implémentation </li>
+						<li>un package <strong>modele</strong> pour vos classes du modèle</li>
+						<li>un package <strong>exceptions</strong> pour vos classes d'exceptions</li>
+					</ul>
                 </ul>
                 
-                <h4>Implémentation de Change</h4>
+                <h4>Modèles</h4>
                 <strong>Constructeur</strong> 
                 <p>
-                    Le constructeur sans paramètre de votre classe doit renvoyer un change vide.
+                    Vos constructeurs doivent avoir comme argument tous les paramètres de votre classe.
                 </p>
-                <strong>Fonctionnalités</strong> 
-                <p>
-                    <span class="label label-success">1 point code</span> Le change 
-                    maintient le nombre d'objets de chaque type, le montant total et le nombre total d'objets après chaque opération.
-                </p>
-                <ul>
-                    <li><span class="label label-primary">1 point test</span> on teste les différentes valeurs du change pour un change vide.</li>
-                    <li><span class="label label-primary">1 point test</span> on teste l'évolution des différentes valeurs après des opération d'ajout réussies.</li>
-                    <li><span class="label label-primary">1 point test</span> on teste les différentes exceptions sur des opérations avec exceptions</li>
-                </ul>
             </div>
         </div>
         <div class="row">
             <div class=" ">
-                <h4>Implémentation de ServiceArgent</h4>
-                <strong>Constructeur</strong> 
-                <p>
-                    Le constructeur sans paramètre renvoit un service qui est à moitié plein.
-                    Par exemple, il contient 20 billets de chaque sorte puisque la capacité
-                    maximale pour les billets et les pièces est de 40 par type.
-                </p>
-                
-                <strong>Calcul de l'arrondi</strong>
-                <p>
-                    <span class="label label-success">1 point code</span> <span class="label label-primary">3 points test</span> Vous devez vous assurer que votre calcul d'arrondi est correct dans tous les cas. Tous les arrondis sont testés .01 .02 .03 .04 etc .09 (<a href="http://www.cra-arc.gc.ca/gncy/lmntnpnny/menu-fra.html">source</a>)
-                </p>
-                <p>
-                    
-                </p>
-                <strong>Calcul de la monnaie simple</strong> 
+                <h4>Implémentation de ServiceVote</h4>
+				
+                <strong>Ajouter une question</strong>
                 <p>
                     <span class="label label-success">1 point code</span> <span class="label label-primary">2 points test</span>
-                    Il existe un test de base sur le calcul où un montant simple est retiré avec un change suffisant et que le Service est capable de contenir. Les montants négatifs sont testés ainsi que les autres montants aberrants, une exception significative est levée.
+                    Votre service doit permettre d'ajouter une question.
+					<ul>
+						
+						<li><span class="label label-success">1 point code</span> <span class="label label-primary">2 points test</span> Pour simuler le fonctionnement de la BD, le id de la question est attribué une fois les vérifications effectuées, au moment d'ajouter la question dans votre structure de données.</li>
+						
+						<li><span class="label label-success">1 point code</span> <span class="label label-primary">2 points test</span> La question doit être entre 5 et 255 caractères.</li>
+						
+						<li><span class="label label-success">2 point code</span> <span class="label label-primary">3 points test</span> La question doit être unique. <u>Note</u> : bbb est considéré identique à BBB.</li>
+						<br/>
+						<li>Une question peut avoir plusieurs votes.</li>
+					</ul>
                 </p>
-                
-                <strong>Calcul de la monnaie avec dépassement</strong> 
-                <p>
-                    <span class="label label-success">1 point code</span> <span class="label label-primary">1 point test</span>
-                    Il existe un test illustrant un cas où l'argent donné ne rentre pas dans les capacités du service. Par exemple, on paie avec 3 billets de 100$ alors que le service contient déjà 38 billets de 100$. Une exception doit être lancé et l'état du service ne
-                    doit pas changer.
-                </p>
-                
-                <strong>Calcul de la monnaie, manque de fonds</strong>
-                <p>
-                    <span class="label label-success">1 point code</span> <span class="label label-primary">2 points test</span>
-                    Votre service doit gérer les cas où le change ne peut pas être rendu parce qu'il manque quelque chose dans le service. Dans ces situations, le service doit rester inchangé. Par exemple, on veut le change pour 60$ et il ne reste que 20 dans le service.
-                </p>
-                <strong>Calcul de la monnaie, manque certains objets</strong>
+                <strong>Ajouter un vote</strong>
                 <p>
                     <span class="label label-success">1 point code</span> <span class="label label-primary">2 points test</span>
-                    Vous devez gérer des cas comme le suivant : il ne reste que des billets (30 de chaque type) et on doit rendre le change pour 63$. Cela devrait échouer (le client nous devait 37$ et il a payé avec un billet de 100$).
+                    Votre service doit permettre d'ajouter un vote.
+					<ul>
+						<li> <span class="label label-success">1 point code</span> <span class="label label-primary">2 points test</span> Pour simuler le fonctionnement de la BD, le id du vote est attribué une fois les vérifications effectuées, au moment d'ajouter la question dans votre structure de données.</li>
+						<li> <span class="label label-success">1 point code</span> <span class="label label-primary">2 points test</span> Les votes sont un indice de satisfaction de 0 à 5.</li>
+						<li> <span class="label label-success">1 point code</span> <span class="label label-primary">2 points test</span> Une même personne ne peut pas voter deux fois pour la même question.</li>
+						<li> <span class="label label-success">1 point code</span> <span class="label label-primary">2 points test</span> Un vote doit être associé à une question.</li>
+					
+					</ul>
                 </p>
+				
+                <strong>Obtenir les questions triées</strong>
                 <p>
-                    <span class="label label-success">2 points code (difficile)</span> <span class="label label-primary">1 point test</span>
-                    Vous devez gérer le type de cas suivant : il reste un billet des billets de 50$ et des billets de 20$ mais rien d'autre. Quelqu'un demande un change de 60$ (il doit 40$ et il a donné 100$), Cela devrait réussir avec un résultat de 3 * 20$).
+                    <span class="label label-success">2 point code</span> <span class="label label-primary">3 points test</span>
+                    Votre service doit retourner une version triée de la structure de donnée des questions en ordre décroissant du nombre de votes et, si le nombre de votes est identique, en ordre croissant alphabétique.
                 </p>
-                <strong>Autres méthodes du service</strong>
+				<p> <u>Note</u> : L'ordre alphabétique doit mettre J (j majuscule) avant k (k minuscule).</p>
+				
+                <strong>Calcul de la distribution</strong>
+                <p>
+                    <span class="label label-success">1 point code</span> <span class="label label-primary">2 points test</span>
+                    Votre service doit calculer la distribution de toutes les valeurs des votes d'une question. Par exemple, si deux usagers ont voté 2/5 et un usager a voté 5/5, la distribution sera de 2 pour 2/5, 1 pour 5/5 et 0 pour toutes les autres valeurs.
+                </p>
+				
+                <strong>Calcul de la moyenne</strong>
+                <p>
+                    <span class="label label-success">1 point code</span> <span class="label label-primary">2 points test</span>
+                    Votre service doit calculer la moyenne de toutes les valeurs des votes d'une question. Par exemple, si deux usagers ont voté 2/5 et un usager a voté 5/5, la moyenne sera 3/5 (donc 3).
+                </p>
+				
+				<strong>Calcul de l'écart-type</strong>
+                <p>
+                    <span class="label label-success">1 point code</span> <span class="label label-primary">2 points test</span>
+                    Votre service doit calculer l'écart-type de toutes les valeurs des votes d'une question. Par exemple, si deux usagers ont voté 2/5 et un usager a voté 5/5, l'écart-type sera 1.4142135623731...
+                </p>
+				
+				<strong>Autres tests pour le service service</strong>
                 <p>
                     <span class="label label-success">2 points code</span> <span class="label label-primary">4 points test</span>
-                    Vous devez tester les autres méthodes du service (hors arrondi et calcul du change) et vous assurer de leur bon fonctionnement.
+                    Vous devez tester les autres cas possibles pour les méthodes du service et vous assurer du bon fonctionnement du code.
                 </p>
+				<p> <u>Note</u> : Pensez aux valeurs limites, aux valeurs extrêmes, aux valeurs risquant de faire planter le module, etc.</p>
             </div>
         </div>
         <div class="row">
@@ -166,13 +176,18 @@
             <div class=" ">
                 <h4>Manipulation par les interfaces</h4>
                 <p>
-                    <span class="label label-danger">4 points négatifs</span> Tous vos traitements doivent utiliser les méthodes définies dans les interfaces. Vous devez manipuler les objets par les interfaces Change et ServiceArgent plutôt que par vos classes d'implémentations. Vous perdrez un point à chaque fois que :
+                    <span class="label label-danger">4 points négatifs</span> Tous vos traitements doivent utiliser les méthodes définies dans les interfaces. Vous devez manipuler les objets par l'interface ServiceVote plutôt que par vos classes d'implémentations. Vous perdrez un point à chaque fois que :
                 </p>
                 <ul>
                     <li>Vous accédez directement à un champ d'une classe depuis une autre classe (dans le code ou dans les tests)</li>
                     <li>Vous utilisez une méthode définie dans vos classes mais qui n'existe pas dans l'interface (dans le code ou dans les tests)</li>
                 </ul>
+				<p style="font-size:16px">
+					<strong> Vous pouvez créer d’autres méthodes dans la classe d'implémentation pour vous aider <u>mais</u> elles doivent être privées et ne pas être utilisées dans les test </strong>
+				</p>
             </div>
+			<br/>
+			<br/>
         </div>
     </div>
 
