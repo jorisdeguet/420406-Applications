@@ -4,7 +4,7 @@ public interface Service {
 
     void ajoutVote(VDVote vote);
 
-    List<VDQuestion> getAllQuestions();
+    List<VDQuestion> questionsParNombreVotes();
 
     Map<Integer, Integer> distributionPour(VDQuestion question);
 
