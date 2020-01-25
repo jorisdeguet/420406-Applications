@@ -109,8 +109,17 @@
                                 <li>Attendre 5min pour valider que ce n'est pas la machine</li>
                                 <li>En bas à droite, ouvrir le EVENT LOG</li>
                                 <li>NDK Version is UNKNOWN --> pas grave</li>
-                                <li>java lang nullpointerexception --> il faut supprimer le dossier .idea et relancer AS</li>
+                                <li>java lang nullpointerexception --> peut être plusieurs choses (voir ci-dessous)</li>
+                                <li>Tout d'abord, supprimer le dossier .idea et relancer Android Studio</li>
+                                <li>Si ça ne fonctionne pas, aller dans AndroidManifest.xml</li>
+                                <li>Si vous voyez le message suivant : Gradle project sync failed. Basic functionality will not work properly. </li>
+                                <li>Cliquez sur 'Show Log in Explorer'. Ouvrez idea.log dans notepad++. Cherchez l'erreur en question (nullpointer dans ce cas-ci)</li>
                             </ol>
+                           Exemple : Module 'app': platform 'android-28' not found. Gradle sync failed: java.lang.NullPointerException (7 s 897 ms) 
+java.lang.NullPointerException at org.jetbrains.android.sdk.AndroidSdkData.getSdkData(AndroidSdkData.java:117)
+                            <br/>
+                            <strong>Solution </strong> : Vous n'avez pas la bonne version de SDK d'installé. Cliquez sur SDK Manager pour l'installer. Puis file - invalidate cache and restart pour redémarrer
+                           
                             <h3>Je suis incapable d'ajouter un "package" ou une "class" (le menu offre seulement un folder ou un file)</h3>
                             <ol>
                                 <li>Clic droit sur le dossier java</li>
