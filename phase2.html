@@ -101,34 +101,34 @@
                 <p>
                     <span class="label label-success">1 point code</span> <span class="label label-primary">2 points test</span>
                     Votre service doit permettre d'ajouter une question.
-					<ul>
-						
-						<li><span class="label label-success">1 point code</span> <span class="label label-primary">2 points test</span> Pour simuler le fonctionnement de la BD, le id de la question est attribué une fois les vérifications effectuées, au moment d'ajouter la question dans votre structure de données.</li>
-						
-						<li><span class="label label-success">1 point code</span> <span class="label label-primary">2 points test</span> La question doit être entre 5 et 255 caractères.</li>
-						
-						<li><span class="label label-success">2 point code</span> <span class="label label-primary">3 points test</span> La question doit être unique. <u>Note</u> : bbb est considéré identique à BBB.</li>
-						<br/>
-						<li>Une question peut avoir plusieurs votes.</li>
-					</ul>
                 </p>
+                <ul>
+						
+                    <li><span class="label label-success">1 point code</span> <span class="label label-primary">2 points test</span> Pour simuler le fonctionnement de la BD, le id de la question est attribué une fois les vérifications effectuées, au moment d'ajouter la question dans votre structure de données. La méthode doit refuser les objets qui ont un id non nul. Si l'ajout du vote a été effectué, l'objet passé en paramètre doit avoir un id fixé. Si on ajoute 2 questions, les 2 questions devraient recevoir des ids différents.</li>
+
+                    <li><span class="label label-success">1 point code</span> <span class="label label-primary">2 points test</span> La longueur de la question doit être entre 5 (inclus) et 255 (inclus) caractères.</li>
+
+                    <li><span class="label label-success">2 point code</span> <span class="label label-primary">3 points test</span> La question doit être unique. (<u>Note</u> : bbb est considéré identique à BBB)</li>
+                    <br/>
+                    <li>Une question peut avoir plusieurs votes.</li>
+                </ul>
                 <strong>Ajouter un vote</strong>
                 <p>
                     <span class="label label-success">1 point code</span> <span class="label label-primary">2 points test</span>
                     Votre service doit permettre d'ajouter un vote.
-					<ul>
-						<li> <span class="label label-success">1 point code</span> <span class="label label-primary">2 points test</span> Pour simuler le fonctionnement de la BD, le id du vote est attribué une fois les vérifications effectuées, au moment d'ajouter la question dans votre structure de données.</li>
-						<li> <span class="label label-success">1 point code</span> <span class="label label-primary">2 points test</span> Les votes sont un indice de satisfaction de 0 à 5.</li>
-						<li> <span class="label label-success">1 point code</span> <span class="label label-primary">2 points test</span> Une même personne ne peut pas voter deux fois pour la même question.</li>
-						<li> <span class="label label-success">1 point code</span> <span class="label label-primary">2 points test</span> Un vote doit être associé à une question.</li>
-					
-					</ul>
                 </p>
+                <ul>
+                    <li> <span class="label label-success">1 point code</span> <span class="label label-primary">2 points test</span> Pour simuler le fonctionnement de la BD, le id du vote est attribué une fois les vérifications effectuées, au moment d'ajouter la question dans votre structure de données.</li>
+                    <li> <span class="label label-success">1 point code</span> <span class="label label-primary">2 points test</span> Les votes sont un indice de satisfaction de 0 à 5 (inclus).</li>
+                    <li> <span class="label label-success">1 point code</span> <span class="label label-primary">2 points test</span> Une même personne ne peut pas voter deux fois pour la même question. (<u>Note</u> : Maude est considéré identique à maude)</li>
+                    <li> <span class="label label-success">1 point code</span> <span class="label label-primary">2 points test</span> Un vote doit être associé à une question. (Attention : dans la suite, la base de données est de type SQL, prendre ça en compte pour modéliser les données)</li>
+
+                </ul>
 				
                 <strong>Obtenir les questions triées</strong>
                 <p>
                     <span class="label label-success">2 point code</span> <span class="label label-primary">3 points test</span>
-                    Votre service doit retourner une version triée de la structure de donnée des questions en ordre décroissant du nombre de votes et, si le nombre de votes est identique, en ordre croissant alphabétique.
+                    Votre service doit retourner une version triée de la liste des questions en ordre décroissant du nombre de votes et, si le nombre de votes est identique, en ordre croissant alphabétique.
                 </p>
 				<p> <u>Note</u> : L'ordre alphabétique doit mettre J (j majuscule) avant k (k minuscule).</p>
 				
