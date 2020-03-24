@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content="page du cours professions informatiques">
         <meta name="author" content="Département informatique, collège Édouard Montpetit">
-        <title>Multi activités</title>
+        <title>Sem. 9</title>
         <!-- Bootstrap core CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -13,6 +13,11 @@
             body {
                 padding-top: 70px;
             }
+			
+			img {
+				margin-right:10px;
+				border:solid black 2px;
+			}
         </style>
     </head>
 
@@ -35,30 +40,27 @@
 
         <div class="container">
             <div class="row">
-                <h3>Multiple activités et navigation</h3>
+                <h3>Multiples activités et navigation</h3>
             </div>
             <div class="row">
                 <div class="col-md-6 alert alert-success">
                     <strong>Avant la séance (2h)</strong>
                     <p>
-                        TODO
+                        Vous devez regarder les vidéos suivantes
                     </p> 
-                    <p>Videos:</p>
-<!--                    <iframe width="200" height="150" src="https://www.youtube.com/embed/xUfl8cSVi7s?rel=0" frameborder="0" allowfullscreen></iframe>-->
-                   TODO
-                    <p>
+					<iframe width="200" height="150" src="https://www.youtube.com/embed/t4jYehSpR1A" frameborder="0" allowfullscreen></iframe>
+                    <iframe width="200" height="150" src="https://www.youtube.com/embed/qvty1jwEj-4" frameborder="0" allowfullscreen></iframe>
+                    <iframe width="200" height="150" src="https://www.youtube.com/embed/Zu2pd6vOxMM" frameborder="0" allowfullscreen></iframe>
+                    
+					<p>
                         Ensuite tu dois commencer les exercices . Arrête quand tu as complété tes 2 heures.
                     </p>
                 </div>
                 <div class="col-md-3 alert  alert-warning">
                     <strong>Séance 1</strong> 
-                    <div>
-                       TODO
-                    </div>
                     <ul>
-                        <li>Gni</li>
-                        <li>Gna</li>
-                        <li>Gno</li>
+						<li><a class="btn btn-xs btn-primary" href="https://github.com/jorisdeguet/420406-Applications/tree/master/code/DemoIntentScanner">Démo</a> de lecture de code barre</li>
+                        <li>Retour sur le viewbinding vs findViewByID </li>
                     </ul>
                 </div>
                 <div class="col-md-3 alert alert-info">
@@ -75,9 +77,55 @@
                     <div>
                         <h2><span class="btn btn-dark btn-lg btn-block mt-5">Exercices de la semaine</span></h2>
                         <div>
-                            <h3>Exercice TODO</h3>
+                            <h3>Exercice de navigation</h3>
                             <p>
-                                TODO
+                                Tu dois implanter une application avec trois activités. Voici la navigation souhaitée : </br>
+								
+								<ul>
+									<li>Accueil -> Contact ou Article </li>
+									<li>Article -> Contact </li>
+									<li>Contact -> Accueil </li>
+								</ul>
+								Le look n'est <b>pas</b> important
+                            </p>
+                            <p>
+							<img height="300px" src="img/Accueil_v1.PNG" />
+							<img height="300px" src="img/Article_v1.PNG" />
+							<img height="300px" src="img/Contact_v1.PNG" />
+                            </p>
+                        </div>
+						<div>
+                            <h3>Exercice de transfert d'informations</h3>
+                            <p>
+                                Tu dois maintenant rajouter un peu de logique à ton application </br>
+								
+								<ul>
+									<li>Accueil  : Contient un texte disant Bonjour et un Number Picker. </li>
+									<li>Article  : Affiche toujours le même texte (lorem ipsum), mais le numéro de l'article change en fonction de ce qui a été choisi sur l'activité d'accueil </li>
+									<li>Contact : Contient un texte éditable où on entre son nom  </li>
+									<li>Lorsqu'on est sur l'activité Contact et qu'on revient à l'accueil avec le bouton, on doit changer le message pour Bonjour [nom] </li>
+								</ul>
+							</p>
+                            <p>
+							<img height="350px" src="img/Accueil_v2_state1.PNG" />
+							<img height="350px" src="img/Article_v2.PNG" />
+							<img height="350px" src="img/Contact_v2.PNG" />
+							<img height="350px" src="img/Accueil_v2_state2.PNG" />
+                            </p>
+                        </div>
+						<div>
+                            <h3>(OPTIONNEL) Exercice d'exploration</h3>
+                            <p>
+                                Utilise la documentation en ligne pour apprendre comment appeler un numéro de téléphone en utilisant un intent </br>
+								
+								<ol>
+									<li>Crée une activité avec un bouton</li>
+									<li>Chaque fois que tu cliques sur le bouton, ouvre automatiquement l'écran pour appeler ton numéro </li>
+								</ol>
+							</p>
+                            <p>
+							<img height="300px" src="img/Email_v1.PNG" />
+							<img height="300px" src="img/Email_afterClick.PNG" />
                             </p>
                         </div>
                     </div>
