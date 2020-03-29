@@ -16,6 +16,10 @@
             body {
                 padding-top: 70px;
             }
+			
+			img{
+				height:450px;
+			}
         </style>
     </head>
 
@@ -44,7 +48,7 @@
 
         <div class="container">
             <div class="row">
-                <div class="col-xs-6">
+                <div class="col-xs-4">
                     <h4>Multilingue</h4>
                     <p>
                         <span class="label label-success">3 points</span> L’intégralité des textes de l’interface graphique doit être traduite. Cela ne concerne pas les données entrées par l’utilisateur.
@@ -53,34 +57,43 @@
                         La qualité de l'anglais n'est pas évaluée, vous pouvez utiliser <a class="btn btn-xs btn-info" href="https://translate.google.ca">Google Translate</a> pour effectuer les traducations
                     </p>
                 </div>
-                <div class="col-xs-6">
+                <div class="col-xs-4">
                     <h4>Statistiques quand il n'y a pas de vote</h3>
                     <p>
                         <span class="label label-success">1 point</span> Dans le cas où il n'y a pas de votes pour une question, tu dois dapter l’application pour qu’au lieu d’arriver sur un écran de statistiques et que le message d’erreur s’affiche, le message s’affiche avant et empêche le changement d’activité.
                     </p>
                 </div>
+				<div class="col-xs-2">
+                    <h4>Statistiques quand il y a des votes</h3>
+                    <p>
+                        <span class="label label-success">3 points</span>
+                    </p>
+                </div>
+				<div class="col-xs-2">
+					<img src="img/TP4_Ecran_Results.png" />
+				</div>
             </div>
             <div class="row">
-                <div class="col-xs-4">
+                <div class="col-xs-5">
                     <h3>Sondage</h3>
                     On souhaite que tu ajoutes une entité de sondage qui regroupe un ensemble de questions ensemble. Toutes les questions doivent maintenant appartenir à un sondage. Cela va changer de nombreux aspects de l'application.
                 </div>
-                <div class="col-xs-4">
+                <div class="col-xs-5">
                     <h4>Sondage accueil</h4>
                     <p>
                         <span class="label label-success">1 point code</span>
                         Le nouvel écran d’accueil de l’application doit correspondre à la copie d’écran (liste des sondages actuels et bouton d’ajout)
                     </p>
                 </div>
-                <div class="col-xs-4">
-                    COPIE ÉCRAN ICI
+                <div class="col-xs-2">
+                    <img src="img/TP4_List_sondages.png" />
                 </div>
             </div>
 
             <div class="row">
-                <div class="col-xs-4">
+                <div class="col-xs-2">
                     <h3>Sondage ajout</h3>
-                    Tu dois implanter au moins une des méthodes suivantes pour permettre de créer un sondage.
+                    Tu dois implanter au moins une des méthodes suivantes pour permettre de créer un sondage.<br/><br/>
                     <p>
                         <span class="label label-success">2 points</span> La création d'un sondage doit amener à la création du sondage ainsi que toutes ses questions dans la base de données.
                     </p>
@@ -100,11 +113,10 @@
                         <li>Les blocs suivants sont les textes des questions du sondage : "Pepsi ou Coke?" "Papier ou plastique?" etc.</li>
                     </ul>
                 </div>
-                <div class="col-xs-4">
-                    <h4>Ajout : méthode 2</h4>
-                    <p>
-                        Appouyer sur ajout lance une autre activité. COPIE D'Écran.
-                    </p>
+                <div class="col-xs-6">
+                    <h4>Ajout : méthode 2 - Lance nouvelle activité</h4>
+                    <img src="img/TP4_Ecran_Add_survey.PNG"/>
+					<img src="img/TP4_List_questions.PNG" />
                 </div>
             </div>
 
@@ -123,14 +135,16 @@
                         Si le nom fourni est invalide, un message est affiché et l'utilisateur peut modifier son nom pour réessayer.   
                     </p>
                 </div>
-                <div class="col-xs-4">
-                    <h4>COPIE ECRAN VOTE</h4>
-                    
+                <div class="col-xs-3">
+					<img src="img/TP4_Ecran_Answer1.PNG"/>
                 </div>
-                <div class="col-xs-4">
-                    <h4>COPIE ECRAN RECAPITULATIF</h4>
-                    
+				<div class="col-xs-3">
+				    <img src="img/TP4_Ecran_Answer3.PNG"/>
                 </div>
+				<div class="col-xs-2">
+					<img src="img/TP4_Ecran_Recap.PNG"/>
+                </div>
+
             </div>
         
             <div class="row">
