@@ -47,28 +47,52 @@
                 <h3>Activité d'accueil</h3>
                 <h4>Mise en page</h4>
                 <p>
-                    <span class="label label-success">1 point</span> la mise en page respecte l'image suivante (cliquez pour élargir)
+                    <span class="label label-success">1 point</span> La mise en page respecte l'image suivante (cliquez pour élargir)
                 </p>
                 <h4>Boutons</h4>
                 <p>
-                    <span class="label label-success">1 point</span> les boutons fonctionnement. Scanner doit démarrer l'application de lecture de codes QR. Ajouter doit amener à l'activité de création d'une question.
-                </p>
-                <h4>Code QR</h4>
-                <p>
-                    <span class="label label-success">2 points </span> Si le code QR représente une question valide (voir critères TP2), une nouvelle question est créée en base de données.
+                    <span class="label label-success">1 point</span> Les boutons fonctionnement : 
+					<ul><li>Si vous avez choisi d'implémenter Code QR<ul><li>Scanner doit démarrer l'application de lecture de codes QR</li></ul></li>
+						<li>Si vous n'avez pas choisi Code QR<ul><li>Scanner doit afficher un message disant que ce n'est pas implémenté</li></ul>
+						<li>Ajouter doit amener à l'activité de création d'une question.</li></ul>
                 </p>
             </div>
             
             <div class="col-xs-3 ">
                 <a href="img/phase3-accueil.png"><img src="img/phase3-accueil.png" style="width:100%"/></a>
             </div>
-            <div class="col-xs-3 ">
+                        <div class="col-xs-3 ">
                 <p>
                     Ce TP nécessite que les données soient sauvegardée dans la BD SQLite sur l'appareil Android. Il est recommandé de modifier le service produit dans le TP2 pour qu'il utilise un DAO Room.
                 </p>
                 <p>
                     Les points de BD ne seront accordés que si les données sont enregistrées dans SQLite.
                 </p>
+            </div>
+        </div>
+		<div class="row mb-3">
+            <div class="col-xs-6 ">
+                <h3>Choix de développement</h3>
+				<p> Vous devez choisir d'implémenter <b>UNE</b> des deux fonctionnalités ci-dessous. </p>
+                <br/>
+				<h4>Code QR (pas testable avec un émulateur)</h4>
+                <p>
+                    <span class="label label-success">2 points</span> Si le code QR représente une question valide (voir critères TP2), une nouvelle question est créée en base de données.
+                </p><br/>
+				<h4> <u>OU</u> </h4>
+				<br/>  
+				<h4>Multilingue</h4>
+                <p>
+                    <span class="label label-success">2 points</span>  L’intégralité des textes de l’interface graphique doit être traduite. Cela ne concerne pas les données entrées par l’utilisateur.
+La qualité de l'anglais n'est pas évaluée, vous pouvez utiliser <a class="btn btn-xs btn-info" href="https://translate.google.ca">Google Translate</a> pour effectuer les traducations
+                </p>
+            </div>
+            
+            <div class="col-xs-3 ">
+                <a href="img/phase3-english1.png"><img src="img/phase3-english1.png" style="width:100%"/></a>
+            </div>
+            <div class="col-xs-3 ">
+                <a href="img/phase3-english2.png"><img src="img/phase3-english2.png" style="width:100%"/></a>
             </div>
             
         </div>
@@ -77,7 +101,7 @@
                 <h3>Création d'une question</h3>
                 <h4>Mise en page</h4>
                 <p>
-                    <span class="label label-success">1 point</span> la mise en page respecte l'image suivante (cliquez pour élargir)
+                    <span class="label label-success">1 point</span> La mise en page respecte l'image suivante (cliquez pour élargir)
                 </p>
                 <h4>Fonctionnement correct</h4>
                 <p>
@@ -95,6 +119,7 @@
                 <a href="img/phase3-ajout-complet.png"><img src="img/phase3-ajout-complet.png" style="width:100%"/></a>
             </div>
         </div>
+		<br/>
         <div class="row">
             <div class="col-xs-12 alert-danger">
                 ATTENTION! SI ON NE PEUT PAS CRÉER DE QUESTION, ON NE PEUT PAS CORRIGER LA SUITE.
@@ -124,13 +149,13 @@
             <div class="col-xs-6">
                 <h4>Écran de vote</h4>
                 <p>
-                    <span class="label label-success">1 point </span> La mise en page doit correspondre avec un moyen d'enregistrer une note entre 0 et 5 inclus et un champ pour entrer le nom du votant.
+                    <span class="label label-success">1 point</span> La mise en page doit correspondre avec un moyen d'enregistrer une note entre 0 et 5 inclus et un champ pour entrer le nom du votant.
                 </p>
                 <p>
-                   <span class="label label-success">2 points </span> Un vote est créé en base de données avec la note et le votant.
+                   <span class="label label-success">2 points</span> Un vote est créé en base de données avec la note et le votant.
                 </p>
                 <p>
-                    <span class="label label-success">1 point </span> Il y a un message d'erreur significatif si le votant a déjà voté pour cette question.
+                    <span class="label label-success">1 point</span> Il y a un message d'erreur significatif si le votant a déjà voté pour cette question.
                 </p>
             </div>
             <div class="col-xs-3 well">
@@ -149,10 +174,10 @@
             <div class="col-xs-3">
                 <h4>Écran de résultats</h4>
                 <p>
-                    <span class="label label-success">2 point </span> La mise en page correspond et permet d'afficher la moyenne, l'écart type et la distribution des votes par note.
+                    <span class="label label-success">2 points</span> La mise en page correspond et permet d'afficher la moyenne, l'écart type et la distribution des votes par note.
                 </p>
                 <p>
-                    <span class="label label-success">1 point </span> Un message s'affiche s'il n'y a aucun vote pour cette question à ce moment.
+                    <span class="label label-success">1 point</span> Un message s'affiche s'il n'y a aucun vote pour cette question à ce moment.
                 </p>
             </div>
             <div class="col-xs-3 well">
@@ -161,9 +186,9 @@
             <div class="col-xs-3">
                 <h4>Menu de l'activité</h4>
                 <ul>
-                    <li><span class="label label-success">1 point </span> <strong>Supprime les votes</strong> doit supprimer tous les objets votes dans la base de données</li>  
-                    <li><span class="label label-success">1 point </span> <strong>Supprime les questions</strong> doit supprimer toutes les questions sauf celles où il y a des votes</li>
-                    <li><span class="label label-success">1 point </span> La liste se met à jour après suppression (éléments et ordre)</li>
+                    <li><span class="label label-success">1 point</span> <strong>Supprime les votes</strong> doit supprimer tous les objets votes dans la base de données</li>  
+                    <li><span class="label label-success">1 point</span> <strong>Supprime les questions</strong> doit supprimer toutes les questions sauf celles où il y a des votes</li>
+                    <li><span class="label label-success">1 point</span> La liste se met à jour après suppression (éléments et ordre)</li>
                 </ul>
             </div>
             <div class="col-xs-3 well">
